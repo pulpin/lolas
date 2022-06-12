@@ -1,0 +1,1216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>LibreriaAC</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>libreriaac.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltaAjuste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaAjuste.designer.cs">
+      <DependentUpon>AltaAjuste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaCliente.designer.cs">
+      <DependentUpon>AltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaClienteCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaClienteCC.designer.cs">
+      <DependentUpon>AltaClienteCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaconsignaMae.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaconsignaMae.designer.cs">
+      <DependentUpon>AltaconsignaMae.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaDeposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaDeposito.designer.cs">
+      <DependentUpon>AltaDeposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaDineroCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaDineroCaja.designer.cs">
+      <DependentUpon>AltaDineroCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaEditorial.designer.cs">
+      <DependentUpon>AltaEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaPedido.designer.cs">
+      <DependentUpon>AltaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaProducto.designer.cs">
+      <DependentUpon>AltaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaProductoConsigna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaProductoConsigna.designer.cs">
+      <DependentUpon>AltaProductoConsigna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaGenero.designer.cs">
+      <DependentUpon>AltaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaProveedor.designer.cs">
+      <DependentUpon>AltaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaRendicionMae.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaRendicionMae.designer.cs">
+      <DependentUpon>AltaRendicionMae.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaReserva.designer.cs">
+      <DependentUpon>AltaReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaUsuario.designer.cs">
+      <DependentUpon>AltaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArqueodeCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArqueodeCaja.designer.cs">
+      <DependentUpon>ArqueodeCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambioPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioPrecio.designer.cs">
+      <DependentUpon>CambioPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambioPrecioViejo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioPrecioViejo.designer.cs">
+      <DependentUpon>CambioPrecioViejo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CantiInte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CantiInte.designer.cs">
+      <DependentUpon>CantiInte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargarapida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargarapida.designer.cs">
+      <DependentUpon>Cargarapida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarCantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarCantidad.designer.cs">
+      <DependentUpon>CargarCantidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cobrar.designer.cs">
+      <DependentUpon>Cobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAjustes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaAjustes.designer.cs">
+      <DependentUpon>ConsultaAjustes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCC.designer.cs">
+      <DependentUpon>ConsultaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCliente.designer.cs">
+      <DependentUpon>ConsultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaClienteLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaClienteLi.designer.cs">
+      <DependentUpon>ConsultaClienteLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCuentaCorriente.designer.cs">
+      <DependentUpon>ConsultaCuentaCorriente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaEditoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaEditoriales.designer.cs">
+      <DependentUpon>ConsultaEditoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaInteres.designer.cs">
+      <DependentUpon>ConsultaInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaMoviVtas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaMoviVtas.designer.cs">
+      <DependentUpon>ConsultaMoviVtas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPedidosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPedidosR.designer.cs">
+      <DependentUpon>ConsultaPedidosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPedidosRealizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPedidosRealizados.designer.cs">
+      <DependentUpon>ConsultaPedidosRealizados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPermisos.designer.cs">
+      <DependentUpon>ConsultaPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPlataCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPlataCaja.designer.cs">
+      <DependentUpon>ConsultaPlataCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPrecios.designer.cs">
+      <DependentUpon>ConsultaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProConsigna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProConsigna.designer.cs">
+      <DependentUpon>ConsultaProConsigna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductos.designer.cs">
+      <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProductosAgregaI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductosAgregaI.designer.cs">
+      <DependentUpon>ConsultaProductosAgregaI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProductosAgrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductosAgrega.designer.cs">
+      <DependentUpon>ConsultaProductosAgrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProductosAgregaC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductosAgregaC.designer.cs">
+      <DependentUpon>ConsultaProductosAgregaC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProductosAgregaRe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductosAgregaRe.designer.cs">
+      <DependentUpon>ConsultaProductosAgregaRe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProfor.designer.cs">
+      <DependentUpon>ConsultaProfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaGenero.designer.cs">
+      <DependentUpon>ConsultaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProveedor.designer.cs">
+      <DependentUpon>ConsultaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaReservas.designer.cs">
+      <DependentUpon>ConsultaReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasConsignas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasConsignas.designer.cs">
+      <DependentUpon>ConsultasConsignas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasConsignasD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasConsignasD.designer.cs">
+      <DependentUpon>ConsultasConsignasD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasEditoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasEditoriales.designer.cs">
+      <DependentUpon>ConsultasEditoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasHistoricoD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasHistoricoD.designer.cs">
+      <DependentUpon>ConsultasHistoricoD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasHistoricoDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasHistoricoDev.designer.cs">
+      <DependentUpon>ConsultasHistoricoDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasLugares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasLugares.designer.cs">
+      <DependentUpon>ConsultasLugares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasLugaresHis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasLugaresHis.designer.cs">
+      <DependentUpon>ConsultasLugaresHis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasPedidosVta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasPedidosVta.designer.cs">
+      <DependentUpon>ConsultasPedidosVta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasRendiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasRendiciones.designer.cs">
+      <DependentUpon>ConsultasRendiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasRendicionesD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasRendicionesD.designer.cs">
+      <DependentUpon>ConsultasRendicionesD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaUsuarios.designer.cs">
+      <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaVentas.designer.cs">
+      <DependentUpon>ConsultaVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaVentasProduc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaVentasProduc.designer.cs">
+      <DependentUpon>ConsultaVentasProduc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimePrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimePrecio.designer.cs">
+      <DependentUpon>ImprimePrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VolverPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolverPrecio.designer.cs">
+      <DependentUpon>VolverPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlaConsignas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlaConsignas.designer.cs">
+      <DependentUpon>ControlaConsignas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevolucionConsigna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevolucionConsigna.designer.cs">
+      <DependentUpon>DevolucionConsigna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarPorcentaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPorcentaje.designer.cs">
+      <DependentUpon>CambiarPorcentaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Elegirpto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elegirpto.designer.cs">
+      <DependentUpon>Elegirpto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturar.designer.cs">
+      <DependentUpon>Facturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hacerpedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hacerpedido.designer.cs">
+      <DependentUpon>hacerpedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImagenCompleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImagenCompleta.designer.cs">
+      <DependentUpon>ImagenCompleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoClave.designer.cs">
+      <DependentUpon>IngresoClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoClaveRe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoClaveRe.designer.cs">
+      <DependentUpon>IngresoClaveRe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaReserva.designer.cs">
+      <DependentUpon>ModificaReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientosdeProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientosdeProducto.designer.cs">
+      <DependentUpon>MovimientosdeProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotadeCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotadeCredito.designer.cs">
+      <DependentUpon>NotadeCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagarCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagarCC.designer.cs">
+      <DependentUpon>PagarCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proforma.designer.cs">
+      <DependentUpon>Proforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reservasentrefecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservasentrefecha.designer.cs">
+      <DependentUpon>reservasentrefecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventasentrefechapedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventasentrefechapedido.designer.cs">
+      <DependentUpon>ventasentrefechapedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contador.designer.cs">
+      <DependentUpon>Contador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventasentrefechas1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventasentrefechas1.designer.cs">
+      <DependentUpon>ventasentrefechas1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AltaAjuste.resx">
+      <DependentUpon>AltaAjuste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaCliente.resx">
+      <DependentUpon>AltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaClienteCC.resx">
+      <DependentUpon>AltaClienteCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaconsignaMae.resx">
+      <DependentUpon>AltaconsignaMae.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaDeposito.resx">
+      <DependentUpon>AltaDeposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaDineroCaja.resx">
+      <DependentUpon>AltaDineroCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaEditorial.resx">
+      <DependentUpon>AltaEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaPedido.resx">
+      <DependentUpon>AltaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaProducto.resx">
+      <DependentUpon>AltaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaProductoConsigna.resx">
+      <DependentUpon>AltaProductoConsigna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaGenero.resx">
+      <DependentUpon>AltaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaProveedor.resx">
+      <DependentUpon>AltaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaRendicionMae.resx">
+      <DependentUpon>AltaRendicionMae.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaReserva.resx">
+      <DependentUpon>AltaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaUsuario.resx">
+      <DependentUpon>AltaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArqueodeCaja.resx">
+      <DependentUpon>ArqueodeCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioPrecio.resx">
+      <DependentUpon>CambioPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioPrecioViejo.resx">
+      <DependentUpon>CambioPrecioViejo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CantiInte.resx">
+      <DependentUpon>CantiInte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargarapida.resx">
+      <DependentUpon>Cargarapida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarCantidad.resx">
+      <DependentUpon>CargarCantidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cobrar.resx">
+      <DependentUpon>Cobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaAjustes.resx">
+      <DependentUpon>ConsultaAjustes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCC.resx">
+      <DependentUpon>ConsultaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCliente.resx">
+      <DependentUpon>ConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaClienteLi.resx">
+      <DependentUpon>ConsultaClienteLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCuentaCorriente.resx">
+      <DependentUpon>ConsultaCuentaCorriente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaEditoriales.resx">
+      <DependentUpon>ConsultaEditoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaInteres.resx">
+      <DependentUpon>ConsultaInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMoviVtas.resx">
+      <DependentUpon>ConsultaMoviVtas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPedidosR.resx">
+      <DependentUpon>ConsultaPedidosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPedidosRealizados.resx">
+      <DependentUpon>ConsultaPedidosRealizados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPermisos.resx">
+      <DependentUpon>ConsultaPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPlataCaja.resx">
+      <DependentUpon>ConsultaPlataCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPrecios.resx">
+      <DependentUpon>ConsultaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProConsigna.resx">
+      <DependentUpon>ConsultaProConsigna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductos.resx">
+      <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductosAgregaI.resx">
+      <DependentUpon>ConsultaProductosAgregaI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductosAgrega.resx">
+      <DependentUpon>ConsultaProductosAgrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductosAgregaC.resx">
+      <DependentUpon>ConsultaProductosAgregaC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductosAgregaRe.resx">
+      <DependentUpon>ConsultaProductosAgregaRe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProfor.resx">
+      <DependentUpon>ConsultaProfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaGenero.resx">
+      <DependentUpon>ConsultaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProveedor.resx">
+      <DependentUpon>ConsultaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaReservas.resx">
+      <DependentUpon>ConsultaReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasConsignas.resx">
+      <DependentUpon>ConsultasConsignas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasConsignasD.resx">
+      <DependentUpon>ConsultasConsignasD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasEditoriales.resx">
+      <DependentUpon>ConsultasEditoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasHistoricoD.resx">
+      <DependentUpon>ConsultasHistoricoD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasHistoricoDev.resx">
+      <DependentUpon>ConsultasHistoricoDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasLugares.resx">
+      <DependentUpon>ConsultasLugares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasLugaresHis.resx">
+      <DependentUpon>ConsultasLugaresHis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasPedidosVta.resx">
+      <DependentUpon>ConsultasPedidosVta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasRendiciones.resx">
+      <DependentUpon>ConsultasRendiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasRendicionesD.resx">
+      <DependentUpon>ConsultasRendicionesD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaUsuarios.resx">
+      <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaVentas.resx">
+      <DependentUpon>ConsultaVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaVentasProduc.resx">
+      <DependentUpon>ConsultaVentasProduc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimePrecio.resx">
+      <DependentUpon>ImprimePrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolverPrecio.resx">
+      <DependentUpon>VolverPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlaConsignas.resx">
+      <DependentUpon>ControlaConsignas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevolucionConsigna.resx">
+      <DependentUpon>DevolucionConsigna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarPorcentaje.resx">
+      <DependentUpon>CambiarPorcentaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elegirpto.resx">
+      <DependentUpon>Elegirpto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturar.resx">
+      <DependentUpon>Facturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hacerpedido.resx">
+      <DependentUpon>hacerpedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagenCompleta.resx">
+      <DependentUpon>ImagenCompleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoClave.resx">
+      <DependentUpon>IngresoClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoClaveRe.resx">
+      <DependentUpon>IngresoClaveRe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaReserva.resx">
+      <DependentUpon>ModificaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimientosdeProducto.resx">
+      <DependentUpon>MovimientosdeProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotadeCredito.resx">
+      <DependentUpon>NotadeCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagarCC.resx">
+      <DependentUpon>PagarCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proforma.resx">
+      <DependentUpon>Proforma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reservasentrefecha.resx">
+      <DependentUpon>reservasentrefecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventasentrefechapedido.resx">
+      <DependentUpon>ventasentrefechapedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contador.resx">
+      <DependentUpon>Contador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventasentrefechas1.resx">
+      <DependentUpon>ventasentrefechas1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Logica\LogicaNegocios\LogicaNegocios.csproj">
+      <Project>{47a4e732-957a-437f-9371-c4bbb9257bdb}</Project>
+      <Name>LogicaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AC3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AC11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AC15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AC64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AC100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acepta64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agrega32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agrega64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregali64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregarE32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregarE321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregarE322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahora12a48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahora12ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahora48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahora1248.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajuste32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrarusu32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscarl64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscarlibro32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caro64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caro96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeuser64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuloamarillo30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulorojo30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuloverde30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cobrar48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comprar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credito48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credpersonalc48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\debito48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diferenciapre64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diferenciaprecio64+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinero32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editarusu32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editorial64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\efectivo48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrar48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\execute32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit296.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factu64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factu96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generar64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historico24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historico32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Impresora64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intere32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interes24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nodisponible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-disponible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nolibro32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papelera64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedido32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedidos32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permisos32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plata32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\precio64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prin48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proforma48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reservas24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reservas32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reservas64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subirimagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subirimagen32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventaspago64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrod32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libreriaac.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
