@@ -33,7 +33,7 @@ namespace Presentacion
             Productos pro = new Productos();
             pro.productoide = Producide;
             pro.Titulo = txttitulo.Text;
-            pro.Autor = txtautor.Text;
+            pro.Autor = "";
             pro.Editorial = Convert.ToInt32(lUEditorial.EditValue);
             pro.Editorial = Convert.ToInt32(lUEditorial.EditValue);
             pro.Genero = Convert.ToInt32(LUgenero.EditValue);
@@ -126,7 +126,7 @@ namespace Presentacion
             string extension;
             Productos pro = new Productos();
             pro.Titulo = (txttitulo.Text).ToUpper();
-            pro.Autor = (txtautor.Text).ToUpper();
+            pro.Autor = "";
             pro.Editorial = Convert.ToInt32(lUEditorial.EditValue);
             pro.Genero = Convert.ToInt32(LUgenero.EditValue);
 
@@ -282,6 +282,7 @@ namespace Presentacion
 
         private void AltaProducto_Load(object sender, EventArgs e)
         {
+            this.tipopro = 1;
             Editorial edi = new Editorial();
 
             lUEditorial.Properties.DisplayMember = "EDI_EDITORIAL";
@@ -327,7 +328,7 @@ namespace Presentacion
         private void bloqueoporcuerpoyestante()
         {
             txttitulo.Enabled = false;
-            txtautor.Enabled = false;
+            //txtautor.Enabled = false;
             lUEditorial.Enabled = false;
             LUgenero.Enabled = false;
             txtdividido.Enabled = false;
@@ -342,7 +343,7 @@ namespace Presentacion
         private void desbloqueotitulo()
         {
             txttitulo.Enabled = true;
-            txtautor.Enabled = true;
+            //txtautor.Enabled = true;
             lUEditorial.Enabled = true;
             LUgenero.Enabled = true;
         }
@@ -350,7 +351,8 @@ namespace Presentacion
         {
             if (e.KeyCode == Keys.Enter)
             {
-                txtautor.Focus();
+                //txtautor.Focus();
+                lUEditorial.Focus();
             }
         }
 
@@ -478,7 +480,7 @@ namespace Presentacion
             
             Producide = pro.productoide;
             txttitulo.Text = pro.Titulo;
-            txtautor.Text = pro.Autor;
+           //txtautor.Text = pro.Autor;
             lUEditorial.EditValue = pro.Editorial;
             LUgenero.EditValue = pro.Genero;
             this._preciosinmodi = pro.Precio.Replace(",", ".");
@@ -578,9 +580,12 @@ namespace Presentacion
 
         private void rblibro_CheckedChanged(object sender, EventArgs e)
         {
-            this.desactivariva();
+            //this.desactivariva();
+            this.tipopro = 1;
+            
+            this.activariva();
             Genero gen = new Genero();
-            gen.EsLibro = this.tipopro;
+            //gen.EsLibro = this.tipopro;
             //gen.EsLibro = produc.Tipopro;
             LUgenero.Properties.DisplayMember = "GEN_DESC";
             LUgenero.Properties.ValueMember = "GEN_IDE";

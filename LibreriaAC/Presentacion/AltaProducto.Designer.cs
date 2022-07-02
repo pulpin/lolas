@@ -30,8 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txttitulo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtautor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lUEditorial = new DevExpress.XtraEditors.LookUpEdit();
             this.LUgenero = new DevExpress.XtraEditors.LookUpEdit();
@@ -123,35 +121,12 @@
             this.txttitulo.TabIndex = 0;
             this.txttitulo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txttitulo_KeyPress);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label2.Location = new System.Drawing.Point(68, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
-            this.label2.TabIndex = 190;
-            this.label2.Text = "Autor:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txtautor
-            // 
-            this.txtautor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtautor.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtautor.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtautor.Location = new System.Drawing.Point(127, 127);
-            this.txtautor.Name = "txtautor";
-            this.txtautor.Size = new System.Drawing.Size(194, 24);
-            this.txtautor.TabIndex = 1;
-            this.txtautor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtautor_KeyPress);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label3.Location = new System.Drawing.Point(57, 167);
+            this.label3.Location = new System.Drawing.Point(57, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 17);
             this.label3.TabIndex = 192;
@@ -160,7 +135,7 @@
             // 
             // lUEditorial
             // 
-            this.lUEditorial.Location = new System.Drawing.Point(127, 167);
+            this.lUEditorial.Location = new System.Drawing.Point(127, 142);
             this.lUEditorial.Name = "lUEditorial";
             this.lUEditorial.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.Border;
             this.lUEditorial.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -180,7 +155,7 @@
             // 
             // LUgenero
             // 
-            this.LUgenero.Location = new System.Drawing.Point(127, 207);
+            this.LUgenero.Location = new System.Drawing.Point(127, 182);
             this.LUgenero.Name = "LUgenero";
             this.LUgenero.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.Border;
             this.LUgenero.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -203,7 +178,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label4.Location = new System.Drawing.Point(58, 208);
+            this.label4.Location = new System.Drawing.Point(58, 183);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 17);
             this.label4.TabIndex = 194;
@@ -215,7 +190,7 @@
             this.txtprecio.BackColor = System.Drawing.SystemColors.Info;
             this.txtprecio.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtprecio.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtprecio.Location = new System.Drawing.Point(128, 260);
+            this.txtprecio.Location = new System.Drawing.Point(128, 241);
             this.txtprecio.Name = "txtprecio";
             this.txtprecio.Size = new System.Drawing.Size(119, 36);
             this.txtprecio.TabIndex = 4;
@@ -227,7 +202,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label5.Location = new System.Drawing.Point(67, 268);
+            this.label5.Location = new System.Drawing.Point(67, 249);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 17);
             this.label5.TabIndex = 196;
@@ -246,6 +221,7 @@
             this.gBtipopro.TabIndex = 198;
             this.gBtipopro.TabStop = false;
             this.gBtipopro.Text = "Elegir la opción para el producto...";
+            this.gBtipopro.Visible = false;
             // 
             // rbdida
             // 
@@ -307,7 +283,6 @@
             this.paneliva.Name = "paneliva";
             this.paneliva.Size = new System.Drawing.Size(490, 40);
             this.paneliva.TabIndex = 205;
-            this.paneliva.Visible = false;
             // 
             // lUporcentaje
             // 
@@ -573,7 +548,7 @@
             this.lbletra.AutoSize = true;
             this.lbletra.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbletra.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbletra.Location = new System.Drawing.Point(276, 261);
+            this.lbletra.Location = new System.Drawing.Point(276, 242);
             this.lbletra.Name = "lbletra";
             this.lbletra.Size = new System.Drawing.Size(39, 33);
             this.lbletra.TabIndex = 216;
@@ -692,33 +667,31 @@
             this.txtdividido.BackColor = System.Drawing.Color.Honeydew;
             this.txtdividido.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdividido.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtdividido.Location = new System.Drawing.Point(319, 224);
+            this.txtdividido.Location = new System.Drawing.Point(319, 204);
             this.txtdividido.Name = "txtdividido";
             this.txtdividido.Size = new System.Drawing.Size(71, 24);
             this.txtdividido.TabIndex = 221;
             this.txtdividido.Text = "1";
             this.txtdividido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtdividido.Visible = false;
             // 
             // lbdividido
             // 
             this.lbdividido.AutoSize = true;
             this.lbdividido.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbdividido.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.lbdividido.Location = new System.Drawing.Point(315, 204);
+            this.lbdividido.Location = new System.Drawing.Point(315, 184);
             this.lbdividido.Name = "lbdividido";
             this.lbdividido.Size = new System.Drawing.Size(83, 17);
             this.lbdividido.TabIndex = 222;
             this.lbdividido.Text = "Divido por:";
             this.lbdividido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbdividido.Visible = false;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label19.Location = new System.Drawing.Point(31, 301);
+            this.label19.Location = new System.Drawing.Point(31, 282);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(90, 14);
             this.label19.TabIndex = 223;
@@ -730,7 +703,7 @@
             this.lbprecioanterior.AutoSize = true;
             this.lbprecioanterior.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbprecioanterior.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbprecioanterior.Location = new System.Drawing.Point(129, 301);
+            this.lbprecioanterior.Location = new System.Drawing.Point(129, 282);
             this.lbprecioanterior.Name = "lbprecioanterior";
             this.lbprecioanterior.Size = new System.Drawing.Size(14, 14);
             this.lbprecioanterior.TabIndex = 224;
@@ -876,8 +849,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lUEditorial);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtautor);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txttitulo);
             this.Controls.Add(this.label1);
@@ -914,8 +885,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txttitulo;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtautor;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.LookUpEdit lUEditorial;
         private DevExpress.XtraEditors.LookUpEdit LUgenero;

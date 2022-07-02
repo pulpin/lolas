@@ -260,5 +260,10 @@ namespace Presentacion
                 gConsulta4.Visible = false;
             }
         }
+
+        private void rBlibros_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -386,9 +386,6 @@ C:\Users\Usuario\Documents\GitHub\LibreriaAC\LibreriaAC\Presentacion\obj\Debug\P
 C:\Users\Usuario\Documents\GitHub\LibreriaAC\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaCredito.resources
 C:\Users\Usuario\Documents\GitHub\LibreriaAC\LibreriaAC\Presentacion\obj\Debug\Presentacion.AltaCredito.resources
 C:\Users\Usuario\Documents\GitHub\LibreriaAC\LibreriaAC\Presentacion\obj\Debug\Presentacion.Inventario.resources
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\LibreriaAC.exe.config
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\LibreriaAC.exe
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\LibreriaAC.pdb
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\DevExpress.Data.Desktop.v21.2.dll
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\DevExpress.Data.v21.2.dll
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\DevExpress.Office.v21.2.Core.dll
@@ -586,9 +583,13 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presen
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.Contador.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ventasentrefechas1.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\LibreriaAC.exe.licenses
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\LibreriaAC.exe
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\LibreriaAC.pdb
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ActualizaCatalogo.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.exe.config
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.exe
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.pdb
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.exe.licenses
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.exe
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.pdb
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.CambiarPorcentajePrecio.resources

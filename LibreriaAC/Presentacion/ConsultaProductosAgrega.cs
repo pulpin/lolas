@@ -35,7 +35,7 @@ namespace Presentacion
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (txttitulo.Text == string.Empty && txtautor.Text == string.Empty)
+            if (txttitulo.Text == string.Empty )
             {
                 MessageBox.Show("Debe ingresar el texto a buscar");
 
@@ -51,11 +51,11 @@ namespace Presentacion
             pro.Tipo = 1;
             pro.Barra = txtbarra.Text;
             pro.Codigo = txtcodigo.Text;
-            pro.Isbn = txtisbn.Text;
+           // pro.Isbn = txtisbn.Text;
             gConsulta.DataSource = pro.Mostrar_productos();
             txtbarra.Text = string.Empty;
             txtcodigo.Text = string.Empty;
-            txtisbn.Text = string.Empty;
+           // txtisbn.Text = string.Empty;
             this.cargardatos();
         }
 
@@ -73,7 +73,7 @@ namespace Presentacion
             {
                 pro.Contengapalabra = 0;
             }
-            pro.Autor = txtautor.Text;
+            //pro.Autor = txtautor.Text;
 
             gConsulta.DataSource = pro.Mostrar_productos();
             this.limpiartextos();
@@ -96,7 +96,7 @@ namespace Presentacion
         private void limpiartextos()
         {
             txttitulo.Text = string.Empty;
-            txtautor.Text = string.Empty;
+            //txtautor.Text = string.Empty;
             chbpalabra.Checked = false;
         }
         private void blimpiar_Click(object sender, EventArgs e)
@@ -172,12 +172,12 @@ namespace Presentacion
         }
         private void txtautor_Enter(object sender, EventArgs e)
         {
-            this.activartexbox(txtautor);
+           // this.activartexbox(txtautor);
         }
 
         private void txtautor_Leave(object sender, EventArgs e)
         {
-            this.desactivartexbox(txtautor);
+           // this.desactivartexbox(txtautor);
         }
 
         private void txtbarra_Enter(object sender, EventArgs e)
@@ -192,12 +192,12 @@ namespace Presentacion
 
         private void txtisbn_Enter(object sender, EventArgs e)
         {
-            this.activartexbox(txtisbn);
+           // this.activartexbox(txtisbn);
         }
 
         private void txtisbn_Leave(object sender, EventArgs e)
         {
-            this.desactivartexbox(txtisbn);
+           // this.desactivartexbox(txtisbn);
         }
 
         private void txtcodigo_Enter(object sender, EventArgs e)

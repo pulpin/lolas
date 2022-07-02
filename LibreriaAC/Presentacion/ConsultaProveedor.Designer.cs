@@ -178,6 +178,7 @@
             this.groupBox2.Size = new System.Drawing.Size(193, 33);
             this.groupBox2.TabIndex = 258;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Visible = false;
             // 
             // rBlolasdb
             // 

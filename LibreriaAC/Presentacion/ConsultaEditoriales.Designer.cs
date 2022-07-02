@@ -41,13 +41,13 @@
             this.EDI_TELEFONOS = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EDI_CUIT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EDI_CLIENTE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.EDI_PORCEN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnaltacliente = new System.Windows.Forms.Button();
             this.btnborrarusu = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.txttitulo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.EDI_PORCEN = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).BeginInit();
             this.SuspendLayout();
@@ -171,6 +171,14 @@
             this.EDI_CLIENTE.VisibleIndex = 3;
             this.EDI_CLIENTE.Width = 51;
             // 
+            // EDI_PORCEN
+            // 
+            this.EDI_PORCEN.Caption = "Porcentaje";
+            this.EDI_PORCEN.FieldName = "EDI_PORCEN";
+            this.EDI_PORCEN.Name = "EDI_PORCEN";
+            this.EDI_PORCEN.Visible = true;
+            this.EDI_PORCEN.VisibleIndex = 4;
+            // 
             // btncancelar
             // 
             this.btncancelar.Image = global::Presentacion.Properties.Resources.cancelar32;
@@ -244,14 +252,6 @@
             this.label1.Text = "Editorial:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // EDI_PORCEN
-            // 
-            this.EDI_PORCEN.Caption = "Porcentaje";
-            this.EDI_PORCEN.FieldName = "EDI_PORCEN";
-            this.EDI_PORCEN.Name = "EDI_PORCEN";
-            this.EDI_PORCEN.Visible = true;
-            this.EDI_PORCEN.VisibleIndex = 4;
-            // 
             // ConsultaEditoriales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,7 +267,7 @@
             this.Controls.Add(this.gConsulta);
             this.Name = "ConsultaEditoriales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Editoriales";
+            this.Text = "Marcas";
             this.Load += new System.EventHandler(this.ConsultaInteres_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).EndInit();

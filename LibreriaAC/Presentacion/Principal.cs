@@ -439,10 +439,7 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
             {
                 //tsPagos.Enabled = true;
             }
-            if (LogicaNegocios.Globales.accesocredito == 2 || LogicaNegocios.Globales.accesocredito == 1)
-            {
-                TlMcredito.Enabled = true;
-            }
+            
         }
         void dll_version()
         {
@@ -749,7 +746,7 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
 
         private void TsMIPorcentaje_Click(object sender, EventArgs e)
         {
-            CambiarPorcentaje cp = new CambiarPorcentaje();
+            CambiarPorcentajePrecio cp = new CambiarPorcentajePrecio();
             cp.ShowDialog();
         }
 
@@ -840,8 +837,14 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
 
         private void interesesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ActualizaCatalogo ac = new ActualizaCatalogo();
-            ac.ShowDialog();
+            /*ActualizaCatalogo ac = new ActualizaCatalogo();
+            ac.ShowDialog();*/
+        }
+
+        private void tSBclientes_Click(object sender, EventArgs e)
+        {
+            ConsultaClienteReserva ccr = new ConsultaClienteReserva();
+            ccr.ShowDialog();
         }
 
         private void toolTurnosD_Click(object sender, EventArgs e)

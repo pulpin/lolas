@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Presentacion</RootNamespace>
-    <AssemblyName>LibreriaAC</AssemblyName>
+    <AssemblyName>Lolas</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -215,6 +215,12 @@
     </Compile>
     <Compile Include="ArqueodeCaja.designer.cs">
       <DependentUpon>ArqueodeCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarPorcentajePrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPorcentajePrecio.designer.cs">
+      <DependentUpon>CambiarPorcentajePrecio.cs</DependentUpon>
     </Compile>
     <Compile Include="CambioPrecio.cs">
       <SubType>Form</SubType>
@@ -769,6 +775,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ArqueodeCaja.resx">
       <DependentUpon>ArqueodeCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarPorcentajePrecio.resx">
+      <DependentUpon>CambiarPorcentajePrecio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CambioPrecio.resx">
       <DependentUpon>CambioPrecio.cs</DependentUpon>

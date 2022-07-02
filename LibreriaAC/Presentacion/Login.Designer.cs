@@ -37,7 +37,6 @@
             this.panelColor = new System.Windows.Forms.Panel();
             this.colorEdit1 = new DevExpress.XtraEditors.ColorEdit();
             this.LUEusuario = new DevExpress.XtraEditors.LookUpEdit();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnIngreso = new System.Windows.Forms.Button();
@@ -47,7 +46,7 @@
             // 
             // txtcontraseña
             // 
-            this.txtcontraseña.Location = new System.Drawing.Point(214, 123);
+            this.txtcontraseña.Location = new System.Drawing.Point(182, 51);
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.PasswordChar = '*';
             this.txtcontraseña.Size = new System.Drawing.Size(134, 20);
@@ -58,7 +57,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(137, 125);
+            this.label2.Location = new System.Drawing.Point(105, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 8;
@@ -68,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(159, 94);
+            this.label1.Location = new System.Drawing.Point(123, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 7;
@@ -77,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(85, 181);
+            this.label3.Location = new System.Drawing.Point(88, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 13;
@@ -90,7 +89,7 @@
             // panelColor
             // 
             this.panelColor.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelColor.Location = new System.Drawing.Point(252, 167);
+            this.panelColor.Location = new System.Drawing.Point(255, 97);
             this.panelColor.Name = "panelColor";
             this.panelColor.Size = new System.Drawing.Size(46, 46);
             this.panelColor.TabIndex = 15;
@@ -98,7 +97,7 @@
             // colorEdit1
             // 
             this.colorEdit1.EditValue = System.Drawing.Color.WhiteSmoke;
-            this.colorEdit1.Location = new System.Drawing.Point(125, 178);
+            this.colorEdit1.Location = new System.Drawing.Point(128, 108);
             this.colorEdit1.Name = "colorEdit1";
             this.colorEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.colorEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -110,7 +109,7 @@
             // 
             // LUEusuario
             // 
-            this.LUEusuario.Location = new System.Drawing.Point(214, 91);
+            this.LUEusuario.Location = new System.Drawing.Point(182, 12);
             this.LUEusuario.Name = "LUEusuario";
             this.LUEusuario.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.Border;
             this.LUEusuario.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -125,23 +124,15 @@
             this.LUEusuario.Properties.HideSelection = false;
             this.LUEusuario.Properties.NullText = "";
             this.LUEusuario.Properties.ShowHeader = false;
-            this.LUEusuario.Size = new System.Drawing.Size(134, 22);
+            this.LUEusuario.Size = new System.Drawing.Size(204, 22);
             this.LUEusuario.TabIndex = 0;
             this.LUEusuario.EditValueChanged += new System.EventHandler(this.LUEusuario_EditValueChanged);
             this.LUEusuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LUEusuario_KeyPress);
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::Presentacion.Properties.Resources.search96;
-            this.panel1.Location = new System.Drawing.Point(4, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(99, 107);
-            this.panel1.TabIndex = 12;
-            // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(216, 14);
+            this.panel2.Location = new System.Drawing.Point(26, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(57, 59);
             this.panel2.TabIndex = 11;
@@ -150,7 +141,7 @@
             // 
             this.btnSalir.Image = global::Presentacion.Properties.Resources.salir48;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(183, 227);
+            this.btnSalir.Location = new System.Drawing.Point(211, 172);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(102, 69);
             this.btnSalir.TabIndex = 3;
@@ -163,7 +154,7 @@
             // 
             this.btnIngreso.Image = global::Presentacion.Properties.Resources.entrar48;
             this.btnIngreso.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnIngreso.Location = new System.Drawing.Point(63, 227);
+            this.btnIngreso.Location = new System.Drawing.Point(79, 172);
             this.btnIngreso.Name = "btnIngreso";
             this.btnIngreso.Size = new System.Drawing.Size(102, 69);
             this.btnIngreso.TabIndex = 2;
@@ -176,15 +167,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(361, 304);
+            this.ClientSize = new System.Drawing.Size(389, 253);
             this.ControlBox = false;
             this.Controls.Add(this.LUEusuario);
             this.Controls.Add(this.colorEdit1);
             this.Controls.Add(this.panelColor);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtcontraseña);
@@ -210,7 +200,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnIngreso;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Panel panelColor;

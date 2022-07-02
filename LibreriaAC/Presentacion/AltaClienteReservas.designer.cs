@@ -35,6 +35,8 @@
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnagregar = new System.Windows.Forms.Button();
             this.txttelefono = new System.Windows.Forms.TextBox();
+            this.txtobs = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +69,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label4.Location = new System.Drawing.Point(74, 101);
+            this.label4.Location = new System.Drawing.Point(70, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 17);
             this.label4.TabIndex = 194;
@@ -87,7 +89,7 @@
             // 
             this.btncancelar.Image = global::Presentacion.Properties.Resources.cancelar64;
             this.btncancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btncancelar.Location = new System.Drawing.Point(240, 184);
+            this.btncancelar.Location = new System.Drawing.Point(240, 270);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(102, 79);
             this.btncancelar.TabIndex = 10;
@@ -100,7 +102,7 @@
             // 
             this.btnagregar.Image = global::Presentacion.Properties.Resources.guardar64;
             this.btnagregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnagregar.Location = new System.Drawing.Point(102, 184);
+            this.btnagregar.Location = new System.Drawing.Point(102, 270);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(102, 79);
             this.btnagregar.TabIndex = 9;
@@ -114,17 +116,42 @@
             this.txttelefono.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txttelefono.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttelefono.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txttelefono.Location = new System.Drawing.Point(77, 121);
+            this.txttelefono.Location = new System.Drawing.Point(73, 121);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(194, 24);
             this.txttelefono.TabIndex = 217;
+            // 
+            // txtobs
+            // 
+            this.txtobs.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtobs.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtobs.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.txtobs.Location = new System.Drawing.Point(73, 179);
+            this.txtobs.Multiline = true;
+            this.txtobs.Name = "txtobs";
+            this.txtobs.Size = new System.Drawing.Size(333, 74);
+            this.txtobs.TabIndex = 219;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label2.Location = new System.Drawing.Point(70, 159);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 17);
+            this.label2.TabIndex = 218;
+            this.label2.Text = "Observación:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // AltaClienteReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 274);
+            this.ClientSize = new System.Drawing.Size(442, 357);
             this.ControlBox = false;
+            this.Controls.Add(this.txtobs);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
@@ -151,5 +178,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.TextBox txtobs;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -11,7 +11,7 @@ namespace LogicaNegocios
 {
     public class Clientes
     {
-        string _cuit, _razonsocial, _domicilio, _telefono, _nombre;
+        string _cuit, _razonsocial, _domicilio, _telefono, _nombre, _obs;
         int _situacion, _alta, _clienteide, _dni, _consultapornombre;
         public DataTable Mostrar_clientes()
         {
@@ -26,7 +26,7 @@ namespace LogicaNegocios
             Conexion con = new Conexion("lolasdb", Globales.ip);
             con.AbrirConexio();
 
-            return con.Mostrar_Datos("select CLIEN_NOMBRE,CLIEN_TELEFONO,CLIEN_IDE FROM clientesli order by CLIEN_NOMBRE");
+            return con.Mostrar_Datos("select CLIEN_NOMBRE,CLIEN_TELEFONO,CLIEN_IDE,CLIEN_OBS FROM clientesli order by CLIEN_NOMBRE");
 
         }
         public DataTable Mostrar_clientesBuscar()
@@ -46,7 +46,7 @@ namespace LogicaNegocios
             string contiene = "%";
             string valor = "CLIEN_NOMBRE like " + "'" + contiene + "" + this.Nombre + "%" + "'";
 
-            return con.Mostrar_Datos("select CLIEN_NOMBRE,CLIEN_TELEFONO,CLIEN_IDE FROM clientesli where " + valor + "");
+            return con.Mostrar_Datos("select CLIEN_NOMBRE,CLIEN_TELEFONO,CLIEN_IDE,CLIEN_OBS FROM clientesli where " + valor + "");
         }
         public DataTable Mostrar_clientesCC()
         {
@@ -293,6 +293,7 @@ namespace LogicaNegocios
                 myCommand.Parameters.AddWithValue("palta", this.Alta);
                 myCommand.Parameters.AddWithValue("usuide", Globales.gbUsuide);
                 myCommand.Parameters.AddWithValue("clienide", this.Clienteide);
+                myCommand.Parameters.AddWithValue("pobs", this.Obs);
 
                 MySqlParameter ValorRetorno = new MySqlParameter("@Resultado", MySqlDbType.Int32);
                 //MySqlParameter ValorRetorno = new MySqlParameter("RETURN_VALUE", SqlDbType.Decimal);
@@ -462,6 +463,11 @@ namespace LogicaNegocios
         {
             get { return this._telefono; }
             set { this._telefono = value; }
+        }
+        public string Obs
+        {
+            get { return this._obs; }
+            set { this._obs = value; }
         }
         public int Situacion
         {

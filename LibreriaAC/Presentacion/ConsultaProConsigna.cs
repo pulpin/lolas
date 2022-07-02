@@ -32,7 +32,7 @@ namespace Presentacion
         {
             ven.venproductoide = this.Codigo;
             co.Codigo = this.Codigo;
-            gConsulta.DataSource = co.Mostrar_consignasporproductosineditorial();
+            //gConsulta.DataSource = co.Mostrar_consignasporproductosineditorial();
 
             //  gConsulta.DataSource = ven.Mostrar_registrodelasventas();
 
@@ -106,7 +106,7 @@ namespace Presentacion
         private void btneliminar_Click(object sender, EventArgs e)
         {
             PrintableComponentLink pl = new PrintableComponentLink(new PrintingSystem());
-            pl.Component = gConsulta;
+            pl.Component = gConsulta1;
             pl.CreateMarginalHeaderArea += new CreateAreaEventHandler(pl_CreateReportHeaderArea);
             pl.CreateReportHeaderArea += new CreateAreaEventHandler(pl_CreateReportHeaderArea2);
             pl.PaperKind = System.Drawing.Printing.PaperKind.A4;
@@ -114,7 +114,7 @@ namespace Presentacion
             pl.Landscape = true;
             pl.CreateDocument();
 
-            gridViewPintarFilas.OptionsView.ShowFooter = true;
+            gridView1.OptionsView.ShowFooter = true;
             pl.ShowPreview();
         }
 
@@ -123,7 +123,7 @@ namespace Presentacion
             if (sfdRuta.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
             {
 
-                gConsulta.ExportToXlsx(sfdRuta.FileName);
+                gConsulta1.ExportToXlsx(sfdRuta.FileName);
 
             }
         }
@@ -139,7 +139,7 @@ namespace Presentacion
         {
             if (sfdRuta1.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
             {
-                gConsulta.ExportToPdf(sfdRuta1.FileName);
+                gConsulta1.ExportToPdf(sfdRuta1.FileName);
             }
         }
     }

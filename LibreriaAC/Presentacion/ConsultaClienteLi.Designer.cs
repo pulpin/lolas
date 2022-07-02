@@ -44,6 +44,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.lbdescuento = new System.Windows.Forms.Label();
+            this.txtobs = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CLIEN_OBS = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -65,7 +68,8 @@
             this.gridViewPintarFilas.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.CLIEN_NOMBRE,
             this.CLIEN_TELEFONO,
-            this.CLIEN_IDE});
+            this.CLIEN_IDE,
+            this.CLIEN_OBS});
             this.gridViewPintarFilas.GridControl = this.gConsulta;
             this.gridViewPintarFilas.Name = "gridViewPintarFilas";
             this.gridViewPintarFilas.OptionsBehavior.Editable = false;
@@ -104,7 +108,7 @@
             // 
             this.btncancelar.Image = global::Presentacion.Properties.Resources.salir48;
             this.btncancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btncancelar.Location = new System.Drawing.Point(440, 412);
+            this.btncancelar.Location = new System.Drawing.Point(440, 442);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(69, 74);
             this.btncancelar.TabIndex = 12;
@@ -139,6 +143,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtobs);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtcaracteristica);
             this.groupBox1.Controls.Add(this.btnguardar);
@@ -149,7 +155,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 276);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(506, 130);
+            this.groupBox1.Size = new System.Drawing.Size(506, 160);
             this.groupBox1.TabIndex = 237;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar cliente...";
@@ -237,11 +243,45 @@
             this.lbdescuento.Text = "Apellido y nombre:";
             this.lbdescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // txtobs
+            // 
+            this.txtobs.BackColor = System.Drawing.SystemColors.Info;
+            this.txtobs.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtobs.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.txtobs.Location = new System.Drawing.Point(55, 113);
+            this.txtobs.Multiline = true;
+            this.txtobs.Name = "txtobs";
+            this.txtobs.Size = new System.Drawing.Size(420, 40);
+            this.txtobs.TabIndex = 244;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label3.Location = new System.Drawing.Point(6, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 19);
+            this.label3.TabIndex = 243;
+            this.label3.Text = "Obs:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CLIEN_OBS
+            // 
+            this.CLIEN_OBS.Caption = "Observación";
+            this.CLIEN_OBS.FieldName = "CLIEN_OBS";
+            this.CLIEN_OBS.MaxWidth = 250;
+            this.CLIEN_OBS.MinWidth = 250;
+            this.CLIEN_OBS.Name = "CLIEN_OBS";
+            this.CLIEN_OBS.Visible = true;
+            this.CLIEN_OBS.VisibleIndex = 2;
+            this.CLIEN_OBS.Width = 250;
+            // 
             // ConsultaClienteLi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 489);
+            this.ClientSize = new System.Drawing.Size(533, 524);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnmodificarcliente);
@@ -278,5 +318,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn CLIEN_IDE;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtcaracteristica;
+        private System.Windows.Forms.TextBox txtobs;
+        private System.Windows.Forms.Label label3;
+        private DevExpress.XtraGrid.Columns.GridColumn CLIEN_OBS;
     }
 }

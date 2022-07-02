@@ -32,7 +32,7 @@ namespace LogicaNegocios
             {
                 esli = 1;
             }
-            return con.Mostrar_Datos("select GEN_IDE,GEN_DESC,GEN_TIPO from lolasdb.genero where GEN_TIPO = " + esli + " order by GEN_DESC");
+            return con.Mostrar_Datos("select GEN_IDE,GEN_DESC,GEN_TIPO from lolasdb.genero order by GEN_DESC");
         }
         public DataTable Tabladedatos_generos2()
         {

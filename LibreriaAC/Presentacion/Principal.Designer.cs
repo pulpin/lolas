@@ -31,16 +31,24 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.menuFacturar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.tMConsultaP = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tSBclientes = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuPrecios = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.tSBVentas = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.tSBArqueo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbtipo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblocalidad = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.txtusuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,7 +60,6 @@
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movimientosDeUnProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TlMcredito = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editorialToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +69,8 @@
             this.TsMIPorcentaje = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIgenero = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.interesesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMIconsulI = new System.Windows.Forms.ToolStripMenuItem();
             this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CRPTSMIalta = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,27 +94,18 @@
             this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.menuReservas = new System.Windows.Forms.ToolStripButton();
+            this.tlSBed = new System.Windows.Forms.ToolStripButton();
+            this.tSBproveedor = new System.Windows.Forms.ToolStripButton();
+            this.tSBEditorial = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.actualizaCatálogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuReservas = new System.Windows.Forms.ToolStripButton();
-            this.tlSBed = new System.Windows.Forms.ToolStripButton();
-            this.tSBproveedor = new System.Windows.Forms.ToolStripButton();
-            this.tSBEditorial = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.menuFacturar = new System.Windows.Forms.ToolStripButton();
-            this.tMConsultaP = new System.Windows.Forms.ToolStripButton();
-            this.menuPrecios = new System.Windows.Forms.ToolStripButton();
-            this.tSBVentas = new System.Windows.Forms.ToolStripButton();
-            this.tSBArqueo = new System.Windows.Forms.ToolStripButton();
-            this.interesesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMIconsulI = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -120,8 +120,10 @@
             this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFacturar,
-            this.toolStripSeparator1,
+            this.toolStripSeparator6,
             this.tMConsultaP,
+            this.toolStripSeparator1,
+            this.tSBclientes,
             this.toolStripSeparator2,
             this.menuPrecios,
             this.toolStripSeparator4,
@@ -136,25 +138,123 @@
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // menuFacturar
+            // 
+            this.menuFacturar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuFacturar.Image = global::Presentacion.Properties.Resources.factu64;
+            this.menuFacturar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.menuFacturar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuFacturar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.menuFacturar.Name = "menuFacturar";
+            this.menuFacturar.Size = new System.Drawing.Size(66, 82);
+            this.menuFacturar.Text = "Facturar";
+            this.menuFacturar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.menuFacturar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuFacturar.ToolTipText = "Realizar facturación de productos...";
+            this.menuFacturar.Click += new System.EventHandler(this.menuViaje_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(66, 6);
+            // 
+            // tMConsultaP
+            // 
+            this.tMConsultaP.Enabled = false;
+            this.tMConsultaP.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tMConsultaP.Image = global::Presentacion.Properties.Resources.search64;
+            this.tMConsultaP.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tMConsultaP.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tMConsultaP.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tMConsultaP.Name = "tMConsultaP";
+            this.tMConsultaP.Size = new System.Drawing.Size(66, 82);
+            this.tMConsultaP.Text = "Consultar";
+            this.tMConsultaP.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tMConsultaP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tMConsultaP.ToolTipText = "Consulta de productos...";
+            this.tMConsultaP.Click += new System.EventHandler(this.toolTurnos_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(66, 6);
+            // 
+            // tSBclientes
+            // 
+            this.tSBclientes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tSBclientes.Image = global::Presentacion.Properties.Resources.Books_64;
+            this.tSBclientes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tSBclientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tSBclientes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBclientes.Name = "tSBclientes";
+            this.tSBclientes.Size = new System.Drawing.Size(66, 82);
+            this.tSBclientes.Text = "Agenda";
+            this.tSBclientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tSBclientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBclientes.ToolTipText = "Consulta de productos...";
+            this.tSBclientes.Click += new System.EventHandler(this.tSBclientes_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(66, 6);
             // 
+            // menuPrecios
+            // 
+            this.menuPrecios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.menuPrecios.Image = global::Presentacion.Properties.Resources.precio64;
+            this.menuPrecios.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.menuPrecios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuPrecios.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.menuPrecios.Name = "menuPrecios";
+            this.menuPrecios.Size = new System.Drawing.Size(66, 82);
+            this.menuPrecios.Text = "Precios";
+            this.menuPrecios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.menuPrecios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuPrecios.ToolTipText = "Consulta rápida de precios por código de barras...";
+            this.menuPrecios.Click += new System.EventHandler(this.menuPrecios_Click);
+            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(66, 6);
             // 
+            // tSBVentas
+            // 
+            this.tSBVentas.Enabled = false;
+            this.tSBVentas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tSBVentas.Image = global::Presentacion.Properties.Resources.ventaspago64;
+            this.tSBVentas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tSBVentas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tSBVentas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBVentas.Name = "tSBVentas";
+            this.tSBVentas.Size = new System.Drawing.Size(66, 82);
+            this.tSBVentas.Text = "Ventas";
+            this.tSBVentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tSBVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBVentas.ToolTipText = "Ver ventas realizadas...";
+            this.tSBVentas.Click += new System.EventHandler(this.tSBVentas_Click);
+            // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(66, 6);
+            // 
+            // tSBArqueo
+            // 
+            this.tSBArqueo.Enabled = false;
+            this.tSBArqueo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tSBArqueo.Image = global::Presentacion.Properties.Resources.ventas64;
+            this.tSBArqueo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tSBArqueo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tSBArqueo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBArqueo.Name = "tSBArqueo";
+            this.tSBArqueo.Size = new System.Drawing.Size(66, 82);
+            this.tSBArqueo.Text = "Arqueo";
+            this.tSBArqueo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tSBArqueo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBArqueo.ToolTipText = "Ver ventas realizadas...";
+            this.tSBArqueo.Click += new System.EventHandler(this.tSBArqueo_Click);
             // 
             // toolStripSeparator3
             // 
@@ -217,6 +317,14 @@
             this.lblocalidad.Name = "lblocalidad";
             this.lblocalidad.Size = new System.Drawing.Size(0, 16);
             this.lblocalidad.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Location = new System.Drawing.Point(29, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(28, 27);
+            this.panel2.TabIndex = 2;
             // 
             // txtusuario
             // 
@@ -295,8 +403,7 @@
             this.aerhToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productoToolStripMenuItem,
             this.editorialToolStripMenuItem,
-            this.movimientosDeUnProductoToolStripMenuItem,
-            this.TlMcredito});
+            this.movimientosDeUnProductoToolStripMenuItem});
             this.aerhToolStripMenuItem.Name = "aerhToolStripMenuItem";
             this.aerhToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.aerhToolStripMenuItem.Text = "Buscar";
@@ -324,14 +431,6 @@
             this.movimientosDeUnProductoToolStripMenuItem.Text = "Movimientos de un producto";
             this.movimientosDeUnProductoToolStripMenuItem.Click += new System.EventHandler(this.movimientosDeUnProductoToolStripMenuItem_Click);
             // 
-            // TlMcredito
-            // 
-            this.TlMcredito.Enabled = false;
-            this.TlMcredito.Name = "TlMcredito";
-            this.TlMcredito.Size = new System.Drawing.Size(229, 22);
-            this.TlMcredito.Text = "Crédito";
-            this.TlMcredito.Click += new System.EventHandler(this.TlMcredito_Click);
-            // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -342,8 +441,7 @@
             this.TSMIccorrientes,
             this.TsMIPorcentaje,
             this.TSMIgenero,
-            this.clientesReservasToolStripMenuItem,
-            this.actualizaCatálogoToolStripMenuItem});
+            this.clientesReservasToolStripMenuItem});
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.modificarToolStripMenuItem.Text = "Modificar";
@@ -359,7 +457,7 @@
             // 
             this.editorialToolStripMenuItem1.Name = "editorialToolStripMenuItem1";
             this.editorialToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
-            this.editorialToolStripMenuItem1.Text = "Editorial";
+            this.editorialToolStripMenuItem1.Text = "Marca";
             this.editorialToolStripMenuItem1.Click += new System.EventHandler(this.editorialToolStripMenuItem1_Click);
             // 
             // TSMIcambiopre
@@ -390,7 +488,7 @@
             this.TsMIPorcentaje.Enabled = false;
             this.TsMIPorcentaje.Name = "TsMIPorcentaje";
             this.TsMIPorcentaje.Size = new System.Drawing.Size(204, 22);
-            this.TsMIPorcentaje.Text = "Porcentaje de editoriales";
+            this.TsMIPorcentaje.Text = "Porcentaje por marca";
             this.TsMIPorcentaje.Click += new System.EventHandler(this.TsMIPorcentaje_Click);
             // 
             // TSMIgenero
@@ -406,6 +504,24 @@
             this.clientesReservasToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.clientesReservasToolStripMenuItem.Text = "Clientes reservas";
             this.clientesReservasToolStripMenuItem.Click += new System.EventHandler(this.clientesReservasToolStripMenuItem_Click);
+            // 
+            // interesesToolStripMenuItem
+            // 
+            this.interesesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMIconsulI});
+            this.interesesToolStripMenuItem.Enabled = false;
+            this.interesesToolStripMenuItem.Image = global::Presentacion.Properties.Resources.intere32;
+            this.interesesToolStripMenuItem.Name = "interesesToolStripMenuItem";
+            this.interesesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.interesesToolStripMenuItem.Text = "Intereses";
+            this.interesesToolStripMenuItem.Click += new System.EventHandler(this.interesesToolStripMenuItem_Click);
+            // 
+            // TSMIconsulI
+            // 
+            this.TSMIconsulI.Name = "TSMIconsulI";
+            this.TSMIconsulI.Size = new System.Drawing.Size(121, 22);
+            this.TSMIconsulI.Text = "Consulta";
+            this.TSMIconsulI.Click += new System.EventHandler(this.TSMIconsulI_Click);
             // 
             // altaToolStripMenuItem
             // 
@@ -601,68 +717,6 @@
             this.toolStrip2.TabIndex = 9;
             this.toolStrip2.Text = "toolStrip2";
             // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(70, 6);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label5.Location = new System.Drawing.Point(855, 6);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 16);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Versión: 04/06/2022";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(481, 515);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.Text = "3980,9";
-            this.textBox2.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(643, 515);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_3);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(481, 550);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.Visible = false;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(302, 506);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // actualizaCatálogoToolStripMenuItem
-            // 
-            this.actualizaCatálogoToolStripMenuItem.Name = "actualizaCatálogoToolStripMenuItem";
-            this.actualizaCatálogoToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.actualizaCatálogoToolStripMenuItem.Text = "Actualiza catálogo";
-            this.actualizaCatálogoToolStripMenuItem.Click += new System.EventHandler(this.actualizaCatálogoToolStripMenuItem_Click);
-            // 
             // menuReservas
             // 
             this.menuReservas.Enabled = false;
@@ -726,6 +780,11 @@
             this.tSBEditorial.ToolTipText = "Consulta de editoriales...";
             this.tSBEditorial.Click += new System.EventHandler(this.tSBEditorial_Click);
             // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(70, 6);
+            // 
             // toolStripButton2
             // 
             this.toolStripButton2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
@@ -752,109 +811,55 @@
             this.toolStripButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
-            // menuFacturar
+            // label5
             // 
-            this.menuFacturar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuFacturar.Image = global::Presentacion.Properties.Resources.factu64;
-            this.menuFacturar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.menuFacturar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuFacturar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menuFacturar.Name = "menuFacturar";
-            this.menuFacturar.Size = new System.Drawing.Size(66, 82);
-            this.menuFacturar.Text = "Facturar";
-            this.menuFacturar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.menuFacturar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuFacturar.ToolTipText = "Realizar facturación de productos...";
-            this.menuFacturar.Click += new System.EventHandler(this.menuViaje_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label5.Location = new System.Drawing.Point(855, 6);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(143, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Versión: 01/07/2022";
             // 
-            // tMConsultaP
+            // textBox2
             // 
-            this.tMConsultaP.Enabled = false;
-            this.tMConsultaP.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.tMConsultaP.Image = global::Presentacion.Properties.Resources.search64;
-            this.tMConsultaP.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tMConsultaP.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tMConsultaP.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tMConsultaP.Name = "tMConsultaP";
-            this.tMConsultaP.Size = new System.Drawing.Size(66, 82);
-            this.tMConsultaP.Text = "Consultar";
-            this.tMConsultaP.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tMConsultaP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tMConsultaP.ToolTipText = "Consulta de productos...";
-            this.tMConsultaP.Click += new System.EventHandler(this.toolTurnos_Click);
+            this.textBox2.Location = new System.Drawing.Point(481, 515);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 12;
+            this.textBox2.Text = "3980,9";
+            this.textBox2.Visible = false;
             // 
-            // menuPrecios
+            // button1
             // 
-            this.menuPrecios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.menuPrecios.Image = global::Presentacion.Properties.Resources.precio64;
-            this.menuPrecios.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.menuPrecios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuPrecios.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menuPrecios.Name = "menuPrecios";
-            this.menuPrecios.Size = new System.Drawing.Size(66, 82);
-            this.menuPrecios.Text = "Precios";
-            this.menuPrecios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.menuPrecios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuPrecios.ToolTipText = "Consulta rápida de precios por código de barras...";
-            this.menuPrecios.Click += new System.EventHandler(this.menuPrecios_Click);
+            this.button1.Location = new System.Drawing.Point(643, 515);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
-            // tSBVentas
+            // textBox1
             // 
-            this.tSBVentas.Enabled = false;
-            this.tSBVentas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.tSBVentas.Image = global::Presentacion.Properties.Resources.ventaspago64;
-            this.tSBVentas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tSBVentas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tSBVentas.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBVentas.Name = "tSBVentas";
-            this.tSBVentas.Size = new System.Drawing.Size(66, 82);
-            this.tSBVentas.Text = "Ventas";
-            this.tSBVentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tSBVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBVentas.ToolTipText = "Ver ventas realizadas...";
-            this.tSBVentas.Click += new System.EventHandler(this.tSBVentas_Click);
+            this.textBox1.Location = new System.Drawing.Point(481, 550);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.Visible = false;
             // 
-            // tSBArqueo
+            // button2
             // 
-            this.tSBArqueo.Enabled = false;
-            this.tSBArqueo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.tSBArqueo.Image = global::Presentacion.Properties.Resources.ventas64;
-            this.tSBArqueo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tSBArqueo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tSBArqueo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBArqueo.Name = "tSBArqueo";
-            this.tSBArqueo.Size = new System.Drawing.Size(66, 82);
-            this.tSBArqueo.Text = "Arqueo";
-            this.tSBArqueo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tSBArqueo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBArqueo.ToolTipText = "Ver ventas realizadas...";
-            this.tSBArqueo.Click += new System.EventHandler(this.tSBArqueo_Click);
-            // 
-            // interesesToolStripMenuItem
-            // 
-            this.interesesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMIconsulI});
-            this.interesesToolStripMenuItem.Enabled = false;
-            this.interesesToolStripMenuItem.Image = global::Presentacion.Properties.Resources.intere32;
-            this.interesesToolStripMenuItem.Name = "interesesToolStripMenuItem";
-            this.interesesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.interesesToolStripMenuItem.Text = "Intereses";
-            this.interesesToolStripMenuItem.Click += new System.EventHandler(this.interesesToolStripMenuItem_Click);
-            // 
-            // TSMIconsulI
-            // 
-            this.TSMIconsulI.Name = "TSMIconsulI";
-            this.TSMIconsulI.Size = new System.Drawing.Size(180, 22);
-            this.TSMIconsulI.Text = "Consulta";
-            this.TSMIconsulI.Click += new System.EventHandler(this.TSMIconsulI_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(29, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(28, 27);
-            this.panel2.TabIndex = 2;
+            this.button2.Location = new System.Drawing.Point(302, 506);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // Principal
             // 
@@ -971,7 +976,7 @@
         private System.Windows.Forms.ToolStripMenuItem preciosToolStripMenuItem;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolStripMenuItem clientesReservasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem TlMcredito;
-        private System.Windows.Forms.ToolStripMenuItem actualizaCatálogoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton tSBclientes;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
     }
 }

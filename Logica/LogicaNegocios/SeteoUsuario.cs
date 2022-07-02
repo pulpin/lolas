@@ -189,7 +189,7 @@ namespace LogicaNegocios
                                 }
                             }
 
-                            if ((reader1["menu_nombre"].ToString() == "Consignas"))
+                            /*if ((reader1["menu_nombre"].ToString() == "Consignas"))
                             {
                                 int acceder = reader1.GetInt32(reader1.GetOrdinal("per_acceder"));
                                 int modificar = reader1.GetInt32(reader1.GetOrdinal("per_modificar"));
@@ -215,7 +215,7 @@ namespace LogicaNegocios
                                 {
                                     LogicaNegocios.Globales.accesoarendiciones = 2;
                                 }
-                            }
+                            }*/
 
                             if ((reader1["menu_nombre"].ToString() == "Interes"))
                             {
@@ -299,19 +299,7 @@ namespace LogicaNegocios
                                     LogicaNegocios.Globales.accesoaproveedores = 2;
                                 }
                             }
-                            if ((reader1["menu_nombre"].ToString() == "Proveedores"))
-                            {
-                                int acceder = reader1.GetInt32(reader1.GetOrdinal("per_acceder"));
-                                int modificar = reader1.GetInt32(reader1.GetOrdinal("per_modificar"));
-                                if (acceder == 1)
-                                {
-                                    LogicaNegocios.Globales.accesoaproveedores = 1;
-                                }
-                                if (modificar == 1)
-                                {
-                                    LogicaNegocios.Globales.accesoaproveedores = 2;
-                                }
-                            }
+                            
 
                             if ((reader1["menu_nombre"].ToString() == "Cambiar cuerpo estante"))
                             {
@@ -376,7 +364,7 @@ namespace LogicaNegocios
                                 }
                             }
 
-                            if ((reader1["menu_nombre"].ToString() == "Modificar adopciones"))
+                           /* if ((reader1["menu_nombre"].ToString() == "Modificar adopciones"))
                             {
                                 int acceder = reader1.GetInt32(reader1.GetOrdinal("per_acceder"));
                                 int modificar = reader1.GetInt32(reader1.GetOrdinal("per_modificar"));
@@ -414,7 +402,7 @@ namespace LogicaNegocios
                                 {
                                     LogicaNegocios.Globales.accesocredito = 2;
                                 }
-                            }
+                            }*/
 
                         }
 

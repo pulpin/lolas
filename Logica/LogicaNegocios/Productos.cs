@@ -18,7 +18,7 @@ namespace LogicaNegocios
         Conexion con = new Conexion("lolasdb", Globales.ip);
         int stockp, consideactual, resultadop;
         Decimal _primervalordecimal, _segundovalordecimal, _cuartovalordecimal, _quintovalordecimal, _sextovalordecimal, _septimovalordecimal;
-        int _tercervalorint;
+        int _tercervalorint, _porcentajecosto;
         string _usuariodioal, _fechadioal, _usuariomodi, _fechausumo;
         public DataTable Mostrar_productos()
         {
@@ -114,7 +114,9 @@ namespace LogicaNegocios
                 " LI_BARRA,LI_ISBN,LI_STOCK,LI_IMAGEN,LI_CUERPO,LI_ESTANTE,LI_FECHAPRE,LI_EDI_CODIGO,LI_IDE,LI_GEN_IDE,LI_TIPOPRO,LI_COSTO,LI_PORC_IVA,LI_PORC_GANAN,LI_CODIGOPROVEE,LI_PROPIO,LI_PRECIO AS li_precioori,LI_PEDIDOS,LI_PRECIOARTDI,LI_PRECIOAN,LI_INVENTA,LI_FEC_INVEN from lolasdb.libros left join lolasdb.editorial on LI_EDI_CODIGO = EDI_CODIGO " +
                 " left join lolasdb.genero on LI_GEN_IDE = GEN_IDE " +
                 " where " + valor +"");
-            
+            /*return con.Mostrar_Datos("select * from lolasdb.producto left join lolasdb.editorial on LI_EDI_CODIGO = EDI_CODIGO " +
+                " where li_ide > 0 and " + valor + "");*/
+
         }
 
         public DataTable Mostrar_productostodos()
@@ -668,7 +670,7 @@ namespace LogicaNegocios
                 myCommand.Parameters.AddWithValue("tipo", this.Tipo);
                 myCommand.Parameters.AddWithValue("cuerpo", this.Cuerpo);
                 myCommand.Parameters.AddWithValue("estante", this.Estante);
-                myCommand.Parameters.AddWithValue("usuide", Globales.usureservaide);
+                myCommand.Parameters.AddWithValue("usuide", Globales.gbUsuide);
                 myCommand.Parameters.AddWithValue("pcodigoprovee", this.Codigoprovee);
                 myCommand.Parameters.AddWithValue("dividido", this.Dividido);
 
@@ -1434,6 +1436,56 @@ namespace LogicaNegocios
             return Valor_Retornado;
         }
 
+
+        public int spModificarPorcentajePrecio()
+        {
+            int Valor_Retornado = 0;
+            string cadenaconexion;
+
+            Conexion con = new Conexion("lolasdb", Globales.ip);
+            cadenaconexion = con.inicializa();
+            MySqlConnection mysql_conexion = con.AbrirConexion(cadenaconexion);
+            // MySqlCommand myCommand = new  MySqlCommand();
+            mysql_conexion.Open();
+            MySqlTransaction sqlTran = mysql_conexion.BeginTransaction();
+            MySqlCommand myCommand = mysql_conexion.CreateCommand();
+            myCommand.Transaction = sqlTran;
+
+            try
+            {
+                myCommand.Connection = mysql_conexion;
+                myCommand.CommandText = "spCambioPrecioMasivo";
+                myCommand.CommandType = CommandType.StoredProcedure;
+                myCommand.Parameters.AddWithValue("pproveedor", this.Editorial);
+                myCommand.Parameters.AddWithValue("porcentaje", this.PorcentajeCosto);
+                myCommand.Parameters.AddWithValue("usuide", Globales.gbUsuide);
+
+                MySqlParameter ValorRetorno = new MySqlParameter("@Resultado", MySqlDbType.Int32);
+                ValorRetorno.Direction = ParameterDirection.Output;// Output;
+                myCommand.Parameters.Add(ValorRetorno);
+                myCommand.ExecuteNonQuery();
+                Valor_Retornado = Convert.ToInt32(ValorRetorno.Value);
+                sqlTran.Commit();
+                mysql_conexion.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception if the transaction fails to commit.
+                Console.WriteLine(ex.Message);
+
+                try
+                {
+                    // Attempt to roll back the transaction.
+                    sqlTran.Rollback();
+                }
+                catch (Exception exRollback)
+                {
+                    Console.WriteLine(exRollback.Message);
+                }
+            }
+
+            return Valor_Retornado;
+        }
         public int spConsultastockpropi()
         {
             int Valor_Retornado = 0;
@@ -2423,6 +2475,13 @@ namespace LogicaNegocios
             get { return this._cantidad; }
             set { this._cantidad = value; }
         }
+
+        public int PorcentajeCosto
+        {
+            get { return this._porcentajecosto; }
+            set { this._porcentajecosto = value; }
+        }
+
 
         public int Inventario
         {

@@ -145,7 +145,7 @@ namespace Presentacion
                 else
                 { 
                 cli.Nombre = txtnombre.Text;
-                
+                cli.Obs = txtobs.Text;
                 int valor = cli.spInsertarClienteReservas();
 
                     IClienteRe formInterClientes = this.Owner as IClienteRe;

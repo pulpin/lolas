@@ -62,11 +62,11 @@ namespace Presentacion
                 //buscar acá
                 //    cli.Nombre = txttitulo.Text;
                 //  gConsulta.DataSource = cli.Mostrar_clientesBuscar();
-                re.Nombre = txttitulo.Text;
+                //re.Nombre = txttitulo.Text;
                 re.Clitelefono = string.Empty;
                 re.Desc =string.Empty;
                 gConsulta.DataSource = re.Mostrar_ReservasBuscar();
-                txttitulo.Text = string.Empty;
+                //txttitulo.Text = string.Empty;
             }
         }
 
@@ -79,9 +79,9 @@ namespace Presentacion
                 //  gConsulta.DataSource = cli.Mostrar_clientesBuscar();
                 re.Nombre = string.Empty;
                 re.Clitelefono = string.Empty;
-                re.Desc = txtlibro.Text;
+                //re.Desc = txtlibro.Text;
                 gConsulta.DataSource = re.Mostrar_ReservasBuscar();
-                txttitulo.Text = string.Empty;
+               //txttitulo.Text = string.Empty;
             }
         }
 
@@ -92,12 +92,12 @@ namespace Presentacion
             {
                 //buscar acá
                 // cli.Nombre = txttitulo.Text;
-                re.Clitelefono = txttelefono.Text;
+               // re.Clitelefono = txttelefono.Text;
                 re.Nombre = string.Empty;
                 re.Desc = string.Empty;
                 gConsulta.DataSource = re.Mostrar_ReservasBuscar();
                 // gConsulta.DataSource = cli.Mostrar_clientesBuscar();
-                txttelefono.Text = string.Empty;
+               // txttelefono.Text = string.Empty;
             }
         }
 
@@ -109,34 +109,7 @@ namespace Presentacion
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-            /*CantiInte ci = new CantiInte();
-            ci.Titulo = Convert.ToString(this.gridViewPintarFilas.GetRowCellValue(gridViewPintarFilas.FocusedRowHandle, this.gridViewPintarFilas.Columns["TIP_DESC"]));
-            ci.Interes = Convert.ToString(this.gridViewPintarFilas.GetRowCellValue(gridViewPintarFilas.FocusedRowHandle, this.gridViewPintarFilas.Columns["TIP_INTERES"]));
-            ci.Codigo = Convert.ToInt32(this.gridViewPintarFilas.GetRowCellValue(gridViewPintarFilas.FocusedRowHandle, this.gridViewPintarFilas.Columns["TIP_IDE"]));
-            ci.colocardatos();
-            if (ci.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                this.cargar();
-            }*/
-
-            IngresoClaveRe ic = new IngresoClaveRe();
-
-            /*if (ic.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                this.cargar();
-            }*/
-            Globales.usureservaide = 0;
-            ic.ShowDialog();
-
-            if (Globales.usureservaide != 0)
-            {
-                this.abrirmodificar();
-            }
-            else
-            {
-                MessageBox.Show("Debe ingresar una clave válida!");
-
-            }
+            recorreymarcaparaavisar();
 
 
 
@@ -195,22 +168,7 @@ namespace Presentacion
             mr.Alta = 0;
             if (mr.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                if (txttitulo.Text != "")
-                {
-                    re.Nombre = txttitulo.Text;
-                }
-                if (txttelefono.Text != "")
-                {
-                    re.Clitelefono = string.Empty;
-                }
-                if (txttelefono.Text != "")
-                {
-                    re.Clitelefono = txttelefono.Text;
-                }
-                if (txtlibro.Text != "")
-                {
-                    re.Desc = txtlibro.Text;
-                }
+                
                 
                 gConsulta.DataSource = re.Mostrar_ReservasBuscar();
 
@@ -259,31 +217,31 @@ namespace Presentacion
 
         private void btnparaavisar_Click(object sender, EventArgs e)
         {
-            gbmarcar.Visible = false;
+           // gbmarcar.Visible = false;
             gConsulta.DataSource = re.Mostrar_Reservas(1);
         }
 
         private void btnavisado_Click(object sender, EventArgs e)
         {
-            gbmarcar.Visible = false;
+          //  gbmarcar.Visible = false;
             gConsulta.DataSource = re.Mostrar_Reservas(2);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            gbmarcar.Visible = false;
+          //  gbmarcar.Visible = false;
             gConsulta.DataSource = re.Mostrar_Reservas(3);
         }
 
         private void btnalaventa_Click(object sender, EventArgs e)
         {
-            gbmarcar.Visible = false;
+            //gbmarcar.Visible = false;
             gConsulta.DataSource = re.Mostrar_Reservas(4);
         }
 
         private void btntodos_Click(object sender, EventArgs e)
         {
-            gbmarcar.Visible = false;
+            //gbmarcar.Visible = false;
             gConsulta.DataSource = re.Mostrar_Reservas();
 
         }
@@ -312,7 +270,7 @@ namespace Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            gbmarcar.Visible = true;
+            //gbmarcar.Visible = true;
            
             gConsulta.DataSource = re.Mostrar_Reservas(0);
         }
@@ -323,36 +281,50 @@ namespace Presentacion
         }
         private void recorreymarcaparaavisar()
         {
-           //int contador = 0;
-            int cantidadadescontar = Convert.ToInt32(txtcantidad.Text);
-            int cantidadoriginal=0;
+
             for (int i = 0; i < gridViewPintarFilas.RowCount; i++)
             {
-                
-                    int reseride = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["RESE_IDE"].ToString());
-                    int resecanti = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["RESE_CANTIDAD"].ToString());
-                    if (cantidadadescontar>0)
-                     { 
-                        if (resecanti <= cantidadadescontar)
-                        {
-                            re.Reservaide = reseride;
-                            re.spMarcarparaAvisar();
-                            cantidadadescontar = cantidadadescontar - resecanti;
-                            cantidadoriginal = cantidadoriginal + resecanti;
-                        }
-                        else { //no hay tanto libros como la reserva.
-
-                            re.Reservaide = reseride;
-                            re.Obs = "Llegaron sólo "+ cantidadadescontar + " libros.";
-                            re.spMarcarparaAvisar();
-                            cantidadoriginal = cantidadoriginal + cantidadadescontar;
-                            cantidadadescontar = 0;
-                            
+                    int liide = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["LI_IDE"].ToString());
+                    int codigo = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["LI_CODIGO"].ToString());
+                    string LI_DESC = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_DESC"].ToString());
+                    string LI_PRECIO = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_PRECIO"].ToString());
+                    string LI_FECHAPRE = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_FECHAPRE"].ToString());
+                    string LI_EDI_CODIGO = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_EDI_CODIGO"].ToString());
+                    int LI_GEN_IDE = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["LI_TEM_IDE"].ToString());
+                    string LI_BARRA = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_BARRA"].ToString());
+                    int LI_STOCK = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["LI_STOCK"].ToString());
+                    int LI_INVENTA = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["LI_INVENTA"].ToString());
+                    string LI_FEC_INVEN = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_FEC_INVEN"].ToString());
+                    string LI_COSTO = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_COSTO"].ToString());
+                    string LI_PORC_IVA = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_PORC_IVA"].ToString());
+                    string LI_PORC_GANAN = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_PORC_GANAN"].ToString());
+                    string LI_CUERPO = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_CUERPO"].ToString());
+                    string LI_ESTANTE = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_ESTANTE"].ToString());
+                    string LI_IMAGEN = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_IMAGEN"].ToString());
+                    string LI_PEDIDOS = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_PEDCANTIDAD"].ToString());
+                    if (Convert.ToString(this.gridViewPintarFilas.GetRowCellValue(gridViewPintarFilas.FocusedRowHandle, this.gridViewPintarFilas.Columns["LI_USUA_IDE"])) != "")
+                    {
+                        int LI_USUA_IDE = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["LI_USUA_IDE"].ToString());
                     }
-                     }
+                    
+                    
+                    if (Convert.ToString(this.gridViewPintarFilas.GetRowCellValue(gridViewPintarFilas.FocusedRowHandle, this.gridViewPintarFilas.Columns["LI_USUM_IDE"])) != "")
+                    {
+                     int LI_USUM_IDE = Convert.ToInt32(gridViewPintarFilas.GetDataRow(i)["LI_USUM_IDE"].ToString());
+                    }
+                    string LI_USUA_FE = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_USUA_FE"].ToString());
+                    string LI_USUM_FE = Convert.ToString(gridViewPintarFilas.GetDataRow(i)["LI_USUM_FE"].ToString());
+                    
+
+
+                //re.Reservaide = reseride;
+                //re.spMarcarparaAvisar();
+
+
+
             }
-            MessageBox.Show("Se han marcado " + cantidadoriginal + " Reservas para avisar!" );
-            gConsulta.DataSource = re.Mostrar_Reservas(0);
+           // MessageBox.Show("Se han marcado " + cantidadoriginal + " Reservas para avisar!" );
+           // gConsulta.DataSource = re.Mostrar_Reservas(0);
         }
         private void button3_Click(object sender, EventArgs e)
         {

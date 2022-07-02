@@ -33,6 +33,7 @@
             this.CLIEN_NOMBRE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.CLIEN_TELEFONO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.CLIEN_IDE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.CLIEN_OBS = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnaltacliente = new System.Windows.Forms.Button();
             this.btnmodificarcliente = new System.Windows.Forms.Button();
@@ -47,7 +48,7 @@
             this.gConsulta.Location = new System.Drawing.Point(12, 48);
             this.gConsulta.MainView = this.gridViewPintarFilas;
             this.gConsulta.Name = "gConsulta";
-            this.gConsulta.Size = new System.Drawing.Size(386, 295);
+            this.gConsulta.Size = new System.Drawing.Size(557, 295);
             this.gConsulta.TabIndex = 1;
             this.gConsulta.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPintarFilas});
@@ -58,7 +59,8 @@
             this.gridViewPintarFilas.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.CLIEN_NOMBRE,
             this.CLIEN_TELEFONO,
-            this.CLIEN_IDE});
+            this.CLIEN_IDE,
+            this.CLIEN_OBS});
             this.gridViewPintarFilas.GridControl = this.gConsulta;
             this.gridViewPintarFilas.Name = "gridViewPintarFilas";
             this.gridViewPintarFilas.OptionsBehavior.Editable = false;
@@ -93,11 +95,22 @@
             this.CLIEN_IDE.FieldName = "CLIEN_IDE";
             this.CLIEN_IDE.Name = "CLIEN_IDE";
             // 
+            // CLIEN_OBS
+            // 
+            this.CLIEN_OBS.Caption = "Observaciones";
+            this.CLIEN_OBS.FieldName = "CLIEN_OBS";
+            this.CLIEN_OBS.MaxWidth = 250;
+            this.CLIEN_OBS.MinWidth = 250;
+            this.CLIEN_OBS.Name = "CLIEN_OBS";
+            this.CLIEN_OBS.Visible = true;
+            this.CLIEN_OBS.VisibleIndex = 2;
+            this.CLIEN_OBS.Width = 250;
+            // 
             // btncancelar
             // 
             this.btncancelar.Image = global::Presentacion.Properties.Resources.cancelar64;
             this.btncancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btncancelar.Location = new System.Drawing.Point(316, 349);
+            this.btncancelar.Location = new System.Drawing.Point(489, 349);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(80, 80);
             this.btncancelar.TabIndex = 12;
@@ -134,7 +147,7 @@
             // 
             // txttitulo
             // 
-            this.txttitulo.Location = new System.Drawing.Point(177, 12);
+            this.txttitulo.Location = new System.Drawing.Point(214, 12);
             this.txttitulo.Name = "txttitulo";
             this.txttitulo.Size = new System.Drawing.Size(221, 20);
             this.txttitulo.TabIndex = 251;
@@ -143,7 +156,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(127, 14);
+            this.label2.Location = new System.Drawing.Point(164, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 252;
@@ -154,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 443);
+            this.ClientSize = new System.Drawing.Size(581, 443);
             this.ControlBox = false;
             this.Controls.Add(this.txttitulo);
             this.Controls.Add(this.label2);
@@ -164,7 +177,7 @@
             this.Controls.Add(this.gConsulta);
             this.Name = "ConsultaClienteReserva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Clientes de reservas";
+            this.Text = "Clientes de agenda";
             this.Load += new System.EventHandler(this.ConsultaInteres_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).EndInit();
@@ -185,5 +198,6 @@
         private System.Windows.Forms.Button btnmodificarcliente;
         private System.Windows.Forms.TextBox txttitulo;
         private System.Windows.Forms.Label label2;
+        private DevExpress.XtraGrid.Columns.GridColumn CLIEN_OBS;
     }
 }

@@ -17,7 +17,7 @@ namespace Presentacion
     public partial class AltaClienteReservas : Form
     {
         private int _alta, _situacion, _clienteide;
-        private string _iva, _nombre, _razonsocial, _domicilio, _telefono;
+        private string _iva, _nombre, _razonsocial, _domicilio, _telefono, _obs;
         Clientes cli = new Clientes();
         public AltaClienteReservas()
         {
@@ -113,7 +113,7 @@ namespace Presentacion
             cli.Nombre = txtcuit.Text;
             
             cli.Telefono = txttelefono.Text;
-         
+            cli.Obs = txtobs.Text;
             cli.Alta = this.Alta;
             cli.Clienteide = 0;
             int resultado = cli.spInsertarClienteReservas();
@@ -134,7 +134,7 @@ namespace Presentacion
             cli.Nombre = txtcuit.Text;
             
             cli.Telefono = txttelefono.Text;
-           
+            cli.Obs = txtobs.Text;
             cli.Clienteide = this.Clienteide;
             cli.Alta = 0;
             int resultado = cli.spInsertarClienteReservas();
@@ -290,6 +290,11 @@ namespace Presentacion
             get { return this._telefono; }
             set { this._telefono = value; }
         }
+        public string Obs
+        {
+            get { return this._obs; }
+            set { this._obs = value; }
+        }
         public int Situacion
         {
             get { return this._situacion; }
@@ -305,6 +310,7 @@ namespace Presentacion
             txtcuit.Text = this.Nombre;
            
             txttelefono.Text = this.Telefono;
+            txtobs.Text = this.Obs;
             
         }
         private void btnsubir_Click(object sender, EventArgs e)
