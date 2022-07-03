@@ -2519,7 +2519,8 @@ pnombrecli, pcuit, pdire, ptipo;
             valortemI10 = Math.Floor(valortemI10 * 10000) / 10000;
             lbimp10.Text = Convert.ToString(valortemI10);
 
-            vta.venimp105 = lbimp10.Text;
+            //vta.venimp105 = lbimp10.Text;
+            vta.venimp105 = "0";
 
 
             string importetemI105 = lbiva21.Text;
@@ -2527,7 +2528,8 @@ pnombrecli, pcuit, pdire, ptipo;
             valortemI105 = Math.Floor(valortemI105 * 10000) / 10000;
             lbiva10.Text = Convert.ToString(valortemI105);
 
-            vta.venIVA105 = lbiva10.Text;
+            //vta.venIVA105 = lbiva10.Text;
+            vta.venIVA105 = "0";
 
             vta.venimpexcento = lbexcento.Text;
             vta.venusuventapedido = this.pusuariopedidoide;
@@ -2727,7 +2729,9 @@ pnombrecli, pcuit, pdire, ptipo;
                     vta.vendtieneiva = 0;
                     //vta.vendimporteiva21 = Convert.ToString(row.Cells[10].Value);
                 }
-                else if (Convert.ToString(row.Cells[10].Value) == "21")
+                vta.vendtieneiva = 1;
+                vta.vendimporteiva21 = Convert.ToString(row.Cells[10].Value);
+                /*else if (Convert.ToString(row.Cells[10].Value) == "21")
                 {
                     vta.vendtieneiva = 1;
                     vta.vendimporteiva21 = Convert.ToString(row.Cells[10].Value);
@@ -2736,7 +2740,7 @@ pnombrecli, pcuit, pdire, ptipo;
                 {
                     vta.vendtieneiva = 1;
                     vta.vendimporteiva1050 = Convert.ToString(row.Cells[10].Value);
-                }
+                }*/
 
 
                 int valord = vta.spVentaProductoDetalledefinitiva();
