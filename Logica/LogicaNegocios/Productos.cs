@@ -2141,6 +2141,8 @@ namespace LogicaNegocios
             string queryanu = "UPDATE lolasdb.venta SET VEN_ANULADO = " + anulado + " where  VEN_IDE = '" + this.NrodeVta + "'";
             con.InsertarYactualiza(queryanu);
         }
+
+        
         public int spRegistrarlasVentas(int consig,int cantidadadescontar,int edicodigo)
         {
             int Valor_Retornado = 0;
@@ -2211,7 +2213,23 @@ namespace LogicaNegocios
             return Valor_Retornado;
         }
 
+        public int SetearPrecioNuevo(int codigo, decimal costo,decimal ganancia,decimal iva,int porcentaje)
+        {
+           
 
+            decimal ncosto = costo + (costo * porcentaje / 100);
+            decimal niva = ncosto + (ncosto * iva / 100);
+            decimal precioausar = niva + (niva * ganancia / 100);
+            precioausar = Math.Truncate(precioausar * 100) / 100;
+
+            string ncosto1 = Convert.ToString(ncosto).Replace(",", ".");
+            string nprecioausar1 = Convert.ToString(precioausar).Replace(",", ".");
+
+            string querycosto = "UPDATE lolasdb.libros SET LI_COSTO = " + ncosto1 + ",LI_PRECIO= "+ nprecioausar1 + " where  LI_IDE = " + codigo + "";
+            con.InsertarYactualiza(querycosto);
+            
+            return 0;
+        }
         public string spPrecioporcodigo(string pcodigo)
         {
             string Valor_RetornadoPrecio = string.Empty;

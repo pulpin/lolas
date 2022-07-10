@@ -390,6 +390,12 @@
     <Compile Include="ConsultaProConsigna.designer.cs">
       <DependentUpon>ConsultaProConsigna.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaProductosPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductosPrecio.designer.cs">
+      <DependentUpon>ConsultaProductosPrecio.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -862,6 +868,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaProConsigna.resx">
       <DependentUpon>ConsultaProConsigna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductosPrecio.resx">
+      <DependentUpon>ConsultaProductosPrecio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaProductos.resx">
       <DependentUpon>ConsultaProductos.cs</DependentUpon>

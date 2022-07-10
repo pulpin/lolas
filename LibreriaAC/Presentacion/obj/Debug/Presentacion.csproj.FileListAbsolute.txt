@@ -593,3 +593,4 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.exe
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.pdb
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.CambiarPorcentajePrecio.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProductosPrecio.resources

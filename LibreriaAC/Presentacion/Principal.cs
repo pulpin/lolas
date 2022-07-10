@@ -407,10 +407,10 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
             {
                 interesesToolStripMenuItem.Enabled = true;
             }
-            if (LogicaNegocios.Globales.accesoacargarapida == 2)
+            /*if (LogicaNegocios.Globales.accesoacargarapida == 2)
             {
-                altaToolStripMenuItem.Enabled = true;
-            }
+                //altaToolStripMenuItem.Enabled = true;
+            }*/
             if (LogicaNegocios.Globales.accesoapedidos == 2)
             {
                 pedidosToolStripMenuItem.Enabled = true;
@@ -429,9 +429,11 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
             }
             if (LogicaNegocios.Globales.accessoporcentajesedi == 2 || LogicaNegocios.Globales.accessoporcentajesedi == 1)
             {
-                TsMIPorcentaje.Enabled = true;
+                cPTSMprecio.Enabled = true;
             }
-            if (LogicaNegocios.Globales.accesocontador == 2 || LogicaNegocios.Globales.accesocontador == 1)
+
+
+                if (LogicaNegocios.Globales.accesocontador == 2 || LogicaNegocios.Globales.accesocontador == 1)
             {
                 TSMIContador.Enabled = true;
             }
@@ -746,8 +748,7 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
 
         private void TsMIPorcentaje_Click(object sender, EventArgs e)
         {
-            CambiarPorcentajePrecio cp = new CambiarPorcentajePrecio();
-            cp.ShowDialog();
+           
         }
 
         private void TSMIContador_Click(object sender, EventArgs e)
@@ -845,6 +846,23 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
         {
             ConsultaClienteReserva ccr = new ConsultaClienteReserva();
             ccr.ShowDialog();
+        }
+
+        private void porMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CambiarPorcentajePrecio cp = new CambiarPorcentajePrecio();
+            cp.ShowDialog();
+        }
+
+        private void porNombreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaProductosPrecio cpp = new ConsultaProductosPrecio();
+            cpp.ShowDialog();
+        }
+
+        private void cambioDePreciosPorPorcentajeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void toolTurnosD_Click(object sender, EventArgs e)

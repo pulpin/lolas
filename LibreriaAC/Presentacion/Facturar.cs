@@ -1648,14 +1648,14 @@ pnombrecli, pcuit, pdire, ptipo;
 */
         private void imprimirtiqueadora()
         {
-            string cabecera = "DISTRIBUIDORA AC SANTA CRUZ";
-            string dire = "Fagnano 197/9  Tel. 02966-437670";
+            string cabecera = "LOLAS´S";
+            string dire = "Fagnano 151  Tel. 02966437670 int 34";
             string dire2 = "(9400) Rio Gallegos - Santa Cruz";
             string dire3 = "e-mail lolasdbacsantacruz@gmail.com";
             string dire4 = "ALVADO JUAN CARLOS";
-            string dire5 = "CUIT Nro.: 20-13393350-7";
+            string dire5 = "CUIT Nro.: 20-13393350-7 Ing. Brutos: 1/9093";
             string dire6 = "IVA RESPONSABLE INSCRIPTO";
-            string dire7 = "A CONSUMIDOR FINAL";
+            string dire7 = "Inic Act: 12/06/10 - Municipal: 1600248A A CONSUMIDOR FINAL";
             string dire8 = "P.V. Nro.:0006 ";
             string dire9 = "Nro.                             0000" + this.Ultimavta;
             string dire10 = "Fecha: " + DateTime.Now;

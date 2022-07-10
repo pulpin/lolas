@@ -66,13 +66,10 @@
             this.TSMIcambiopre = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIcliente = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIccorrientes = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMIPorcentaje = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIgenero = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.interesesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIconsulI = new System.Windows.Forms.ToolStripMenuItem();
-            this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CRPTSMIalta = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventaEntreFechasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIContador = new System.Windows.Forms.ToolStripMenuItem();
@@ -106,6 +103,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.cPTSMprecio = new System.Windows.Forms.ToolStripMenuItem();
+            this.porMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.porNombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -385,7 +385,6 @@
             this.aerhToolStripMenuItem,
             this.modificarToolStripMenuItem,
             this.interesesToolStripMenuItem,
-            this.altaToolStripMenuItem,
             this.ventasToolStripMenuItem,
             this.pedidosToolStripMenuItem,
             this.proformasToolStripMenuItem,
@@ -439,9 +438,9 @@
             this.TSMIcambiopre,
             this.TSMIcliente,
             this.TSMIccorrientes,
-            this.TsMIPorcentaje,
             this.TSMIgenero,
-            this.clientesReservasToolStripMenuItem});
+            this.clientesReservasToolStripMenuItem,
+            this.cPTSMprecio});
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.modificarToolStripMenuItem.Text = "Modificar";
@@ -449,21 +448,21 @@
             // productoToolStripMenuItem1
             // 
             this.productoToolStripMenuItem1.Name = "productoToolStripMenuItem1";
-            this.productoToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
+            this.productoToolStripMenuItem1.Size = new System.Drawing.Size(253, 22);
             this.productoToolStripMenuItem1.Text = "Producto";
             this.productoToolStripMenuItem1.Click += new System.EventHandler(this.productoToolStripMenuItem1_Click);
             // 
             // editorialToolStripMenuItem1
             // 
             this.editorialToolStripMenuItem1.Name = "editorialToolStripMenuItem1";
-            this.editorialToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
+            this.editorialToolStripMenuItem1.Size = new System.Drawing.Size(253, 22);
             this.editorialToolStripMenuItem1.Text = "Marca";
             this.editorialToolStripMenuItem1.Click += new System.EventHandler(this.editorialToolStripMenuItem1_Click);
             // 
             // TSMIcambiopre
             // 
             this.TSMIcambiopre.Name = "TSMIcambiopre";
-            this.TSMIcambiopre.Size = new System.Drawing.Size(204, 22);
+            this.TSMIcambiopre.Size = new System.Drawing.Size(253, 22);
             this.TSMIcambiopre.Text = "Precio automáticamente";
             this.TSMIcambiopre.Click += new System.EventHandler(this.TSMIcambiopre_Click);
             // 
@@ -471,7 +470,7 @@
             // 
             this.TSMIcliente.Enabled = false;
             this.TSMIcliente.Name = "TSMIcliente";
-            this.TSMIcliente.Size = new System.Drawing.Size(204, 22);
+            this.TSMIcliente.Size = new System.Drawing.Size(253, 22);
             this.TSMIcliente.Text = "Clientes";
             this.TSMIcliente.Click += new System.EventHandler(this.TSMIcliente_Click);
             // 
@@ -479,29 +478,21 @@
             // 
             this.TSMIccorrientes.Enabled = false;
             this.TSMIccorrientes.Name = "TSMIccorrientes";
-            this.TSMIccorrientes.Size = new System.Drawing.Size(204, 22);
+            this.TSMIccorrientes.Size = new System.Drawing.Size(253, 22);
             this.TSMIccorrientes.Text = "Cuentas corrientes";
             this.TSMIccorrientes.Click += new System.EventHandler(this.TSMIccorrientes_Click);
-            // 
-            // TsMIPorcentaje
-            // 
-            this.TsMIPorcentaje.Enabled = false;
-            this.TsMIPorcentaje.Name = "TsMIPorcentaje";
-            this.TsMIPorcentaje.Size = new System.Drawing.Size(204, 22);
-            this.TsMIPorcentaje.Text = "Porcentaje por marca";
-            this.TsMIPorcentaje.Click += new System.EventHandler(this.TsMIPorcentaje_Click);
             // 
             // TSMIgenero
             // 
             this.TSMIgenero.Name = "TSMIgenero";
-            this.TSMIgenero.Size = new System.Drawing.Size(204, 22);
+            this.TSMIgenero.Size = new System.Drawing.Size(253, 22);
             this.TSMIgenero.Text = "Género";
             this.TSMIgenero.Click += new System.EventHandler(this.TSMIgenero_Click);
             // 
             // clientesReservasToolStripMenuItem
             // 
             this.clientesReservasToolStripMenuItem.Name = "clientesReservasToolStripMenuItem";
-            this.clientesReservasToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.clientesReservasToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.clientesReservasToolStripMenuItem.Text = "Clientes reservas";
             this.clientesReservasToolStripMenuItem.Click += new System.EventHandler(this.clientesReservasToolStripMenuItem_Click);
             // 
@@ -522,22 +513,6 @@
             this.TSMIconsulI.Size = new System.Drawing.Size(121, 22);
             this.TSMIconsulI.Text = "Consulta";
             this.TSMIconsulI.Click += new System.EventHandler(this.TSMIconsulI_Click);
-            // 
-            // altaToolStripMenuItem
-            // 
-            this.altaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CRPTSMIalta});
-            this.altaToolStripMenuItem.Enabled = false;
-            this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.altaToolStripMenuItem.Text = "Carga";
-            // 
-            // CRPTSMIalta
-            // 
-            this.CRPTSMIalta.Name = "CRPTSMIalta";
-            this.CRPTSMIalta.Size = new System.Drawing.Size(214, 22);
-            this.CRPTSMIalta.Text = "Carga rápida de productos";
-            this.CRPTSMIalta.Click += new System.EventHandler(this.CRPTSMIalta_Click);
             // 
             // ventasToolStripMenuItem
             // 
@@ -820,7 +795,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Versión: 01/07/2022";
+            this.label5.Text = "Versión: 03/07/2022";
             // 
             // textBox2
             // 
@@ -860,6 +835,31 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // cPTSMprecio
+            // 
+            this.cPTSMprecio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.porMarcaToolStripMenuItem,
+            this.porNombreToolStripMenuItem});
+            this.cPTSMprecio.Enabled = false;
+            this.cPTSMprecio.Name = "cPTSMprecio";
+            this.cPTSMprecio.Size = new System.Drawing.Size(253, 22);
+            this.cPTSMprecio.Text = "Cambio de precios por porcentaje";
+            this.cPTSMprecio.Click += new System.EventHandler(this.cambioDePreciosPorPorcentajeToolStripMenuItem_Click);
+            // 
+            // porMarcaToolStripMenuItem
+            // 
+            this.porMarcaToolStripMenuItem.Name = "porMarcaToolStripMenuItem";
+            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porMarcaToolStripMenuItem.Text = "Por marca";
+            this.porMarcaToolStripMenuItem.Click += new System.EventHandler(this.porMarcaToolStripMenuItem_Click);
+            // 
+            // porNombreToolStripMenuItem
+            // 
+            this.porNombreToolStripMenuItem.Name = "porNombreToolStripMenuItem";
+            this.porNombreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porNombreToolStripMenuItem.Text = "Por nombre";
+            this.porNombreToolStripMenuItem.Click += new System.EventHandler(this.porNombreToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -935,8 +935,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem TSMIUsuarios;
-        private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem CRPTSMIalta;
         private System.Windows.Forms.ToolStripMenuItem TSMIcambiopre;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton tSBEditorial;
@@ -968,7 +966,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ToolStripMenuItem TsMIPorcentaje;
         private System.Windows.Forms.ToolStripMenuItem TSMIContador;
         private System.Windows.Forms.ToolStripMenuItem TSMIgenero;
         private System.Windows.Forms.ToolStripMenuItem cerrarToolStripMenuItem;
@@ -978,5 +975,8 @@
         private System.Windows.Forms.ToolStripMenuItem clientesReservasToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton tSBclientes;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem cPTSMprecio;
+        private System.Windows.Forms.ToolStripMenuItem porMarcaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem porNombreToolStripMenuItem;
     }
 }
