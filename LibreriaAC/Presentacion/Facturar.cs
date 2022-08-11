@@ -3061,6 +3061,34 @@ pnombrecli, pcuit, pdire, ptipo;
                     // lbcomtipo.Text = ptipo;
                     lbcomcuit.Text = pcuit;
                     lbtipoiva.Text = ptipo;
+                    if (ptipo == "I")
+                    {
+                        lbcomtipo.Text = "RESP. INSCRIPTO";
+                    }
+                    else if (ptipo == "R")
+                    {
+                        lbcomtipo.Text = "RESP. NO INSCRIPTO";
+                    }
+                    else if (ptipo == "E")
+                    {
+                        lbcomtipo.Text = "EXENTO";
+                    }
+                    else if (ptipo == "M")
+                    {
+                        lbcomtipo.Text = "MONOTRIBUTO";
+                    }
+                    else if (ptipo == "N")
+                    {
+                        lbcomtipo.Text = "NO RESPONSABLE";
+                    }
+                    else if (ptipo == "S")
+                    {
+                        lbcomtipo.Text = "NO CATEGORIZADO";
+                    }
+                    else
+                    {
+                        lbcomtipo.Text = "CONSUMIDOR FINAL";
+                    }
                 }
                 else
                 {

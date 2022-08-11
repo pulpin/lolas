@@ -283,60 +283,65 @@ namespace Presentacion
                     this.PCIde = dc.Ide;
                 }
                 dinerodelacaja = dinerodelacaja.Replace(".", ",");
-                decimal dinerodelacajad = Convert.ToDecimal(dinerodelacaja);
-                txtdinerocaja.Text = dinerodelacaja;
-
-                if (chbTitulo.Checked == true)
+                if (dinerodelacaja == "")
                 {
-                    todos = 1;
-                }
-                else
-                {
-                    todos = 0;
-                }
+                    MessageBox.Show("Debe cargar la caja");
+                }else
+                { 
+                    decimal dinerodelacajad = Convert.ToDecimal(dinerodelacaja);
+                    txtdinerocaja.Text = dinerodelacaja;
 
-                gConsulta.DataSource = ve.Mostrar_ventasporfecha(fdesdee, fdesdee, Convert.ToInt32(LUpunto.EditValue), Convert.ToInt32(LUusuarios.EditValue), todos);
-
-                decimal importesumaefe = 0, importetarjeta = 0, importeajuste = 0;
-                int tipopag = 0;
-                for (int i = 0; i < gridViewPintarFilas.DataRowCount; i++)
-                {
-                    // ren.Factura = gridViewPintarFilas.GetRowCellValue(i, "PREN_FACTU").ToString();
-                    tipopag = Convert.ToInt32(gridViewPintarFilas.GetRowCellValue(i, "TIP_IDE").ToString());
-                    if (tipopag == 1)
+                    if (chbTitulo.Checked == true)
                     {
-                        importesumaefe = importesumaefe + Convert.ToDecimal(gridViewPintarFilas.GetRowCellValue(i, "total").ToString());
-                    }
-                    else if (tipopag == 0)
-                    {
-                        importeajuste = importeajuste + Convert.ToDecimal(gridViewPintarFilas.GetRowCellValue(i, "total").ToString());
+                        todos = 1;
                     }
                     else
                     {
-                        importetarjeta = importetarjeta + Convert.ToDecimal(gridViewPintarFilas.GetRowCellValue(i, "total").ToString());
+                        todos = 0;
                     }
+
+                    gConsulta.DataSource = ve.Mostrar_ventasporfecha(fdesdee, fdesdee, Convert.ToInt32(LUpunto.EditValue), Convert.ToInt32(LUusuarios.EditValue), todos);
+
+                    decimal importesumaefe = 0, importetarjeta = 0, importeajuste = 0;
+                    int tipopag = 0;
+                    for (int i = 0; i < gridViewPintarFilas.DataRowCount; i++)
+                    {
+                        // ren.Factura = gridViewPintarFilas.GetRowCellValue(i, "PREN_FACTU").ToString();
+                        tipopag = Convert.ToInt32(gridViewPintarFilas.GetRowCellValue(i, "TIP_IDE").ToString());
+                        if (tipopag == 1)
+                        {
+                            importesumaefe = importesumaefe + Convert.ToDecimal(gridViewPintarFilas.GetRowCellValue(i, "total").ToString());
+                        }
+                        else if (tipopag == 0)
+                        {
+                            importeajuste = importeajuste + Convert.ToDecimal(gridViewPintarFilas.GetRowCellValue(i, "total").ToString());
+                        }
+                        else
+                        {
+                            importetarjeta = importetarjeta + Convert.ToDecimal(gridViewPintarFilas.GetRowCellValue(i, "total").ToString());
+                        }
+                    }
+                    importesumaefe = decimal.Round(importesumaefe, 2);
+                    importetarjeta = decimal.Round(importetarjeta, 2);
+                    importeajuste = decimal.Round(importeajuste, 2);
+                    //importetotalventas = importesumaefe + importeajuste;
+                    txtefectivo.Text = Convert.ToString(importesumaefe);
+                    txttarjeta.Text = Convert.ToString(importetarjeta);
+                    txtajustes.Text = Convert.ToString(importeajuste);
+                   // txttotalventas.Text = Convert.ToString(importetotalventas);
+                    //lbcreditop.Text = Convert.ToString(importesuma);
+                    subtotal = importesumaefe + dinerodelacajad + importetarjeta + importeajuste;
+                    txttotalventas.Text = Convert.ToString(subtotal);
+                    // txtingresototal.Text = Convert.ToString(subtotal);
+                    ingresotot = Convert.ToDecimal((txtingresototal.Text).Replace(".", ","));
+                    tarjetascaja = Convert.ToDecimal((txttarjetascaja.Text).Replace(".", ","));
+                    totalenlacaja = ingresotot + tarjetascaja;
+                    txttotalencaja.Text = Convert.ToString(totalenlacaja);
+
+                    diferencia = totalenlacaja - subtotal;
+                    txtdiferencia.Text = Convert.ToString(diferencia);
+                    btnGuardar.Visible = true;
                 }
-                importesumaefe = decimal.Round(importesumaefe, 2);
-                importetarjeta = decimal.Round(importetarjeta, 2);
-                importeajuste = decimal.Round(importeajuste, 2);
-                //importetotalventas = importesumaefe + importeajuste;
-                txtefectivo.Text = Convert.ToString(importesumaefe);
-                txttarjeta.Text = Convert.ToString(importetarjeta);
-                txtajustes.Text = Convert.ToString(importeajuste);
-               // txttotalventas.Text = Convert.ToString(importetotalventas);
-                //lbcreditop.Text = Convert.ToString(importesuma);
-                subtotal = importesumaefe + dinerodelacajad + importetarjeta + importeajuste;
-                txttotalventas.Text = Convert.ToString(subtotal);
-                // txtingresototal.Text = Convert.ToString(subtotal);
-                ingresotot = Convert.ToDecimal((txtingresototal.Text).Replace(".", ","));
-                tarjetascaja = Convert.ToDecimal((txttarjetascaja.Text).Replace(".", ","));
-                totalenlacaja = ingresotot + tarjetascaja;
-                txttotalencaja.Text = Convert.ToString(totalenlacaja);
-
-                diferencia = totalenlacaja - subtotal;
-                txtdiferencia.Text = Convert.ToString(diferencia);
-                btnGuardar.Visible = true;
-
             }
             else
             {

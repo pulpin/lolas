@@ -14,7 +14,7 @@ namespace LogicaNegocios
         string _vennombre, _vendireccion, _vencuit, _venimporte, _venimporteiva, _ventotal, _ventipofactura, _vennroticket, _vendescuento, _ventipoiva, _venliide, _vendimporteu, _vendimporte, _vendimporteiva21, _vendiva21, _vendimporteiva1050, _vendivavalor, _vendivaimporte, _vendiva, _obs;
         string _vendimporteivac, _vendimporteiva, _vendivavalorc, _vendimportec, _vendimporteuc;
         string _venimp21 = "0", _veniva21 = "0", _venimp105 = "0", _veniva105 = "0", _venimpexcento = "0", _venproducide, _telefono;
-        int _venptodeventa, _venccorriente, _ventipopago, _venide, _vencantidad, _vendtieneiva, _venusuventapedido, _proformaide, _ventaidparanota, _eslibro;
+        int _venptodeventa, _venccorriente, _ventipopago, _venide, _vencantidad, _vendtieneiva, _venusuventapedido, _proformaide, _ventaidparanota, _eslibro, _editorial;
         public int spVentaProducto()
         {
             int Valor_Retornado = 0;
@@ -1290,6 +1290,36 @@ namespace LogicaNegocios
 
         }
 
+        public DataTable Mostrar_VentasporfechaPedidoPorMarca(string fechadesde, string fechahasta)
+        {
+            string eslibro = string.Empty,edito = string.Empty;
+
+            Conexion con = new Conexion("lolasdb", Globales.ip);
+            con.AbrirConexio();
+
+            if (this.EsLibro == 1)
+            {
+                eslibro = " li.LI_TIPOPRO = 0 ";
+            }
+            else
+            {
+                eslibro = " li.LI_TIPOPRO > 0 ";
+            }
+            if (this.Editorial > 0)
+            {
+                edito = " LI_EDI_CODIGO = "+ this.Editorial +" and ";
+            }
+
+            return con.Mostrar_Datos("select li.LI_IDE, li.LI_CODIGOVIEJO as codigo,li.LI_DESC,li.LI_AUTOR,edi.EDI_EDITORIAL,vend.VEND_CANTIDAD,0 as valor,vend.VEND_IMPORTEU,vend.VEND_IMPORTE,tp.TIP_DESC " +
+                                     " from venta as ven left join ventadetalle as vend on ven.VEN_IDE = vend.VEND_VEN_IDE " +
+                                     " left join libros as li on vend.VEND_LI_IDE = li.LI_CODIGOVIEJO " +
+                                     " left join editorial as edi on li.LI_EDI_CODIGO = edi.EDI_CODIGO " +
+                                     " left join tipopago as tp on ven.VEN_TIP_IDE = tp.TIP_IDE " +
+                                     " where " + edito +" (VEN_FECHA >= '" + fechadesde + "' and  VEN_FECHA <= '" + fechahasta + "' ) and " + eslibro + " " +
+                                     "  ");
+
+        }
+
         public DataTable Tabladedatos_Ajustes(int ptovta,string fecha)
         {
             Conexion con = new Conexion("lolasdb", Globales.ip);
@@ -1435,6 +1465,12 @@ namespace LogicaNegocios
         {
             get { return this._eslibro; }
             set { this._eslibro = value; }
+        }
+
+        public int Editorial
+        {
+            get { return this._editorial; }
+            set { this._editorial = value; }
         }
         public string Vendireccion
         {

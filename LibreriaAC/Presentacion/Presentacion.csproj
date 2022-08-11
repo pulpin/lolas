@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>publicar\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,10 +26,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>libreriaac.ico</ApplicationIcon>
+    <ApplicationIcon>lolas.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -588,6 +588,12 @@
     <Compile Include="Pagarp.designer.cs">
       <DependentUpon>Pagarp.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventasentrefechadetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventasentrefechadetalles.designer.cs">
+      <DependentUpon>ventasentrefechadetalles.cs</DependentUpon>
+    </Compile>
     <Compile Include="VolverPrecio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -967,6 +973,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pagarp.resx">
       <DependentUpon>Pagarp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventasentrefechadetalles.resx">
+      <DependentUpon>ventasentrefechadetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VolverPrecio.resx">
       <DependentUpon>VolverPrecio.cs</DependentUpon>
@@ -1417,6 +1426,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="libreriaac.ico" />
+    <Content Include="lolas.ico" />
     <None Include="Resources\notepad32.png" />
     <None Include="Resources\noted32.png" />
     <None Include="Resources\modificar32.png" />

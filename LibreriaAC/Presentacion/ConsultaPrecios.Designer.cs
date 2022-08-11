@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraPrinting.BarCode.Code128Generator code128Generator2 = new DevExpress.XtraPrinting.BarCode.Code128Generator();
+            DevExpress.XtraPrinting.BarCode.Code128Generator code128Generator1 = new DevExpress.XtraPrinting.BarCode.Code128Generator();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtbarra = new System.Windows.Forms.TextBox();
@@ -38,10 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbprecio = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.barCodeControl1 = new DevExpress.XtraEditors.BarCodeControl();
             this.lbtitulo = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -145,22 +143,13 @@
             this.label5.Text = "$";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.AC11;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 128);
-            this.pictureBox1.TabIndex = 192;
-            this.pictureBox1.TabStop = false;
-            // 
             // barCodeControl1
             // 
             this.barCodeControl1.Location = new System.Drawing.Point(207, 72);
             this.barCodeControl1.Name = "barCodeControl1";
             this.barCodeControl1.Padding = new System.Windows.Forms.Padding(10, 2, 10, 0);
             this.barCodeControl1.Size = new System.Drawing.Size(382, 52);
-            this.barCodeControl1.Symbology = code128Generator2;
+            this.barCodeControl1.Symbology = code128Generator1;
             this.barCodeControl1.TabIndex = 193;
             this.barCodeControl1.Text = "0";
             // 
@@ -184,7 +173,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.lbtitulo);
             this.Controls.Add(this.barCodeControl1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbprecio);
             this.Controls.Add(this.label4);
@@ -197,7 +185,6 @@
             this.Name = "ConsultaPrecios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de precios...";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +201,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbprecio;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.BarCodeControl barCodeControl1;
         private System.Windows.Forms.TextBox lbtitulo;
     }

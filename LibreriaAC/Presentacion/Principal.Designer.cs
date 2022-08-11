@@ -68,11 +68,15 @@
             this.TSMIccorrientes = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIgenero = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cPTSMprecio = new System.Windows.Forms.ToolStripMenuItem();
+            this.porMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.porNombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.interesesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIconsulI = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventaEntreFechasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIContador = new System.Windows.Forms.ToolStripMenuItem();
+            this.dVTSMItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasEntreFechasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasEntreFechasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -103,9 +107,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.cPTSMprecio = new System.Windows.Forms.ToolStripMenuItem();
-            this.porMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porNombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -496,6 +497,31 @@
             this.clientesReservasToolStripMenuItem.Text = "Clientes reservas";
             this.clientesReservasToolStripMenuItem.Click += new System.EventHandler(this.clientesReservasToolStripMenuItem_Click);
             // 
+            // cPTSMprecio
+            // 
+            this.cPTSMprecio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.porMarcaToolStripMenuItem,
+            this.porNombreToolStripMenuItem});
+            this.cPTSMprecio.Enabled = false;
+            this.cPTSMprecio.Name = "cPTSMprecio";
+            this.cPTSMprecio.Size = new System.Drawing.Size(253, 22);
+            this.cPTSMprecio.Text = "Cambio de precios por porcentaje";
+            this.cPTSMprecio.Click += new System.EventHandler(this.cambioDePreciosPorPorcentajeToolStripMenuItem_Click);
+            // 
+            // porMarcaToolStripMenuItem
+            // 
+            this.porMarcaToolStripMenuItem.Name = "porMarcaToolStripMenuItem";
+            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.porMarcaToolStripMenuItem.Text = "Por marca";
+            this.porMarcaToolStripMenuItem.Click += new System.EventHandler(this.porMarcaToolStripMenuItem_Click);
+            // 
+            // porNombreToolStripMenuItem
+            // 
+            this.porNombreToolStripMenuItem.Name = "porNombreToolStripMenuItem";
+            this.porNombreToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.porNombreToolStripMenuItem.Text = "Por nombre";
+            this.porNombreToolStripMenuItem.Click += new System.EventHandler(this.porNombreToolStripMenuItem_Click);
+            // 
             // interesesToolStripMenuItem
             // 
             this.interesesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -518,7 +544,8 @@
             // 
             this.ventasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ventaEntreFechasToolStripMenuItem,
-            this.TSMIContador});
+            this.TSMIContador,
+            this.dVTSMItem});
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ventasToolStripMenuItem.Text = "Ventas";
@@ -538,6 +565,14 @@
             this.TSMIContador.Size = new System.Drawing.Size(170, 22);
             this.TSMIContador.Text = "Contador";
             this.TSMIContador.Click += new System.EventHandler(this.TSMIContador_Click);
+            // 
+            // dVTSMItem
+            // 
+            this.dVTSMItem.Enabled = false;
+            this.dVTSMItem.Name = "dVTSMItem";
+            this.dVTSMItem.Size = new System.Drawing.Size(170, 22);
+            this.dVTSMItem.Text = "Detalle de ventas";
+            this.dVTSMItem.Click += new System.EventHandler(this.dVTSMItem_Click);
             // 
             // pedidosToolStripMenuItem
             // 
@@ -795,7 +830,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Versión: 03/07/2022";
+            this.label5.Text = "Versión: 11/08/2022";
             // 
             // textBox2
             // 
@@ -835,31 +870,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // cPTSMprecio
-            // 
-            this.cPTSMprecio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.porMarcaToolStripMenuItem,
-            this.porNombreToolStripMenuItem});
-            this.cPTSMprecio.Enabled = false;
-            this.cPTSMprecio.Name = "cPTSMprecio";
-            this.cPTSMprecio.Size = new System.Drawing.Size(253, 22);
-            this.cPTSMprecio.Text = "Cambio de precios por porcentaje";
-            this.cPTSMprecio.Click += new System.EventHandler(this.cambioDePreciosPorPorcentajeToolStripMenuItem_Click);
-            // 
-            // porMarcaToolStripMenuItem
-            // 
-            this.porMarcaToolStripMenuItem.Name = "porMarcaToolStripMenuItem";
-            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.porMarcaToolStripMenuItem.Text = "Por marca";
-            this.porMarcaToolStripMenuItem.Click += new System.EventHandler(this.porMarcaToolStripMenuItem_Click);
-            // 
-            // porNombreToolStripMenuItem
-            // 
-            this.porNombreToolStripMenuItem.Name = "porNombreToolStripMenuItem";
-            this.porNombreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.porNombreToolStripMenuItem.Text = "Por nombre";
-            this.porNombreToolStripMenuItem.Click += new System.EventHandler(this.porNombreToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -978,5 +988,6 @@
         private System.Windows.Forms.ToolStripMenuItem cPTSMprecio;
         private System.Windows.Forms.ToolStripMenuItem porMarcaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porNombreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dVTSMItem;
     }
 }

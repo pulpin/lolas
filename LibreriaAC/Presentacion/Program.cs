@@ -19,7 +19,7 @@ namespace Presentacion
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Globales.ip = "192.168.0.105";
-            //Globales.ip = "10.1.10.202";
+            //Globales.ip = "10.1.10.248";
             Globales.ip = "127.0.0.1";
             Application.Run(new Login());
         }

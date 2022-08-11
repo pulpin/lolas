@@ -377,6 +377,7 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
             {
                 tSBVentas.Enabled = true;
                 ventaEntreFechasToolStripMenuItem.Enabled = true;
+                dVTSMItem.Enabled = true;
             }
             if (LogicaNegocios.Globales.accesoareservas == 2 || LogicaNegocios.Globales.accesoareservas == 1)
             {
@@ -863,6 +864,12 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
         private void cambioDePreciosPorPorcentajeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void dVTSMItem_Click(object sender, EventArgs e)
+        {
+            ventasentrefechadetalles vefd = new ventasentrefechadetalles();
+            vefd.ShowDialog();
         }
 
         private void toolTurnosD_Click(object sender, EventArgs e)
