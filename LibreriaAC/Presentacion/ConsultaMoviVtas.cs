@@ -114,5 +114,13 @@ namespace Presentacion
                 gConsulta.ExportToPdf(sfdRuta1.FileName);
             }
         }
+
+        private void gConsulta_DoubleClick(object sender, EventArgs e)
+        {
+            int venidep1 = Convert.ToInt32(this.gridViewPintarFilas.GetRowCellValue(gridViewPintarFilas.FocusedRowHandle, this.gridViewPintarFilas.Columns["REGV_NROVTA"]));
+            ConsultaVentasProduc cvp = new ConsultaVentasProduc();
+            cvp.Vendidep = venidep1;
+            cvp.ShowDialog();
+        }
     }
 }

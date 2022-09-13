@@ -830,7 +830,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Versión: 11/08/2022";
+            this.label5.Text = "Versión: 13/09/2022";
             // 
             // textBox2
             // 

@@ -119,7 +119,9 @@
             this.txttitulo.Name = "txttitulo";
             this.txttitulo.Size = new System.Drawing.Size(395, 24);
             this.txttitulo.TabIndex = 0;
+            this.txttitulo.TextChanged += new System.EventHandler(this.txttitulo_TextChanged);
             this.txttitulo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txttitulo_KeyPress);
+            this.txttitulo.Leave += new System.EventHandler(this.txttitulo_Leave);
             // 
             // label3
             // 

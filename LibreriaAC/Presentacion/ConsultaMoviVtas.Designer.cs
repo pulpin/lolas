@@ -86,6 +86,7 @@
             this.gConsulta.TabIndex = 195;
             this.gConsulta.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPintarFilas});
+            this.gConsulta.DoubleClick += new System.EventHandler(this.gConsulta_DoubleClick);
             // 
             // cmdmenugrid
             // 
@@ -93,19 +94,19 @@
             this.exportarAExcelToolStripMenuItem,
             this.exportarAPDFToolStripMenuItem});
             this.cmdmenugrid.Name = "contextMenuStrip1";
-            this.cmdmenugrid.Size = new System.Drawing.Size(156, 48);
+            this.cmdmenugrid.Size = new System.Drawing.Size(158, 48);
             // 
             // exportarAExcelToolStripMenuItem
             // 
             this.exportarAExcelToolStripMenuItem.Name = "exportarAExcelToolStripMenuItem";
-            this.exportarAExcelToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.exportarAExcelToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.exportarAExcelToolStripMenuItem.Text = "Exportar a Excel";
             this.exportarAExcelToolStripMenuItem.Click += new System.EventHandler(this.exportarAExcelToolStripMenuItem_Click);
             // 
             // exportarAPDFToolStripMenuItem
             // 
             this.exportarAPDFToolStripMenuItem.Name = "exportarAPDFToolStripMenuItem";
-            this.exportarAPDFToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.exportarAPDFToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.exportarAPDFToolStripMenuItem.Text = "Exportar a PDF";
             this.exportarAPDFToolStripMenuItem.Click += new System.EventHandler(this.exportarAPDFToolStripMenuItem_Click);
             // 

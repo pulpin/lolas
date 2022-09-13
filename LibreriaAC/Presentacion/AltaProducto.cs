@@ -578,6 +578,18 @@ namespace Presentacion
             cl.ShowDialog();
         }
 
+        private void txttitulo_TextChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show("adfd");
+        }
+
+        private void txttitulo_Leave(object sender, EventArgs e)
+        {
+            string[] words = txttitulo.Text.Split(' ');
+            //MessageBox.Show(words[0]);
+            txtcodprovee.Text = words[0];
+        }
+
         private void rblibro_CheckedChanged(object sender, EventArgs e)
         {
             //this.desactivariva();
