@@ -558,6 +558,12 @@
     <Compile Include="AltaAdopcion.designer.cs">
       <DependentUpon>AltaAdopcion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contador_nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contador_nuevo.designer.cs">
+      <DependentUpon>Contador_nuevo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImprimePrecio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -958,6 +964,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaAdopcion.resx">
       <DependentUpon>AltaAdopcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contador_nuevo.resx">
+      <DependentUpon>Contador_nuevo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImprimePrecio.resx">
       <DependentUpon>ImprimePrecio.cs</DependentUpon>

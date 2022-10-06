@@ -754,7 +754,7 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
 
         private void TSMIContador_Click(object sender, EventArgs e)
         {
-            Contador cn = new Contador();
+            Contador_nuevo cn = new Contador_nuevo();
             cn.ShowDialog();
         }
 
