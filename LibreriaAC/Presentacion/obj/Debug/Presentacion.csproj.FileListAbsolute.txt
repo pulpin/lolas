@@ -596,3 +596,4 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presen
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProductosPrecio.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ventasentrefechadetalles.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.Contador_nuevo.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaMoviVtasOld.resources

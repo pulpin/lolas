@@ -107,6 +107,7 @@
             this.lbgenero = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbpedidos = new System.Windows.Forms.Label();
             this.btnlugares = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
@@ -915,6 +916,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Control;
+            this.panel7.Controls.Add(this.button1);
             this.panel7.Controls.Add(this.lbpedidos);
             this.panel7.Controls.Add(this.btnlugares);
             this.panel7.Controls.Add(this.label19);
@@ -930,6 +932,16 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(892, 40);
             this.panel7.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::Presentacion.Properties.Resources.limpiar32;
+            this.button1.Location = new System.Drawing.Point(609, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(34, 34);
+            this.button1.TabIndex = 14;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // lbpedidos
             // 
@@ -1006,7 +1018,7 @@
             // btnmovvtas
             // 
             this.btnmovvtas.Image = global::Presentacion.Properties.Resources.historico32;
-            this.btnmovvtas.Location = new System.Drawing.Point(598, 3);
+            this.btnmovvtas.Location = new System.Drawing.Point(570, 3);
             this.btnmovvtas.Name = "btnmovvtas";
             this.btnmovvtas.Size = new System.Drawing.Size(34, 34);
             this.btnmovvtas.TabIndex = 6;
@@ -1329,5 +1341,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn LI_INVENTA;
         private DevExpress.XtraGrid.Columns.GridColumn LI_FEC_INVEN;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button button1;
     }
 }

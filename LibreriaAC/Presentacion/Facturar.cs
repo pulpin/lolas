@@ -2669,7 +2669,8 @@ pnombrecli, pcuit, pdire, ptipo;
             vta.venimpexcento = lbexcento.Text;
             vta.venusuventapedido = this.pusuariopedidoide;
 
-            vta.vendescuento = txtdescuento.Text;
+            //vta.vendescuento = txtdescuento.Text;
+            vta.vendescuento = lbdescu.Text;
             int valor = vta.spVentaProductodefinitiva();
             if (valor == 0)
             {
@@ -3501,6 +3502,7 @@ pnombrecli, pcuit, pdire, ptipo;
                 row.Cells[5].Value = row.Cells[7].Value;
             }*/
                 this.aplicades(descu);
+            lbdescu.Text = Convert.ToString(descu);
             Cobrar.totalapag = lbtotalg.Text;
         }
 

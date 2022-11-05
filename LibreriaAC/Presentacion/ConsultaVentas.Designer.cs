@@ -57,6 +57,7 @@
             this.fechahasta = new DevExpress.XtraEditors.DateEdit();
             this.label4 = new System.Windows.Forms.Label();
             this.fechadesde = new DevExpress.XtraEditors.DateEdit();
+            this.VEN_DESCUENTO = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).BeginInit();
             this.gBtipopro.SuspendLayout();
@@ -89,7 +90,8 @@
             this.VEN_TOTAL,
             this.VEN_ANULADO,
             this.TIP_DESC,
-            this.VEN_PTOVTA});
+            this.VEN_PTOVTA,
+            this.VEN_DESCUENTO});
             this.gridViewPintarFilas.GridControl = this.gConsulta;
             this.gridViewPintarFilas.Name = "gridViewPintarFilas";
             this.gridViewPintarFilas.OptionsBehavior.Editable = false;
@@ -408,6 +410,17 @@
             this.fechadesde.Size = new System.Drawing.Size(100, 20);
             this.fechadesde.TabIndex = 205;
             // 
+            // VEN_DESCUENTO
+            // 
+            this.VEN_DESCUENTO.Caption = "Descuento";
+            this.VEN_DESCUENTO.FieldName = "VEN_DESCUENTO";
+            this.VEN_DESCUENTO.MaxWidth = 70;
+            this.VEN_DESCUENTO.MinWidth = 70;
+            this.VEN_DESCUENTO.Name = "VEN_DESCUENTO";
+            this.VEN_DESCUENTO.Visible = true;
+            this.VEN_DESCUENTO.VisibleIndex = 8;
+            this.VEN_DESCUENTO.Width = 70;
+            // 
             // ConsultaVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -471,5 +484,6 @@
         private DevExpress.XtraEditors.LookUpEdit LUpunto;
         private System.Windows.Forms.TextBox txtticket;
         private System.Windows.Forms.Label label6;
+        private DevExpress.XtraGrid.Columns.GridColumn VEN_DESCUENTO;
     }
 }

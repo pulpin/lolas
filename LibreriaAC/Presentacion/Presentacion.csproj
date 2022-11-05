@@ -342,6 +342,12 @@
     <Compile Include="ConsultaInteres.designer.cs">
       <DependentUpon>ConsultaInteres.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaMoviVtasOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaMoviVtasOld.designer.cs">
+      <DependentUpon>ConsultaMoviVtasOld.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaMoviVtas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -856,6 +862,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaInteres.resx">
       <DependentUpon>ConsultaInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMoviVtasOld.resx">
+      <DependentUpon>ConsultaMoviVtasOld.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaMoviVtas.resx">
       <DependentUpon>ConsultaMoviVtas.cs</DependentUpon>

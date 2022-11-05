@@ -374,7 +374,8 @@ namespace LogicaNegocios
                 myCommand.Parameters.AddWithValue("VEN_IVA10p", this.venIVA105);
                 myCommand.Parameters.AddWithValue("VEN_EXCENTOp", this.venimpexcento);
                 myCommand.Parameters.AddWithValue("VEN_COBUSUp", Globales.gbUsuide);
-                
+                myCommand.Parameters.AddWithValue("VEN_DESCUENTOp", this.vendescuento);
+
                 MySqlParameter ValorRetorno = new MySqlParameter("@Resultado", MySqlDbType.Int32);
                 ValorRetorno.Direction = ParameterDirection.Output;// Output;
                 myCommand.Parameters.Add(ValorRetorno);
@@ -1022,7 +1023,7 @@ namespace LogicaNegocios
 
 
             return con.Mostrar_Datos("select VEN_IDE,VEN_TIPOFACTU, " +
-                " VEN_NROTICKET,VEN_FECHA,(case when VEN_TIP_IDE = 12 then CC_NOMBRE else VEN_NOMBRE END) as VEN_NOMBRE,VEN_TOTAL,VEN_ANULADO,TIP_DESC,VEN_PTOVTA " +
+                " VEN_NROTICKET,VEN_FECHA,(case when VEN_TIP_IDE = 12 then CC_NOMBRE else VEN_NOMBRE END) as VEN_NOMBRE,VEN_TOTAL,VEN_ANULADO,TIP_DESC,VEN_PTOVTA,VEN_DESCUENTO " +
                 " from venta left join tipopago on VEN_TIP_IDE = TIP_IDE left join cuentacorriente as cc on VEN_IDE = CUCO_VEN_IDE " +
                 " left join cccliente as ccc on CUCO_CC_IDE = CC_IDE where VEN_PTOVTA = "+ Globales.gbpuntodeventapredetermindado +"  ORDER BY VEN_IDE DESC limit 100");
         }
@@ -1087,7 +1088,7 @@ namespace LogicaNegocios
                 
             }
             return con.Mostrar_Datos("select VEN_IDE,VEN_TIPOFACTU, " +
-                " VEN_NROTICKET,VEN_FECHA,(case when VEN_TIP_IDE = 12 then CC_NOMBRE else VEN_NOMBRE END) as VEN_NOMBRE,VEN_TOTAL,VEN_ANULADO,TIP_DESC,VEN_PTOVTA " +
+                " VEN_NROTICKET,VEN_FECHA,(case when VEN_TIP_IDE = 12 then CC_NOMBRE else VEN_NOMBRE END) as VEN_NOMBRE,VEN_TOTAL,VEN_ANULADO,TIP_DESC,VEN_PTOVTA,VEN_DESCUENTO " +
                 " from venta left join tipopago on VEN_TIP_IDE = TIP_IDE left join cuentacorriente as cc on VEN_IDE = CUCO_VEN_IDE " +
                 " left join cccliente as ccc on CUCO_CC_IDE = CC_IDE where " + valor +" ORDER BY VEN_IDE DESC");
         }
@@ -1178,6 +1179,15 @@ namespace LogicaNegocios
 
         }
 
+        public DataTable Mostrar_registrodelasventasOld()
+        {
+            Conexion con = new Conexion("lolas", Globales.ip);
+            con.AbrirConexio();
+
+            return con.Mostrar_Datos("select ve.VEN_FECHA AS REGV_FECHAVTA,vd.VEND_CANTIDAD as REGV_CANTIDAD,ve.VEN_IDE as REGV_NROVTA,'Propios' as tipo from ventadetalle vd left join venta ve on vd.VEND_VEN_IDE = ve.VEN_IDE where VEND_CODIGO = '" + this.venproductoide + "'");
+
+        }
+
         public DataTable Mostrar_movimientosdeproductos()
         {
             Conexion con = new Conexion("lolasdb", Globales.ip);
@@ -1187,6 +1197,17 @@ namespace LogicaNegocios
                                      " left join proveedor on MOV_CARPRO_IDE = PROV_IDE " +
                                      " left join usuarios.usuarios on MOV_USUA_IDE = USU_IDE " +
                                      " where mov_li_codigoviejo = '" + this.venproductoide + "'");
+
+        }
+
+        public DataTable Mostrar_movimientosdeproductosOld()
+        {
+            Conexion con = new Conexion("lolas", Globales.ip);
+            con.AbrirConexio();
+
+            return con.Mostrar_Datos("select AL_FECHAALTA as MOV_FECHA,AL_CANTIDAD as MOV_CANTIDAD,AL_REMITO as MOV_REMITO,'' as PROV_DESC,USU_NOMBRE as usuario from altasproducto " +
+                                     " left join usuarios.usuarios on AL_USU_IDE = USU_IDE " +
+                                     " where AL_LI_CODIGO = '" + this.venproductoide + "' ");
 
         }
 

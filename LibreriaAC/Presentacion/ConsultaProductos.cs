@@ -619,6 +619,13 @@ namespace Presentacion
             }
             
         }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            ConsultaMoviVtasOld cmv = new ConsultaMoviVtasOld();
+            cmv.Codigo = Convert.ToString(this.gridViewPintarFilas.GetRowCellValue(gridViewPintarFilas.FocusedRowHandle, this.gridViewPintarFilas.Columns["LI_CODIGO"]));
+            cmv.ShowDialog();
+        }
     }
 
     }

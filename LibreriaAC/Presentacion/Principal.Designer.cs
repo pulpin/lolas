@@ -554,7 +554,7 @@
             // 
             this.ventaEntreFechasToolStripMenuItem.Enabled = false;
             this.ventaEntreFechasToolStripMenuItem.Name = "ventaEntreFechasToolStripMenuItem";
-            this.ventaEntreFechasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ventaEntreFechasToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.ventaEntreFechasToolStripMenuItem.Text = "venta entre fechas";
             this.ventaEntreFechasToolStripMenuItem.Click += new System.EventHandler(this.ventaEntreFechasToolStripMenuItem_Click);
             // 
@@ -562,7 +562,7 @@
             // 
             this.TSMIContador.Enabled = false;
             this.TSMIContador.Name = "TSMIContador";
-            this.TSMIContador.Size = new System.Drawing.Size(180, 22);
+            this.TSMIContador.Size = new System.Drawing.Size(170, 22);
             this.TSMIContador.Text = "Contador";
             this.TSMIContador.Click += new System.EventHandler(this.TSMIContador_Click);
             // 
@@ -570,7 +570,7 @@
             // 
             this.dVTSMItem.Enabled = false;
             this.dVTSMItem.Name = "dVTSMItem";
-            this.dVTSMItem.Size = new System.Drawing.Size(180, 22);
+            this.dVTSMItem.Size = new System.Drawing.Size(170, 22);
             this.dVTSMItem.Text = "Detalle de ventas";
             this.dVTSMItem.Click += new System.EventHandler(this.dVTSMItem_Click);
             // 
@@ -830,7 +830,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Versión: 06/10/2022";
+            this.label5.Text = "Versión: 04/11/2022";
             // 
             // textBox2
             // 
