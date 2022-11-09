@@ -30,36 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaProductos));
-            this.gConsulta = new DevExpress.XtraGrid.GridControl();
-            this.gridViewPintarFilas = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.LI_CODIGO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_DESC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_AUTOR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.EDI_EDITORIAL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GEN_DESC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_PRECIO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_STOCK = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_PROPIO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_ISBN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_IMAGEN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_CUERPO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_ESTANTE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_FECHAPRE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_EDI_CODIGO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_IDE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_GEN_IDE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_TIPOPRO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_COSTO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_PORC_IVA = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_PORC_GANAN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_BARRA = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.li_precioori = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_CODIGOPROVEE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_PEDIDOS = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_PRECIOARTDI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_PRECIOAN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_INVENTA = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.LI_FEC_INVEN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lUEgenero = new DevExpress.XtraEditors.LookUpEdit();
             this.cBEeditorial = new DevExpress.XtraEditors.LookUpEdit();
@@ -132,8 +102,36 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btninventario = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).BeginInit();
+            this.gConsulta = new DevExpress.XtraGrid.GridControl();
+            this.gridViewPintarFilas = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.CÓDIGO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn20 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn23 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn24 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn25 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn26 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn27 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lUEgenero.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBEeditorial.Properties)).BeginInit();
@@ -146,261 +144,9 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gConsulta
-            // 
-            this.gConsulta.Location = new System.Drawing.Point(7, 139);
-            this.gConsulta.MainView = this.gridViewPintarFilas;
-            this.gConsulta.Name = "gConsulta";
-            this.gConsulta.Size = new System.Drawing.Size(924, 274);
-            this.gConsulta.TabIndex = 0;
-            this.gConsulta.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewPintarFilas});
-            this.gConsulta.Click += new System.EventHandler(this.gConsulta_Click);
-            // 
-            // gridViewPintarFilas
-            // 
-            this.gridViewPintarFilas.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.LI_CODIGO,
-            this.LI_DESC,
-            this.LI_AUTOR,
-            this.EDI_EDITORIAL,
-            this.GEN_DESC,
-            this.LI_PRECIO,
-            this.LI_STOCK,
-            this.LI_PROPIO,
-            this.LI_ISBN,
-            this.LI_IMAGEN,
-            this.LI_CUERPO,
-            this.LI_ESTANTE,
-            this.LI_FECHAPRE,
-            this.LI_EDI_CODIGO,
-            this.LI_IDE,
-            this.LI_GEN_IDE,
-            this.LI_TIPOPRO,
-            this.LI_COSTO,
-            this.LI_PORC_IVA,
-            this.LI_PORC_GANAN,
-            this.LI_BARRA,
-            this.li_precioori,
-            this.LI_CODIGOPROVEE,
-            this.LI_PEDIDOS,
-            this.LI_PRECIOARTDI,
-            this.LI_PRECIOAN,
-            this.LI_INVENTA,
-            this.LI_FEC_INVEN});
-            this.gridViewPintarFilas.GridControl = this.gConsulta;
-            this.gridViewPintarFilas.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "LI_CODIGO", this.LI_CODIGO, "")});
-            this.gridViewPintarFilas.Name = "gridViewPintarFilas";
-            this.gridViewPintarFilas.OptionsBehavior.Editable = false;
-            this.gridViewPintarFilas.OptionsMenu.ShowGroupSummaryEditorItem = true;
-            this.gridViewPintarFilas.OptionsView.ShowFooter = true;
-            this.gridViewPintarFilas.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.LI_AUTOR, DevExpress.Data.ColumnSortOrder.Ascending)});
-            this.gridViewPintarFilas.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewPintarFilas_FocusedRowChanged);
-            // 
-            // LI_CODIGO
-            // 
-            this.LI_CODIGO.Caption = "Código";
-            this.LI_CODIGO.FieldName = "LI_CODIGO";
-            this.LI_CODIGO.Name = "LI_CODIGO";
-            this.LI_CODIGO.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "LI_CODIGO", "Productos={0:#.##}")});
-            this.LI_CODIGO.Visible = true;
-            this.LI_CODIGO.VisibleIndex = 0;
-            // 
-            // LI_DESC
-            // 
-            this.LI_DESC.Caption = "Descripción";
-            this.LI_DESC.FieldName = "LI_DESC";
-            this.LI_DESC.MaxWidth = 200;
-            this.LI_DESC.MinWidth = 200;
-            this.LI_DESC.Name = "LI_DESC";
-            this.LI_DESC.Visible = true;
-            this.LI_DESC.VisibleIndex = 1;
-            this.LI_DESC.Width = 200;
-            // 
-            // LI_AUTOR
-            // 
-            this.LI_AUTOR.Caption = "Autor";
-            this.LI_AUTOR.FieldName = "LI_AUTOR";
-            this.LI_AUTOR.Name = "LI_AUTOR";
-            // 
-            // EDI_EDITORIAL
-            // 
-            this.EDI_EDITORIAL.Caption = "MARCA";
-            this.EDI_EDITORIAL.FieldName = "EDI_EDITORIAL";
-            this.EDI_EDITORIAL.Name = "EDI_EDITORIAL";
-            this.EDI_EDITORIAL.Visible = true;
-            this.EDI_EDITORIAL.VisibleIndex = 2;
-            // 
-            // GEN_DESC
-            // 
-            this.GEN_DESC.Caption = "Tipo";
-            this.GEN_DESC.FieldName = "GEN_DESC";
-            this.GEN_DESC.Name = "GEN_DESC";
-            this.GEN_DESC.Visible = true;
-            this.GEN_DESC.VisibleIndex = 3;
-            // 
-            // LI_PRECIO
-            // 
-            this.LI_PRECIO.AppearanceCell.Options.UseTextOptions = true;
-            this.LI_PRECIO.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.LI_PRECIO.AppearanceHeader.Options.UseTextOptions = true;
-            this.LI_PRECIO.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.LI_PRECIO.Caption = "Precio";
-            this.LI_PRECIO.FieldName = "LI_PRECIO";
-            this.LI_PRECIO.Name = "LI_PRECIO";
-            this.LI_PRECIO.Visible = true;
-            this.LI_PRECIO.VisibleIndex = 4;
-            // 
-            // LI_STOCK
-            // 
-            this.LI_STOCK.AppearanceCell.Options.UseTextOptions = true;
-            this.LI_STOCK.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.LI_STOCK.AppearanceHeader.Options.UseTextOptions = true;
-            this.LI_STOCK.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.LI_STOCK.Caption = "Stock";
-            this.LI_STOCK.FieldName = "LI_STOCK";
-            this.LI_STOCK.Name = "LI_STOCK";
-            this.LI_STOCK.Visible = true;
-            this.LI_STOCK.VisibleIndex = 5;
-            // 
-            // LI_PROPIO
-            // 
-            this.LI_PROPIO.AppearanceCell.Options.UseTextOptions = true;
-            this.LI_PROPIO.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.LI_PROPIO.AppearanceHeader.Options.UseTextOptions = true;
-            this.LI_PROPIO.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.LI_PROPIO.Caption = "Propios";
-            this.LI_PROPIO.FieldName = "LI_PROPIO";
-            this.LI_PROPIO.Name = "LI_PROPIO";
-            // 
-            // LI_ISBN
-            // 
-            this.LI_ISBN.Caption = "Isbn";
-            this.LI_ISBN.FieldName = "LI_ISBN";
-            this.LI_ISBN.Name = "LI_ISBN";
-            // 
-            // LI_IMAGEN
-            // 
-            this.LI_IMAGEN.Caption = "IMAGEN";
-            this.LI_IMAGEN.FieldName = "LI_IMAGEN";
-            this.LI_IMAGEN.Name = "LI_IMAGEN";
-            // 
-            // LI_CUERPO
-            // 
-            this.LI_CUERPO.Caption = "Cuerpo";
-            this.LI_CUERPO.FieldName = "LI_CUERPO";
-            this.LI_CUERPO.Name = "LI_CUERPO";
-            // 
-            // LI_ESTANTE
-            // 
-            this.LI_ESTANTE.Caption = "Estante";
-            this.LI_ESTANTE.FieldName = "LI_ESTANTE";
-            this.LI_ESTANTE.Name = "LI_ESTANTE";
-            // 
-            // LI_FECHAPRE
-            // 
-            this.LI_FECHAPRE.Caption = "Fechapres";
-            this.LI_FECHAPRE.FieldName = "LI_FECHAPRE";
-            this.LI_FECHAPRE.Name = "LI_FECHAPRE";
-            // 
-            // LI_EDI_CODIGO
-            // 
-            this.LI_EDI_CODIGO.Caption = "LI_EDI_CODIGO";
-            this.LI_EDI_CODIGO.FieldName = "LI_EDI_CODIGO";
-            this.LI_EDI_CODIGO.Name = "LI_EDI_CODIGO";
-            // 
-            // LI_IDE
-            // 
-            this.LI_IDE.Caption = "LI_IDE";
-            this.LI_IDE.FieldName = "LI_IDE";
-            this.LI_IDE.Name = "LI_IDE";
-            // 
-            // LI_GEN_IDE
-            // 
-            this.LI_GEN_IDE.Caption = "LI_GEN_IDE";
-            this.LI_GEN_IDE.FieldName = "LI_GEN_IDE";
-            this.LI_GEN_IDE.Name = "LI_GEN_IDE";
-            // 
-            // LI_TIPOPRO
-            // 
-            this.LI_TIPOPRO.Caption = "LI_TIPOPRO";
-            this.LI_TIPOPRO.FieldName = "LI_TIPOPRO";
-            this.LI_TIPOPRO.Name = "LI_TIPOPRO";
-            // 
-            // LI_COSTO
-            // 
-            this.LI_COSTO.Caption = "LI_COSTO";
-            this.LI_COSTO.FieldName = "LI_COSTO";
-            this.LI_COSTO.Name = "LI_COSTO";
-            // 
-            // LI_PORC_IVA
-            // 
-            this.LI_PORC_IVA.Caption = "LI_PORC_IVA";
-            this.LI_PORC_IVA.FieldName = "LI_PORC_IVA";
-            this.LI_PORC_IVA.Name = "LI_PORC_IVA";
-            // 
-            // LI_PORC_GANAN
-            // 
-            this.LI_PORC_GANAN.Caption = "LI_PORC_GANAN";
-            this.LI_PORC_GANAN.FieldName = "LI_PORC_GANAN";
-            this.LI_PORC_GANAN.Name = "LI_PORC_GANAN";
-            // 
-            // LI_BARRA
-            // 
-            this.LI_BARRA.Caption = "Barra";
-            this.LI_BARRA.FieldName = "LI_BARRA";
-            this.LI_BARRA.Name = "LI_BARRA";
-            this.LI_BARRA.Visible = true;
-            this.LI_BARRA.VisibleIndex = 6;
-            // 
-            // li_precioori
-            // 
-            this.li_precioori.Caption = "li_precioori";
-            this.li_precioori.FieldName = "li_precioori";
-            this.li_precioori.Name = "li_precioori";
-            // 
-            // LI_CODIGOPROVEE
-            // 
-            this.LI_CODIGOPROVEE.Caption = "LI_CODIGOPROVEE";
-            this.LI_CODIGOPROVEE.FieldName = "LI_CODIGOPROVEE";
-            this.LI_CODIGOPROVEE.Name = "LI_CODIGOPROVEE";
-            // 
-            // LI_PEDIDOS
-            // 
-            this.LI_PEDIDOS.Caption = "Pedidos";
-            this.LI_PEDIDOS.FieldName = "LI_PEDIDOS";
-            this.LI_PEDIDOS.Name = "LI_PEDIDOS";
-            this.LI_PEDIDOS.Visible = true;
-            this.LI_PEDIDOS.VisibleIndex = 7;
-            // 
-            // LI_PRECIOARTDI
-            // 
-            this.LI_PRECIOARTDI.Caption = "LI_PRECIOARTDI";
-            this.LI_PRECIOARTDI.FieldName = "LI_PRECIOARTDI";
-            this.LI_PRECIOARTDI.Name = "LI_PRECIOARTDI";
-            // 
-            // LI_PRECIOAN
-            // 
-            this.LI_PRECIOAN.Caption = "LI_PRECIOAN";
-            this.LI_PRECIOAN.FieldName = "LI_PRECIOAN";
-            this.LI_PRECIOAN.Name = "LI_PRECIOAN";
-            // 
-            // LI_INVENTA
-            // 
-            this.LI_INVENTA.Caption = "LI_INVENTA";
-            this.LI_INVENTA.FieldName = "LI_INVENTA";
-            this.LI_INVENTA.Name = "LI_INVENTA";
-            // 
-            // LI_FEC_INVEN
-            // 
-            this.LI_FEC_INVEN.Caption = "LI_FEC_INVEN";
-            this.LI_FEC_INVEN.FieldName = "LI_FEC_INVEN";
-            this.LI_FEC_INVEN.Name = "LI_FEC_INVEN";
             // 
             // panel1
             // 
@@ -1191,12 +937,256 @@
             this.btninventario.UseVisualStyleBackColor = true;
             this.btninventario.Click += new System.EventHandler(this.btninventario_Click);
             // 
+            // gConsulta
+            // 
+            this.gConsulta.Location = new System.Drawing.Point(12, 126);
+            this.gConsulta.MainView = this.gridViewPintarFilas;
+            this.gConsulta.Name = "gConsulta";
+            this.gConsulta.Size = new System.Drawing.Size(956, 299);
+            this.gConsulta.TabIndex = 188;
+            this.gConsulta.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewPintarFilas});
+            // 
+            // gridViewPintarFilas
+            // 
+            this.gridViewPintarFilas.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.CÓDIGO,
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn9,
+            this.gridColumn10,
+            this.gridColumn11,
+            this.gridColumn12,
+            this.gridColumn13,
+            this.gridColumn14,
+            this.gridColumn15,
+            this.gridColumn16,
+            this.gridColumn17,
+            this.gridColumn18,
+            this.gridColumn19,
+            this.gridColumn20,
+            this.gridColumn21,
+            this.gridColumn22,
+            this.gridColumn23,
+            this.gridColumn24,
+            this.gridColumn25,
+            this.gridColumn26,
+            this.gridColumn27});
+            this.gridViewPintarFilas.GridControl = this.gConsulta;
+            this.gridViewPintarFilas.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "LI_ CODIGO", null, "")});
+            this.gridViewPintarFilas.Name = "gridViewPintarFilas";
+            this.gridViewPintarFilas.OptionsBehavior.Editable = false;
+            this.gridViewPintarFilas.OptionsMenu.ShowGroupSummaryEditorItem = true;
+            this.gridViewPintarFilas.OptionsView.ShowFooter = true;
+            this.gridViewPintarFilas.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewPintarFilas_FocusedRowChanged);
+            // 
+            // CÓDIGO
+            // 
+            this.CÓDIGO.Caption = "Código";
+            this.CÓDIGO.FieldName = "LI_CODIGO";
+            this.CÓDIGO.Name = "CÓDIGO";
+            this.CÓDIGO.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "LI_CODIGO", "Productos={0}")});
+            this.CÓDIGO.Visible = true;
+            this.CÓDIGO.VisibleIndex = 0;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Descripción";
+            this.gridColumn1.FieldName = "LI_DESC";
+            this.gridColumn1.MaxWidth = 350;
+            this.gridColumn1.MinWidth = 350;
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.Width = 350;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Autor";
+            this.gridColumn2.FieldName = "LI_AUTOR";
+            this.gridColumn2.Name = "gridColumn2";
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "Marca";
+            this.gridColumn3.FieldName = "EDI_EDITORIAL";
+            this.gridColumn3.MaxWidth = 120;
+            this.gridColumn3.MinWidth = 120;
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.Width = 120;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "Tipo";
+            this.gridColumn4.FieldName = "GEN_DESC";
+            this.gridColumn4.MaxWidth = 120;
+            this.gridColumn4.MinWidth = 120;
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.Width = 120;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Precio";
+            this.gridColumn5.FieldName = "LI_PRECIO";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 4;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Stock";
+            this.gridColumn6.FieldName = "LI_STOCK";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 5;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "Propio";
+            this.gridColumn7.FieldName = "LI_PROPIO";
+            this.gridColumn7.Name = "gridColumn7";
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "ISBN";
+            this.gridColumn8.FieldName = "LI_ISBN";
+            this.gridColumn8.Name = "gridColumn8";
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "Imagen";
+            this.gridColumn9.FieldName = "LI_IMAGEN";
+            this.gridColumn9.Name = "gridColumn9";
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "Cuerpo";
+            this.gridColumn10.FieldName = "LI_CUERPO";
+            this.gridColumn10.Name = "gridColumn10";
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "Estante";
+            this.gridColumn11.FieldName = "LI_ESTANTE";
+            this.gridColumn11.Name = "gridColumn11";
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.Caption = "FechaPre";
+            this.gridColumn12.FieldName = "LI_FECHAPRE";
+            this.gridColumn12.Name = "gridColumn12";
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.Caption = "LI_EDI_CODIGO";
+            this.gridColumn13.FieldName = "LI_EDI_CODIGO";
+            this.gridColumn13.Name = "gridColumn13";
+            // 
+            // gridColumn14
+            // 
+            this.gridColumn14.Caption = "LI_IDE";
+            this.gridColumn14.FieldName = "LI_IDE";
+            this.gridColumn14.Name = "gridColumn14";
+            // 
+            // gridColumn15
+            // 
+            this.gridColumn15.Caption = "LI_GEN_IDE";
+            this.gridColumn15.FieldName = "LI_GEN_IDE";
+            this.gridColumn15.Name = "gridColumn15";
+            // 
+            // gridColumn16
+            // 
+            this.gridColumn16.Caption = "LI_TIPOPRO";
+            this.gridColumn16.FieldName = "LI_TIPOPRO";
+            this.gridColumn16.Name = "gridColumn16";
+            // 
+            // gridColumn17
+            // 
+            this.gridColumn17.Caption = "LI_COSTO";
+            this.gridColumn17.FieldName = "LI_COSTO";
+            this.gridColumn17.Name = "gridColumn17";
+            // 
+            // gridColumn18
+            // 
+            this.gridColumn18.Caption = "LI_PORC_IVA";
+            this.gridColumn18.FieldName = "LI_PORC_IVA";
+            this.gridColumn18.Name = "gridColumn18";
+            // 
+            // gridColumn19
+            // 
+            this.gridColumn19.Caption = "LI_PORC_GANAN";
+            this.gridColumn19.FieldName = "LI_PORC_GANAN";
+            this.gridColumn19.Name = "gridColumn19";
+            // 
+            // gridColumn20
+            // 
+            this.gridColumn20.Caption = "Barra";
+            this.gridColumn20.FieldName = "LI_BARRA";
+            this.gridColumn20.Name = "gridColumn20";
+            this.gridColumn20.Visible = true;
+            this.gridColumn20.VisibleIndex = 6;
+            // 
+            // gridColumn21
+            // 
+            this.gridColumn21.Caption = "li_precioori";
+            this.gridColumn21.FieldName = "li_precioori";
+            this.gridColumn21.Name = "gridColumn21";
+            // 
+            // gridColumn22
+            // 
+            this.gridColumn22.Caption = "LI_CODIGOPROVEE";
+            this.gridColumn22.FieldName = "LI_CODIGOPROVEE";
+            this.gridColumn22.Name = "gridColumn22";
+            // 
+            // gridColumn23
+            // 
+            this.gridColumn23.Caption = "LI_PEDIDOS";
+            this.gridColumn23.FieldName = "LI_PEDIDOS";
+            this.gridColumn23.Name = "gridColumn23";
+            // 
+            // gridColumn24
+            // 
+            this.gridColumn24.Caption = "LI_PRECIOARTDI";
+            this.gridColumn24.FieldName = "LI_PRECIOARTDI";
+            this.gridColumn24.Name = "gridColumn24";
+            // 
+            // gridColumn25
+            // 
+            this.gridColumn25.Caption = "LI_PRECIOAN";
+            this.gridColumn25.FieldName = "LI_PRECIOAN";
+            this.gridColumn25.Name = "gridColumn25";
+            // 
+            // gridColumn26
+            // 
+            this.gridColumn26.Caption = "LI_INVENTA";
+            this.gridColumn26.FieldName = "LI_INVENTA";
+            this.gridColumn26.Name = "gridColumn26";
+            // 
+            // gridColumn27
+            // 
+            this.gridColumn27.Caption = "LI_FEC_INVEN";
+            this.gridColumn27.FieldName = "LI_FEC_INVEN";
+            this.gridColumn27.Name = "gridColumn27";
+            // 
             // ConsultaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 662);
             this.ControlBox = false;
+            this.Controls.Add(this.gConsulta);
             this.Controls.Add(this.btninventario);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.btneliminar);
@@ -1206,15 +1196,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.gConsulta);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultaProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de productos...";
             this.Load += new System.EventHandler(this.ConsultaProductos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lUEgenero.Properties)).EndInit();
@@ -1234,14 +1221,13 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.XtraGrid.GridControl gConsulta;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridViewPintarFilas;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bbuscar;
         private System.Windows.Forms.Label label5;
@@ -1300,47 +1286,49 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtbarra;
         private System.Windows.Forms.Label label3;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_CODIGO;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_DESC;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_AUTOR;
-        private DevExpress.XtraGrid.Columns.GridColumn EDI_EDITORIAL;
-        private DevExpress.XtraGrid.Columns.GridColumn GEN_DESC;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_PRECIO;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_PROPIO;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_ISBN;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_STOCK;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_IMAGEN;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_CUERPO;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_ESTANTE;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_FECHAPRE;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_EDI_CODIGO;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_IDE;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_GEN_IDE;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_TIPOPRO;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_COSTO;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_PORC_IVA;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_PORC_GANAN;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_BARRA;
-        private DevExpress.XtraGrid.Columns.GridColumn li_precioori;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_CODIGOPROVEE;
         private System.Windows.Forms.Label lbcodprovee;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnlugares;
         private System.Windows.Forms.Label label19;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_PEDIDOS;
         private System.Windows.Forms.Label lbpedidos;
         private System.Windows.Forms.Button btnstock;
         private System.Windows.Forms.Label lbprecio2;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_PRECIOARTDI;
         private System.Windows.Forms.TextBox txtprovee;
         private System.Windows.Forms.Label label23;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_PRECIOAN;
         private System.Windows.Forms.Button btninventario;
         private System.Windows.Forms.Label lbfechainventario;
         private System.Windows.Forms.Label lbinventario;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_INVENTA;
-        private DevExpress.XtraGrid.Columns.GridColumn LI_FEC_INVEN;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button button1;
+        private DevExpress.XtraGrid.GridControl gConsulta;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewPintarFilas;
+        private DevExpress.XtraGrid.Columns.GridColumn CÓDIGO;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn21;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn25;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn26;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn27;
     }
 }

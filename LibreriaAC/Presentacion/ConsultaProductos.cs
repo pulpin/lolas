@@ -93,6 +93,7 @@ namespace Presentacion
             }
            // pro.Autor = txtautor.Text;
 
+            //gConsulta.DataSource = pro.Mostrar_productos();
             gConsulta.DataSource = pro.Mostrar_productos();
             this.limpiartextos();
             this.cargardatos();

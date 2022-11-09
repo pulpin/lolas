@@ -111,9 +111,10 @@ namespace LogicaNegocios
             }
             //CONCAT(ifnull(LI_LETRA,''),LI_CODIGO)
             return con.Mostrar_Datos("select LI_CODIGOVIEJO as LI_CODIGO,LI_DESC,LI_AUTOR,EDI_EDITORIAL,GEN_DESC,ROUND(LI_PRECIO + (LI_PRECIO* 5/100)) as LI_PRECIO, " +
-                " LI_BARRA,LI_ISBN,LI_STOCK,LI_IMAGEN,LI_CUERPO,LI_ESTANTE,LI_FECHAPRE,LI_EDI_CODIGO,LI_IDE,LI_GEN_IDE,LI_TIPOPRO,LI_COSTO,LI_PORC_IVA,LI_PORC_GANAN,LI_CODIGOPROVEE,LI_PROPIO,LI_PRECIO AS li_precioori,LI_PEDIDOS,LI_PRECIOARTDI,LI_PRECIOAN,LI_INVENTA,LI_FEC_INVEN from lolasdb.libros left join lolasdb.editorial on LI_EDI_CODIGO = EDI_CODIGO " +
+                " LI_BARRA,LI_ISBN,LI_STOCK,LI_IMAGEN,LI_CUERPO,LI_ESTANTE,LI_FECHAPRE,LI_EDI_CODIGO,LI_IDE,LI_GEN_IDE,LI_TIPOPRO,LI_COSTO,LI_PORC_IVA,LI_PORC_GANAN,LI_CODIGOPROVEE,LI_PROPIO,LI_PRECIO AS li_precioori,LI_PEDIDOS,LI_PRECIOARTDI,LI_PRECIOAN,LI_INVENTA,LI_FEC_INVEN " +
+                " from lolasdb.libros left join lolasdb.editorial on LI_EDI_CODIGO = EDI_CODIGO " +
                 " left join lolasdb.genero on LI_GEN_IDE = GEN_IDE " +
-                " where " + valor +"");
+                " where " + valor + " order by LI_DESC asc");
             /*return con.Mostrar_Datos("select * from lolasdb.producto left join lolasdb.editorial on LI_EDI_CODIGO = EDI_CODIGO " +
                 " where li_ide > 0 and " + valor + "");*/
 
