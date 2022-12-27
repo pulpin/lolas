@@ -86,6 +86,9 @@
             this.label21 = new System.Windows.Forms.Label();
             this.btnlugares = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.lUEditorial.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LUgenero.Properties)).BeginInit();
             this.gBtipopro.SuspendLayout();
@@ -95,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -644,7 +648,7 @@
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label18.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.DarkGray;
-            this.label18.Location = new System.Drawing.Point(402, 391);
+            this.label18.Location = new System.Drawing.Point(422, 288);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(103, 18);
             this.label18.TabIndex = 219;
@@ -657,7 +661,7 @@
             this.lbstockactual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lbstockactual.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbstockactual.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbstockactual.Location = new System.Drawing.Point(504, 391);
+            this.lbstockactual.Location = new System.Drawing.Point(524, 288);
             this.lbstockactual.Name = "lbstockactual";
             this.lbstockactual.Size = new System.Drawing.Size(18, 18);
             this.lbstockactual.TabIndex = 220;
@@ -814,12 +818,45 @@
             this.label22.TabIndex = 225;
             this.label22.Text = "Depósitos:";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Location = new System.Drawing.Point(399, 374);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(78, 50);
+            this.groupBox1.TabIndex = 203;
+            this.groupBox1.TabStop = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(1, 6);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(78, 17);
+            this.radioButton3.TabIndex = 200;
+            this.radioButton3.Text = "Por cambio";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(1, 29);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(72, 17);
+            this.radioButton2.TabIndex = 201;
+            this.radioButton2.Text = "Inventario";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
             // AltaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(757, 658);
             this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnlugares);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.panel2);
@@ -875,6 +912,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -940,5 +979,8 @@
         private System.Windows.Forms.Label lbusuarioalta;
         private System.Windows.Forms.Button btnlugares;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }

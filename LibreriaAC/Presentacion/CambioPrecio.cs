@@ -17,11 +17,11 @@ namespace Presentacion
     public partial class CambioPrecio : Form
     {
        // int tipop = 0;
-       // string server = "127.0.0.1";
-        string server = "10.1.10.202";
+        //string server = "127.0.0.1";
+        string server = "10.1.10.248";
         //string server = "192.168.0.105";
         string database = "lolasdb";
-        string uid = "cambioprecio";
+        string uid = "root";
         //string uid = "root";
         
         string password = "123123";

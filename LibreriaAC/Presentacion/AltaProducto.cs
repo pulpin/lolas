@@ -590,6 +590,16 @@ namespace Presentacion
             txtcodprovee.Text = words[0];
         }
 
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            txtfactura.Text = "Por cambio";
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            txtfactura.Text = "Por inventario";
+        }
+
         private void rblibro_CheckedChanged(object sender, EventArgs e)
         {
             //this.desactivariva();
