@@ -8,10 +8,12 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Presentacion</RootNamespace>
-    <AssemblyName>LibreriaAC</AssemblyName>
+    <AssemblyName>Lolas</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>publicar\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,10 +26,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,22 +49,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>libreriaac.ico</ApplicationIcon>
+    <ApplicationIcon>lolas.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\MySql.Data.dll</HintPath>
@@ -90,6 +90,12 @@
     <Compile Include="AltaAjuste.designer.cs">
       <DependentUpon>AltaAjuste.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaClienteReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaClienteReservas.designer.cs">
+      <DependentUpon>AltaClienteReservas.cs</DependentUpon>
+    </Compile>
     <Compile Include="AltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,12 @@
     </Compile>
     <Compile Include="AltaconsignaMae.designer.cs">
       <DependentUpon>AltaconsignaMae.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaDepositoABM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaDepositoABM.designer.cs">
+      <DependentUpon>AltaDepositoABM.cs</DependentUpon>
     </Compile>
     <Compile Include="AltaDeposito.cs">
       <SubType>Form</SubType>
@@ -126,11 +138,29 @@
     <Compile Include="AltaEditorial.designer.cs">
       <DependentUpon>AltaEditorial.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaBanco.designer.cs">
+      <DependentUpon>AltaBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaEscuela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaEscuela.designer.cs">
+      <DependentUpon>AltaEscuela.cs</DependentUpon>
+    </Compile>
     <Compile Include="AltaPedido.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AltaPedido.designer.cs">
       <DependentUpon>AltaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaCredito.designer.cs">
+      <DependentUpon>AltaCredito.cs</DependentUpon>
     </Compile>
     <Compile Include="AltaProducto.cs">
       <SubType>Form</SubType>
@@ -149,6 +179,12 @@
     </Compile>
     <Compile Include="AltaGenero.designer.cs">
       <DependentUpon>AltaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaProveedorPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaProveedorPagos.designer.cs">
+      <DependentUpon>AltaProveedorPagos.cs</DependentUpon>
     </Compile>
     <Compile Include="AltaProveedor.cs">
       <SubType>Form</SubType>
@@ -180,6 +216,12 @@
     <Compile Include="ArqueodeCaja.designer.cs">
       <DependentUpon>ArqueodeCaja.cs</DependentUpon>
     </Compile>
+    <Compile Include="CambiarPorcentajePrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPorcentajePrecio.designer.cs">
+      <DependentUpon>CambiarPorcentajePrecio.cs</DependentUpon>
+    </Compile>
     <Compile Include="CambioPrecio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +245,12 @@
     </Compile>
     <Compile Include="Cargarapida.designer.cs">
       <DependentUpon>Cargarapida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarProAdo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarProAdo.designer.cs">
+      <DependentUpon>CargarProAdo.cs</DependentUpon>
     </Compile>
     <Compile Include="CargarCantidad.cs">
       <SubType>Form</SubType>
@@ -228,6 +276,18 @@
     <Compile Include="ConsultaCC.designer.cs">
       <DependentUpon>ConsultaCC.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaDocente.designer.cs">
+      <DependentUpon>AltaDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaClienteReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaClienteReserva.designer.cs">
+      <DependentUpon>ConsultaClienteReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +306,30 @@
     <Compile Include="ConsultaCuentaCorriente.designer.cs">
       <DependentUpon>ConsultaCuentaCorriente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaAdopciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaAdopciones.designer.cs">
+      <DependentUpon>ConsultaAdopciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaBancos.designer.cs">
+      <DependentUpon>ConsultaBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCredito.designer.cs">
+      <DependentUpon>ConsultaCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaEscuelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaEscuelas.designer.cs">
+      <DependentUpon>ConsultaEscuelas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaEditoriales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,11 +342,23 @@
     <Compile Include="ConsultaInteres.designer.cs">
       <DependentUpon>ConsultaInteres.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaMoviVtasOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaMoviVtasOld.designer.cs">
+      <DependentUpon>ConsultaMoviVtasOld.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaMoviVtas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultaMoviVtas.designer.cs">
       <DependentUpon>ConsultaMoviVtas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPagos.designer.cs">
+      <DependentUpon>ConsultaPagos.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultaPedidosR.cs">
       <SubType>Form</SubType>
@@ -300,11 +396,23 @@
     <Compile Include="ConsultaProConsigna.designer.cs">
       <DependentUpon>ConsultaProConsigna.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaProductosPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductosPrecio.designer.cs">
+      <DependentUpon>ConsultaProductosPrecio.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultaProductos.designer.cs">
       <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProductosAdop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductosAdop.designer.cs">
+      <DependentUpon>ConsultaProductosAdop.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultaProductosAgregaI.cs">
       <SubType>Form</SubType>
@@ -342,11 +450,23 @@
     <Compile Include="ConsultaGenero.designer.cs">
       <DependentUpon>ConsultaGenero.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaProveedorPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProveedorPagos.designer.cs">
+      <DependentUpon>ConsultaProveedorPagos.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultaProveedor.designer.cs">
       <DependentUpon>ConsultaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizaCatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizaCatalogo.designer.cs">
+      <DependentUpon>ActualizaCatalogo.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultaReservas.cs">
       <SubType>Form</SubType>
@@ -383,6 +503,12 @@
     </Compile>
     <Compile Include="ConsultasHistoricoDev.designer.cs">
       <DependentUpon>ConsultasHistoricoDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasLugaresABM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasLugaresABM.designer.cs">
+      <DependentUpon>ConsultasLugaresABM.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultasLugares.cs">
       <SubType>Form</SubType>
@@ -432,11 +558,53 @@
     <Compile Include="ConsultaVentasProduc.designer.cs">
       <DependentUpon>ConsultaVentasProduc.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaAdopcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaAdopcion.designer.cs">
+      <DependentUpon>AltaAdopcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contador_nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contador_nuevo.designer.cs">
+      <DependentUpon>Contador_nuevo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImprimePrecio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ImprimePrecio.designer.cs">
       <DependentUpon>ImprimePrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaFactura.designer.cs">
+      <DependentUpon>AltaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario.designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarFactura.designer.cs">
+      <DependentUpon>ModificarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagarp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagarp.designer.cs">
+      <DependentUpon>Pagarp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventasentrefechadetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventasentrefechadetalles.designer.cs">
+      <DependentUpon>ventasentrefechadetalles.cs</DependentUpon>
     </Compile>
     <Compile Include="VolverPrecio.cs">
       <SubType>Form</SubType>
@@ -569,6 +737,9 @@
     <EmbeddedResource Include="AltaAjuste.resx">
       <DependentUpon>AltaAjuste.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AltaClienteReservas.resx">
+      <DependentUpon>AltaClienteReservas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -577,6 +748,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaconsignaMae.resx">
       <DependentUpon>AltaconsignaMae.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaDepositoABM.resx">
+      <DependentUpon>AltaDepositoABM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AltaDeposito.resx">
       <DependentUpon>AltaDeposito.cs</DependentUpon>
@@ -587,8 +761,17 @@
     <EmbeddedResource Include="AltaEditorial.resx">
       <DependentUpon>AltaEditorial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AltaBanco.resx">
+      <DependentUpon>AltaBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaEscuela.resx">
+      <DependentUpon>AltaEscuela.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaPedido.resx">
       <DependentUpon>AltaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaCredito.resx">
+      <DependentUpon>AltaCredito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AltaProducto.resx">
       <DependentUpon>AltaProducto.cs</DependentUpon>
@@ -598,6 +781,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaGenero.resx">
       <DependentUpon>AltaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaProveedorPagos.resx">
+      <DependentUpon>AltaProveedorPagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AltaProveedor.resx">
       <DependentUpon>AltaProveedor.cs</DependentUpon>
@@ -614,6 +800,9 @@
     <EmbeddedResource Include="ArqueodeCaja.resx">
       <DependentUpon>ArqueodeCaja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CambiarPorcentajePrecio.resx">
+      <DependentUpon>CambiarPorcentajePrecio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CambioPrecio.resx">
       <DependentUpon>CambioPrecio.cs</DependentUpon>
     </EmbeddedResource>
@@ -625,6 +814,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cargarapida.resx">
       <DependentUpon>Cargarapida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarProAdo.resx">
+      <DependentUpon>CargarProAdo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CargarCantidad.resx">
       <DependentUpon>CargarCantidad.cs</DependentUpon>
@@ -638,6 +830,12 @@
     <EmbeddedResource Include="ConsultaCC.resx">
       <DependentUpon>ConsultaCC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AltaDocente.resx">
+      <DependentUpon>AltaDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaClienteReserva.resx">
+      <DependentUpon>ConsultaClienteReserva.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaCliente.resx">
       <DependentUpon>ConsultaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -647,14 +845,32 @@
     <EmbeddedResource Include="ConsultaCuentaCorriente.resx">
       <DependentUpon>ConsultaCuentaCorriente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaAdopciones.resx">
+      <DependentUpon>ConsultaAdopciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaBancos.resx">
+      <DependentUpon>ConsultaBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCredito.resx">
+      <DependentUpon>ConsultaCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaEscuelas.resx">
+      <DependentUpon>ConsultaEscuelas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaEditoriales.resx">
       <DependentUpon>ConsultaEditoriales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaInteres.resx">
       <DependentUpon>ConsultaInteres.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMoviVtasOld.resx">
+      <DependentUpon>ConsultaMoviVtasOld.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaMoviVtas.resx">
       <DependentUpon>ConsultaMoviVtas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPagos.resx">
+      <DependentUpon>ConsultaPagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaPedidosR.resx">
       <DependentUpon>ConsultaPedidosR.cs</DependentUpon>
@@ -674,8 +890,14 @@
     <EmbeddedResource Include="ConsultaProConsigna.resx">
       <DependentUpon>ConsultaProConsigna.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductosPrecio.resx">
+      <DependentUpon>ConsultaProductosPrecio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaProductos.resx">
       <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductosAdop.resx">
+      <DependentUpon>ConsultaProductosAdop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaProductosAgregaI.resx">
       <DependentUpon>ConsultaProductosAgregaI.cs</DependentUpon>
@@ -695,8 +917,14 @@
     <EmbeddedResource Include="ConsultaGenero.resx">
       <DependentUpon>ConsultaGenero.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProveedorPagos.resx">
+      <DependentUpon>ConsultaProveedorPagos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaProveedor.resx">
       <DependentUpon>ConsultaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizaCatalogo.resx">
+      <DependentUpon>ActualizaCatalogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaReservas.resx">
       <DependentUpon>ConsultaReservas.cs</DependentUpon>
@@ -715,6 +943,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultasHistoricoDev.resx">
       <DependentUpon>ConsultasHistoricoDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasLugaresABM.resx">
+      <DependentUpon>ConsultasLugaresABM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultasLugares.resx">
       <DependentUpon>ConsultasLugares.cs</DependentUpon>
@@ -740,8 +971,29 @@
     <EmbeddedResource Include="ConsultaVentasProduc.resx">
       <DependentUpon>ConsultaVentasProduc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AltaAdopcion.resx">
+      <DependentUpon>AltaAdopcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contador_nuevo.resx">
+      <DependentUpon>Contador_nuevo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ImprimePrecio.resx">
       <DependentUpon>ImprimePrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaFactura.resx">
+      <DependentUpon>AltaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarFactura.resx">
+      <DependentUpon>ModificarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagarp.resx">
+      <DependentUpon>Pagarp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventasentrefechadetalles.resx">
+      <DependentUpon>ventasentrefechadetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VolverPrecio.resx">
       <DependentUpon>VolverPrecio.cs</DependentUpon>
@@ -1192,6 +1444,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="libreriaac.ico" />
+    <Content Include="lolas.ico" />
+    <None Include="Resources\notepad32.png" />
+    <None Include="Resources\noted32.png" />
+    <None Include="Resources\modificar32.png" />
+    <None Include="Resources\plata321.png" />
+    <None Include="Resources\pagos64.png" />
+    <None Include="Resources\escuela32.png" />
+    <None Include="Resources\Books_64.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

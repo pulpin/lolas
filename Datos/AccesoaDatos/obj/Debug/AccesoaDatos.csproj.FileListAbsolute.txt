@@ -26,10 +26,10 @@ C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\bin\Debug\AccesoaDato
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\bin\Debug\AccesoaDatos.pdb
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\bin\Debug\MySql.Data.dll
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\bin\Debug\MySql.Data.xml
+C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.AssemblyReference.cache
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.Properties.Resources.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.GenerateResource.cache
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.CopyComplete
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.exe
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.pdb
-C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.AssemblyReference.cache
