@@ -386,6 +386,9 @@ C:\Users\Usuario\Documents\GitHub\LibreriaAC\LibreriaAC\Presentacion\obj\Debug\P
 C:\Users\Usuario\Documents\GitHub\LibreriaAC\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaCredito.resources
 C:\Users\Usuario\Documents\GitHub\LibreriaAC\LibreriaAC\Presentacion\obj\Debug\Presentacion.AltaCredito.resources
 C:\Users\Usuario\Documents\GitHub\LibreriaAC\LibreriaAC\Presentacion\obj\Debug\Presentacion.Inventario.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.exe.config
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.exe
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.pdb
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\DevExpress.Data.Desktop.v21.2.dll
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\DevExpress.Data.v21.2.dll
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\DevExpress.Office.v21.2.Core.dll
@@ -501,6 +504,7 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presen
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.AltaReserva.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.AltaUsuario.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ArqueodeCaja.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.CambiarPorcentajePrecio.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.CambioPrecio.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.Viejo.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.CantiInte.resources
@@ -521,6 +525,7 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presen
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaEscuelas.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaEditoriales.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaInteres.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaMoviVtasOld.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaMoviVtas.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaPagos.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaPedidosR.resources
@@ -529,6 +534,7 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presen
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaPlataCaja.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaPrecios.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.lbstock.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProductosPrecio.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProductos.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProductosAdop.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProductosAgregaI.resources
@@ -539,6 +545,7 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presen
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaGenero.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProveedorPagos.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProveedor.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ActualizaCatalogo.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaReservas.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultasConsignas.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultasConsignasD.resources
@@ -555,11 +562,13 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presen
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaVentas.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaVentasProduc.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.AltaAdopcion.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.Contador_nuevo.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ImprimePrecio.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.AltaFactura.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.Inventario.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ModificarFactura.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.Pagarp.resources
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ventasentrefechadetalles.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.VolverPrecio.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ControlaConsignas.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.DevolucionConsigna.resources
@@ -583,17 +592,8 @@ C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presen
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.Contador.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ventasentrefechas1.resources
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.exe.licenses
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ActualizaCatalogo.resources
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.exe.config
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.exe
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\bin\Debug\Lolas.pdb
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.exe.licenses
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.exe
 C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.pdb
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.CambiarPorcentajePrecio.resources
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaProductosPrecio.resources
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ventasentrefechadetalles.resources
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.Contador_nuevo.resources
-C:\Users\Usuario\Documents\GitHub\Lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.ConsultaMoviVtasOld.resources

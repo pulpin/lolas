@@ -465,7 +465,11 @@ pnombrecli, pcuit, pdire, ptipo;
             {
                 MessageBox.Show("Error al conectar: " + error.ToString());
             }
-            error = CargarPago(id_modificador, tipodepago, cuotas, lbtotalg.Text, "", "Efectivo", "", "");
+            string totalpag = string.Format("{0:N4}", Convert.ToDouble(lbtotalg.Text));
+            //precio = Convert.ToString(preciod);
+            totalpag = totalpag.Replace(',', '.');
+
+            error = CargarPago(id_modificador, tipodepago, cuotas, totalpag, "", "Efectivo", "", "");
             if (error != ERROR_NINGUNO)
             {
                 MessageBox.Show("Error al cargar pagos: " + error.ToString());

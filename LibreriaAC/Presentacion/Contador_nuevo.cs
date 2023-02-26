@@ -149,7 +149,7 @@ namespace Presentacion
             DateTime fhasta = Convert.ToDateTime(fechahasta.EditValue);
             string fhastae = fhasta.ToString("yyyy-MM-dd");
 
-            
+            int valor = ve.spContador(Convert.ToInt32(LUpunto.EditValue), fdesdee, fhastae);
 
             gConsulta.DataSource = ve.Mostrar_ventasparacontadorNueva(Convert.ToInt32(LUpunto.EditValue), fdesdee, fhastae);
 

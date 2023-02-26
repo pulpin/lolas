@@ -337,7 +337,10 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
             Usuarios usu = new Usuarios();
             usu.cerrarconexion();
             usu = null;
+            //System.Diagnostics.Process.Start(@"C:\Program Files\MySQL\MySQL Server 5.6\bin\backupLolas.bat");
             Application.Exit();
+           
+
         }
 
         private void editorialToolStripMenuItem_Click(object sender, EventArgs e)

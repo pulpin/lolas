@@ -86,6 +86,54 @@ namespace LogicaNegocios
             return Valor_Retornado;
         }
 
+        public int spContador(int ptovta, String fechadesde, String fechahasta)
+        {
+            int Valor_Retornado = 0;
+            string cadenaconexion;
+
+            Conexion con = new Conexion("lolasdb", Globales.ip);
+            cadenaconexion = con.inicializa();
+            MySqlConnection mysql_conexion = con.AbrirConexion(cadenaconexion);
+            // MySqlCommand myCommand = new  MySqlCommand();
+            mysql_conexion.Open();
+            MySqlTransaction sqlTran = mysql_conexion.BeginTransaction();
+            MySqlCommand myCommand = mysql_conexion.CreateCommand();
+            myCommand.Transaction = sqlTran;
+
+            try
+            {
+                myCommand.Connection = mysql_conexion;
+                myCommand.CommandText = "spContador";
+                myCommand.CommandType = CommandType.StoredProcedure;
+                myCommand.Parameters.AddWithValue("fechadesde", fechadesde);
+                myCommand.Parameters.AddWithValue("fechahasta", fechahasta);
+                myCommand.Parameters.AddWithValue("ptoventa", ptovta);
+                MySqlParameter ValorRetorno = new MySqlParameter("@Resultado", MySqlDbType.Int32);
+                ValorRetorno.Direction = ParameterDirection.Output;// Output;
+                myCommand.Parameters.Add(ValorRetorno);
+                myCommand.ExecuteNonQuery();
+                Valor_Retornado = Convert.ToInt32(ValorRetorno.Value);
+                sqlTran.Commit();
+                mysql_conexion.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception if the transaction fails to commit.
+                Console.WriteLine(ex.Message);
+
+                try
+                {
+                    // Attempt to roll back the transaction.
+                    sqlTran.Rollback();
+                }
+                catch (Exception exRollback)
+                {
+                    Console.WriteLine(exRollback.Message);
+                }
+            }
+
+            return Valor_Retornado;
+        }
         public int spProformaMaestro()
         {
             int Valor_Retornado = 0;
