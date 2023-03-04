@@ -33,3 +33,15 @@ C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDato
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.CopyComplete
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.exe
 C:\Users\Usuario\Documents\GitHub\Lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.pdb
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\bin\Debug\AccesoaDatos.exe.config
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\bin\Debug\AccesoaDatos.exe
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\bin\Debug\AccesoaDatos.pdb
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\bin\Debug\MySql.Data.dll
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\bin\Debug\MySql.Data.xml
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.AssemblyReference.cache
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.Properties.Resources.resources
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.GenerateResource.cache
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.CoreCompileInputs.cache
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.CopyComplete
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.exe
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.pdb

@@ -62,10 +62,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.cmdmenugrid.SuspendLayout();
             this.gBtipopro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fechahasta.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fechahasta.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fechadesde.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechahasta.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fechadesde.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechadesde.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBEeditorial.Properties)).BeginInit();
