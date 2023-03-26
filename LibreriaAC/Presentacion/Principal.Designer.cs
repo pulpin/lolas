@@ -141,13 +141,13 @@
             // 
             // menuFacturar
             // 
-            this.menuFacturar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuFacturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuFacturar.Image = global::Presentacion.Properties.Resources.factu64;
             this.menuFacturar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.menuFacturar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuFacturar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuFacturar.Name = "menuFacturar";
-            this.menuFacturar.Size = new System.Drawing.Size(66, 82);
+            this.menuFacturar.Size = new System.Drawing.Size(66, 83);
             this.menuFacturar.Text = "Facturar";
             this.menuFacturar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.menuFacturar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -162,13 +162,13 @@
             // tMConsultaP
             // 
             this.tMConsultaP.Enabled = false;
-            this.tMConsultaP.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tMConsultaP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tMConsultaP.Image = global::Presentacion.Properties.Resources.search64;
             this.tMConsultaP.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tMConsultaP.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tMConsultaP.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tMConsultaP.Name = "tMConsultaP";
-            this.tMConsultaP.Size = new System.Drawing.Size(66, 82);
+            this.tMConsultaP.Size = new System.Drawing.Size(66, 83);
             this.tMConsultaP.Text = "Consultar";
             this.tMConsultaP.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tMConsultaP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -182,13 +182,13 @@
             // 
             // tSBclientes
             // 
-            this.tSBclientes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tSBclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tSBclientes.Image = global::Presentacion.Properties.Resources.Books_64;
             this.tSBclientes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBclientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tSBclientes.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSBclientes.Name = "tSBclientes";
-            this.tSBclientes.Size = new System.Drawing.Size(66, 82);
+            this.tSBclientes.Size = new System.Drawing.Size(66, 83);
             this.tSBclientes.Text = "Agenda";
             this.tSBclientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBclientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -202,13 +202,13 @@
             // 
             // menuPrecios
             // 
-            this.menuPrecios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.menuPrecios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.menuPrecios.Image = global::Presentacion.Properties.Resources.precio64;
             this.menuPrecios.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.menuPrecios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuPrecios.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuPrecios.Name = "menuPrecios";
-            this.menuPrecios.Size = new System.Drawing.Size(66, 82);
+            this.menuPrecios.Size = new System.Drawing.Size(66, 83);
             this.menuPrecios.Text = "Precios";
             this.menuPrecios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.menuPrecios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -223,13 +223,13 @@
             // tSBVentas
             // 
             this.tSBVentas.Enabled = false;
-            this.tSBVentas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tSBVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tSBVentas.Image = global::Presentacion.Properties.Resources.ventaspago64;
             this.tSBVentas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBVentas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tSBVentas.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSBVentas.Name = "tSBVentas";
-            this.tSBVentas.Size = new System.Drawing.Size(66, 82);
+            this.tSBVentas.Size = new System.Drawing.Size(66, 83);
             this.tSBVentas.Text = "Ventas";
             this.tSBVentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -244,13 +244,13 @@
             // tSBArqueo
             // 
             this.tSBArqueo.Enabled = false;
-            this.tSBArqueo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tSBArqueo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tSBArqueo.Image = global::Presentacion.Properties.Resources.ventas64;
             this.tSBArqueo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBArqueo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tSBArqueo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSBArqueo.Name = "tSBArqueo";
-            this.tSBArqueo.Size = new System.Drawing.Size(66, 82);
+            this.tSBArqueo.Size = new System.Drawing.Size(66, 83);
             this.tSBArqueo.Text = "Arqueo";
             this.tSBArqueo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBArqueo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -721,22 +721,22 @@
             this.toolStripButton2,
             this.toolStripButton6});
             this.toolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.toolStrip2.Location = new System.Drawing.Point(935, 48);
+            this.toolStrip2.Location = new System.Drawing.Point(939, 48);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(73, 634);
+            this.toolStrip2.Size = new System.Drawing.Size(69, 634);
             this.toolStrip2.TabIndex = 9;
             this.toolStrip2.Text = "toolStrip2";
             // 
             // menuReservas
             // 
             this.menuReservas.Enabled = false;
-            this.menuReservas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.menuReservas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.menuReservas.Image = global::Presentacion.Properties.Resources.Reservas64;
             this.menuReservas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.menuReservas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuReservas.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuReservas.Name = "menuReservas";
-            this.menuReservas.Size = new System.Drawing.Size(70, 82);
+            this.menuReservas.Size = new System.Drawing.Size(66, 83);
             this.menuReservas.Text = "Reservas";
             this.menuReservas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.menuReservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -746,13 +746,13 @@
             // tlSBed
             // 
             this.tlSBed.Enabled = false;
-            this.tlSBed.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tlSBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tlSBed.Image = global::Presentacion.Properties.Resources.editorial64;
             this.tlSBed.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tlSBed.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tlSBed.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tlSBed.Name = "tlSBed";
-            this.tlSBed.Size = new System.Drawing.Size(70, 82);
+            this.tlSBed.Size = new System.Drawing.Size(66, 83);
             this.tlSBed.Text = "Marcas";
             this.tlSBed.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tlSBed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -762,13 +762,13 @@
             // tSBproveedor
             // 
             this.tSBproveedor.Enabled = false;
-            this.tSBproveedor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tSBproveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tSBproveedor.Image = global::Presentacion.Properties.Resources.proveedor642;
             this.tSBproveedor.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBproveedor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tSBproveedor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSBproveedor.Name = "tSBproveedor";
-            this.tSBproveedor.Size = new System.Drawing.Size(70, 82);
+            this.tSBproveedor.Size = new System.Drawing.Size(66, 83);
             this.tSBproveedor.Text = "Proveedor";
             this.tSBproveedor.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBproveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -777,13 +777,13 @@
             // 
             // tSBEditorial
             // 
-            this.tSBEditorial.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.tSBEditorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tSBEditorial.Image = global::Presentacion.Properties.Resources.pdf64;
             this.tSBEditorial.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBEditorial.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tSBEditorial.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSBEditorial.Name = "tSBEditorial";
-            this.tSBEditorial.Size = new System.Drawing.Size(70, 82);
+            this.tSBEditorial.Size = new System.Drawing.Size(66, 83);
             this.tSBEditorial.Text = "Proformas";
             this.tSBEditorial.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tSBEditorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -793,16 +793,16 @@
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(70, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(66, 6);
             // 
             // toolStripButton2
             // 
-            this.toolStripButton2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.toolStripButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.toolStripButton2.Image = global::Presentacion.Properties.Resources.changeuser64;
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(70, 82);
+            this.toolStripButton2.Size = new System.Drawing.Size(66, 83);
             this.toolStripButton2.Text = "Usuario";
             this.toolStripButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -810,12 +810,12 @@
             // 
             // toolStripButton6
             // 
-            this.toolStripButton6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.toolStripButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.toolStripButton6.Image = global::Presentacion.Properties.Resources.exit64;
             this.toolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(70, 82);
+            this.toolStripButton6.Size = new System.Drawing.Size(66, 83);
             this.toolStripButton6.Text = "Salir";
             this.toolStripButton6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -830,7 +830,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Versión: 07/02/2023";
+            this.label5.Text = "Versión: 16/03/2023";
             // 
             // textBox2
             // 
