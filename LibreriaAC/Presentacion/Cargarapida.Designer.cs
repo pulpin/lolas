@@ -657,15 +657,18 @@
             this.groupBox2.Size = new System.Drawing.Size(193, 33);
             this.groupBox2.TabIndex = 900;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Visible = false;
             // 
             // rBlolasdb
             // 
             this.rBlolasdb.AutoSize = true;
+            this.rBlolasdb.Checked = true;
             this.rBlolasdb.ForeColor = System.Drawing.Color.Maroon;
             this.rBlolasdb.Location = new System.Drawing.Point(87, 8);
             this.rBlolasdb.Name = "rBlolasdb";
             this.rBlolasdb.Size = new System.Drawing.Size(87, 18);
             this.rBlolasdb.TabIndex = 200;
+            this.rBlolasdb.TabStop = true;
             this.rBlolasdb.Text = "Art. librería";
             this.rBlolasdb.UseVisualStyleBackColor = true;
             this.rBlolasdb.CheckedChanged += new System.EventHandler(this.rBlolasdb_CheckedChanged);
@@ -673,13 +676,11 @@
             // rBlibros
             // 
             this.rBlibros.AutoSize = true;
-            this.rBlibros.Checked = true;
             this.rBlibros.ForeColor = System.Drawing.Color.Maroon;
             this.rBlibros.Location = new System.Drawing.Point(19, 8);
             this.rBlibros.Name = "rBlibros";
             this.rBlibros.Size = new System.Drawing.Size(61, 18);
             this.rBlibros.TabIndex = 199;
-            this.rBlibros.TabStop = true;
             this.rBlibros.Text = "Libros";
             this.rBlibros.UseVisualStyleBackColor = true;
             this.rBlibros.CheckedChanged += new System.EventHandler(this.rBlibros_CheckedChanged);

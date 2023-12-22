@@ -76,6 +76,7 @@
             this.gConsulta.TabIndex = 195;
             this.gConsulta.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPintarFilas});
+            this.gConsulta.Click += new System.EventHandler(this.gConsulta_Click);
             // 
             // cmdmenugrid
             // 
@@ -83,19 +84,19 @@
             this.exportarAExcelToolStripMenuItem,
             this.exportarAPDFToolStripMenuItem});
             this.cmdmenugrid.Name = "contextMenuStrip1";
-            this.cmdmenugrid.Size = new System.Drawing.Size(156, 48);
+            this.cmdmenugrid.Size = new System.Drawing.Size(158, 48);
             // 
             // exportarAExcelToolStripMenuItem
             // 
             this.exportarAExcelToolStripMenuItem.Name = "exportarAExcelToolStripMenuItem";
-            this.exportarAExcelToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.exportarAExcelToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.exportarAExcelToolStripMenuItem.Text = "Exportar a Excel";
             this.exportarAExcelToolStripMenuItem.Click += new System.EventHandler(this.exportarAExcelToolStripMenuItem_Click);
             // 
             // exportarAPDFToolStripMenuItem
             // 
             this.exportarAPDFToolStripMenuItem.Name = "exportarAPDFToolStripMenuItem";
-            this.exportarAPDFToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.exportarAPDFToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.exportarAPDFToolStripMenuItem.Text = "Exportar a PDF";
             this.exportarAPDFToolStripMenuItem.Click += new System.EventHandler(this.exportarAPDFToolStripMenuItem_Click);
             // 
@@ -141,6 +142,8 @@
             this.DEH_HAY.Caption = "Hay";
             this.DEH_HAY.FieldName = "DEH_HAY";
             this.DEH_HAY.Name = "DEH_HAY";
+            this.DEH_HAY.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "DEH_HAY", "SUM={0:0.##}")});
             this.DEH_HAY.Visible = true;
             this.DEH_HAY.VisibleIndex = 2;
             // 

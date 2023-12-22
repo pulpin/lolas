@@ -161,5 +161,10 @@ namespace Presentacion
                 this.cargar();
             }
         }
+
+        private void gConsulta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

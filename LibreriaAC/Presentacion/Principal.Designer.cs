@@ -82,6 +82,8 @@
             this.ventasEntreFechasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hacerPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarPedidosRealizadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargaTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargaRápidaDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proformasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -294,7 +296,7 @@
             this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Location = new System.Drawing.Point(376, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(43, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Tipo:";
             // 
@@ -305,7 +307,7 @@
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(635, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 16);
+            this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Localidad:";
             // 
@@ -344,7 +346,7 @@
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(63, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 16);
+            this.label1.Size = new System.Drawing.Size(65, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario:";
             // 
@@ -388,6 +390,7 @@
             this.interesesToolStripMenuItem,
             this.ventasToolStripMenuItem,
             this.pedidosToolStripMenuItem,
+            this.cargaTSMItem,
             this.proformasToolStripMenuItem,
             this.usuariosToolStripMenuItem,
             this.impresoraToolStripMenuItem,
@@ -614,6 +617,22 @@
             this.consultarPedidosRealizadosToolStripMenuItem.Text = "Consultar pedidos realizados";
             this.consultarPedidosRealizadosToolStripMenuItem.Click += new System.EventHandler(this.consultarPedidosRealizadosToolStripMenuItem_Click);
             // 
+            // cargaTSMItem
+            // 
+            this.cargaTSMItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargaRápidaDeProductosToolStripMenuItem});
+            this.cargaTSMItem.Enabled = false;
+            this.cargaTSMItem.Name = "cargaTSMItem";
+            this.cargaTSMItem.Size = new System.Drawing.Size(50, 20);
+            this.cargaTSMItem.Text = "Carga";
+            // 
+            // cargaRápidaDeProductosToolStripMenuItem
+            // 
+            this.cargaRápidaDeProductosToolStripMenuItem.Name = "cargaRápidaDeProductosToolStripMenuItem";
+            this.cargaRápidaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.cargaRápidaDeProductosToolStripMenuItem.Text = "Carga rápida de productos";
+            this.cargaRápidaDeProductosToolStripMenuItem.Click += new System.EventHandler(this.cargaRápidaDeProductosToolStripMenuItem_Click);
+            // 
             // proformasToolStripMenuItem
             // 
             this.proformasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -828,9 +847,9 @@
             this.label5.ForeColor = System.Drawing.Color.ForestGreen;
             this.label5.Location = new System.Drawing.Point(855, 6);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 16);
+            this.label5.Size = new System.Drawing.Size(142, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Versión: 16/03/2023";
+            this.label5.Text = "Versión: 22/12/2023";
             // 
             // textBox2
             // 
@@ -989,5 +1008,7 @@
         private System.Windows.Forms.ToolStripMenuItem porMarcaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porNombreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dVTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaRápidaDeProductosToolStripMenuItem;
     }
 }

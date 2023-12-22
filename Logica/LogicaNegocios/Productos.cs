@@ -18,7 +18,7 @@ namespace LogicaNegocios
         Conexion con = new Conexion("lolasdb", Globales.ip);
         int stockp, consideactual, resultadop;
         Decimal _primervalordecimal, _segundovalordecimal, _cuartovalordecimal, _quintovalordecimal, _sextovalordecimal, _septimovalordecimal;
-        int _tercervalorint, _porcentajecosto;
+        int _tercervalorint, _porcentajecosto, _poractualizacion;
         string _usuariodioal, _fechadioal, _usuariomodi, _fechausumo;
         public DataTable Mostrar_productos()
         {
@@ -1455,7 +1455,13 @@ namespace LogicaNegocios
             try
             {
                 myCommand.Connection = mysql_conexion;
-                myCommand.CommandText = "spCambioPrecioMasivo";
+                if (this.Poractualizacion==1)
+                {
+                    myCommand.CommandText = "spCambioPrecioMasivoac";
+                }else
+                {
+                    myCommand.CommandText = "spCambioPrecioMasivo";
+                }
                 myCommand.CommandType = CommandType.StoredProcedure;
                 myCommand.Parameters.AddWithValue("pproveedor", this.Editorial);
                 myCommand.Parameters.AddWithValue("porcentaje", this.PorcentajeCosto);
@@ -2226,7 +2232,7 @@ namespace LogicaNegocios
             string ncosto1 = Convert.ToString(ncosto).Replace(",", ".");
             string nprecioausar1 = Convert.ToString(precioausar).Replace(",", ".");
 
-            string querycosto = "UPDATE lolasdb.libros SET LI_COSTO = " + ncosto1 + ",LI_PRECIO= "+ nprecioausar1 + " where  LI_IDE = " + codigo + "";
+            string querycosto = "UPDATE lolasdb.libros SET LI_COSTO = " + ncosto1 + ",LI_PRECIO= "+ nprecioausar1 + ",LI_FECHAPRE = now() where  LI_IDE = " + codigo + "";
             con.InsertarYactualiza(querycosto);
             
             return 0;
@@ -2501,6 +2507,11 @@ namespace LogicaNegocios
             set { this._porcentajecosto = value; }
         }
 
+        public int Poractualizacion
+        {
+            get { return this._poractualizacion; }
+            set { this._poractualizacion = value; }
+        }
 
         public int Inventario
         {

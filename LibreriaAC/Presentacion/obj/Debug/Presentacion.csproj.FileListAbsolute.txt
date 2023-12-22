@@ -706,3 +706,4 @@ C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\LibreriaAC\Presentacion\obj\Debu
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.exe
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\LibreriaAC\Presentacion\obj\Debug\Lolas.pdb
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\LibreriaAC\Presentacion\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache

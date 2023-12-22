@@ -35,14 +35,21 @@
             this.txtporcentaje = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btncancelar = new System.Windows.Forms.Button();
+            this.chfechadesde = new DevExpress.XtraEditors.CheckEdit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.fechahasta = new DevExpress.XtraEditors.DateEdit();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.lUEditorial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chfechadesde.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechahasta.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechahasta.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnaceptar
             // 
             this.btnaceptar.Image = global::Presentacion.Properties.Resources.guardar64;
             this.btnaceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnaceptar.Location = new System.Drawing.Point(70, 152);
+            this.btnaceptar.Location = new System.Drawing.Point(70, 212);
             this.btnaceptar.Name = "btnaceptar";
             this.btnaceptar.Size = new System.Drawing.Size(105, 79);
             this.btnaceptar.TabIndex = 11;
@@ -122,7 +129,7 @@
             // 
             this.btncancelar.Image = global::Presentacion.Properties.Resources.cancelar64;
             this.btncancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btncancelar.Location = new System.Drawing.Point(199, 152);
+            this.btncancelar.Location = new System.Drawing.Point(199, 212);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(105, 79);
             this.btncancelar.TabIndex = 216;
@@ -131,12 +138,64 @@
             this.btncancelar.UseVisualStyleBackColor = true;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
+            // chfechadesde
+            // 
+            this.chfechadesde.Location = new System.Drawing.Point(69, 140);
+            this.chfechadesde.Name = "chfechadesde";
+            this.chfechadesde.Properties.Caption = "";
+            this.chfechadesde.Size = new System.Drawing.Size(24, 20);
+            this.chfechadesde.TabIndex = 252;
+            this.chfechadesde.CheckedChanged += new System.EventHandler(this.chfechadesde_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.Location = new System.Drawing.Point(133, 165);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.TabIndex = 251;
+            this.label1.Text = "Fecha:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Visible = false;
+            // 
+            // fechahasta
+            // 
+            this.fechahasta.EditValue = null;
+            this.fechahasta.Location = new System.Drawing.Point(186, 164);
+            this.fechahasta.Name = "fechahasta";
+            this.fechahasta.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.fechahasta.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.fechahasta.Size = new System.Drawing.Size(100, 20);
+            this.fechahasta.TabIndex = 250;
+            this.fechahasta.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.Location = new System.Drawing.Point(86, 141);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(236, 17);
+            this.label2.TabIndex = 253;
+            this.label2.Text = "Sin actualización de precios hasta";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // CambiarPorcentajePrecio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 240);
+            this.ClientSize = new System.Drawing.Size(379, 298);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.chfechadesde);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.fechahasta);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtporcentaje);
@@ -149,6 +208,9 @@
             this.Text = "Cambiar el precio de costo y calcula el precio...";
             this.Load += new System.EventHandler(this.Elegirpto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lUEditorial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chfechadesde.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechahasta.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechahasta.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +225,9 @@
         private System.Windows.Forms.TextBox txtporcentaje;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btncancelar;
+        private DevExpress.XtraEditors.CheckEdit chfechadesde;
+        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.DateEdit fechahasta;
+        private System.Windows.Forms.Label label2;
     }
 }

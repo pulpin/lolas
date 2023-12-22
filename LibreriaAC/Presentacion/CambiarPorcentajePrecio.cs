@@ -38,6 +38,14 @@ namespace Presentacion
             Productos pro = new Productos();
             pro.Editorial = Convert.ToInt32(lUEditorial.EditValue);
             pro.PorcentajeCosto = Convert.ToInt32(txtporcentaje.Text);
+                if (chfechadesde.Checked == true)
+                {
+                    pro.Poractualizacion = 1;
+                }else
+                {
+                    pro.Poractualizacion = 0;
+                }
+
             int valor = pro.spModificarPorcentajePrecio();
             if (valor == 0)
             {
@@ -65,6 +73,20 @@ namespace Presentacion
         {
             this.Dispose();
             this.Hide();
+        }
+
+        private void chfechadesde_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chfechadesde.Checked == true)
+            {
+                label1.Visible = true;
+                fechahasta.Visible = true;
+            }
+            else
+            {
+                label1.Visible = false;
+                fechahasta.Visible = false;
+            }
         }
     }
 }

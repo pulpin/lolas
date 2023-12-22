@@ -58,3 +58,4 @@ C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Logica\LogicaNegocios\obj\Debug\
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Logica\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CopyComplete
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Logica\LogicaNegocios\obj\Debug\LogicaNegocios.exe
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Logica\LogicaNegocios\obj\Debug\LogicaNegocios.pdb
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Logica\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.SuggestedBindingRedirects.cache

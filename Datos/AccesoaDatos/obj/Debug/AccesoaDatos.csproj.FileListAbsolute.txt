@@ -45,3 +45,4 @@ C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\Acc
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.CopyComplete
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.exe
 C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.pdb
+C:\Users\hugoo\OneDrive\Documentos\GitHub\lolas\Datos\AccesoaDatos\obj\Debug\AccesoaDatos.csproj.SuggestedBindingRedirects.cache

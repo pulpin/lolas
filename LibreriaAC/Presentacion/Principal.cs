@@ -375,6 +375,7 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
             {
                 tMConsultaP.Enabled = true;
                 productoToolStripMenuItem.Enabled = true;
+                cargaTSMItem.Enabled = true;
             }
             if (LogicaNegocios.Globales.registrodeventas == 1)
             {
@@ -873,6 +874,12 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
         {
             ventasentrefechadetalles vefd = new ventasentrefechadetalles();
             vefd.ShowDialog();
+        }
+
+        private void cargaRápidaDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cargarapida cr = new Cargarapida();
+            cr.ShowDialog();
         }
 
         private void toolTurnosD_Click(object sender, EventArgs e)
