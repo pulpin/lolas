@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facturar));
             this.label3 = new System.Windows.Forms.Label();
             this.lbcomprador = new System.Windows.Forms.Label();
@@ -40,7 +40,6 @@
             this.lbcomtipo = new System.Windows.Forms.Label();
             this.lbtipoiva = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.LUComprobante = new DevExpress.XtraEditors.LookUpEdit();
             this.label8 = new System.Windows.Forms.Label();
             this.lbfecha = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -81,6 +80,7 @@
             this.txtproforma = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.lbdescu = new System.Windows.Forms.Label();
             this.btnplatacaja = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnajuste = new System.Windows.Forms.Button();
@@ -95,14 +95,14 @@
             this.btndebito = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnagregap = new System.Windows.Forms.Button();
+            this.LUComprobante = new DevExpress.XtraEditors.LookUpEdit();
             this.btnagregar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.lbdescu = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.LUComprobante.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.conMSdebito.SuspendLayout();
             this.conMScredito.SuspendLayout();
             this.conMScuotas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LUComprobante.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -189,27 +189,6 @@
             this.label7.Text = "Tipo de comprobante";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // LUComprobante
-            // 
-            this.LUComprobante.Location = new System.Drawing.Point(338, 37);
-            this.LUComprobante.Name = "LUComprobante";
-            this.LUComprobante.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.Border;
-            this.LUComprobante.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LUComprobante.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LUComprobante.Properties.Appearance.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.LUComprobante.Properties.Appearance.Options.UseBackColor = true;
-            this.LUComprobante.Properties.Appearance.Options.UseFont = true;
-            this.LUComprobante.Properties.Appearance.Options.UseForeColor = true;
-            this.LUComprobante.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.LUComprobante.Properties.DropDownRows = 5;
-            this.LUComprobante.Properties.HideSelection = false;
-            this.LUComprobante.Properties.NullText = "";
-            this.LUComprobante.Properties.ShowHeader = false;
-            this.LUComprobante.Size = new System.Drawing.Size(179, 22);
-            this.LUComprobante.TabIndex = 194;
-            this.LUComprobante.EditValueChanged += new System.EventHandler(this.LUComprobante_EditValueChanged);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -264,33 +243,33 @@
             this.dgvProductos.BackgroundColor = System.Drawing.Color.PaleGoldenrod;
             this.dgvProductos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductos.Location = new System.Drawing.Point(55, 211);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.ReadOnly = true;
             this.dgvProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProductos.RowHeadersVisible = false;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.DimGray;
-            this.dgvProductos.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DimGray;
+            this.dgvProductos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProductos.Size = new System.Drawing.Size(884, 304);
             this.dgvProductos.TabIndex = 202;
@@ -403,34 +382,34 @@
             this.ahora3ToolStripMenuItem,
             this.ahora6ToolStripMenuItem});
             this.conMScuotas.Name = "contextMenuStrip1";
-            this.conMScuotas.Size = new System.Drawing.Size(119, 92);
+            this.conMScuotas.Size = new System.Drawing.Size(152, 92);
             // 
             // tSMI2cuotas
             // 
             this.tSMI2cuotas.Name = "tSMI2cuotas";
-            this.tSMI2cuotas.Size = new System.Drawing.Size(118, 22);
+            this.tSMI2cuotas.Size = new System.Drawing.Size(151, 22);
             this.tSMI2cuotas.Text = "2 cuotas";
             this.tSMI2cuotas.Click += new System.EventHandler(this.tSMI2cuotas_Click);
             // 
             // tSMI3cuotas
             // 
             this.tSMI3cuotas.Name = "tSMI3cuotas";
-            this.tSMI3cuotas.Size = new System.Drawing.Size(118, 22);
+            this.tSMI3cuotas.Size = new System.Drawing.Size(151, 22);
             this.tSMI3cuotas.Text = "3 cuotas";
             this.tSMI3cuotas.Click += new System.EventHandler(this.tSMI3cuotas_Click);
             // 
             // ahora3ToolStripMenuItem
             // 
             this.ahora3ToolStripMenuItem.Name = "ahora3ToolStripMenuItem";
-            this.ahora3ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.ahora3ToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.ahora3ToolStripMenuItem.Text = "Ahora 3";
             this.ahora3ToolStripMenuItem.Click += new System.EventHandler(this.ahora3ToolStripMenuItem_Click);
             // 
             // ahora6ToolStripMenuItem
             // 
             this.ahora6ToolStripMenuItem.Name = "ahora6ToolStripMenuItem";
-            this.ahora6ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
-            this.ahora6ToolStripMenuItem.Text = "Ahora 6";
+            this.ahora6ToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.ahora6ToolStripMenuItem.Text = "6 cuota simple";
             this.ahora6ToolStripMenuItem.Click += new System.EventHandler(this.ahora6ToolStripMenuItem_Click);
             // 
             // label1
@@ -645,6 +624,19 @@
             this.label6.Text = "Pedido";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // lbdescu
+            // 
+            this.lbdescu.AutoSize = true;
+            this.lbdescu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdescu.ForeColor = System.Drawing.Color.Black;
+            this.lbdescu.Location = new System.Drawing.Point(334, 534);
+            this.lbdescu.Name = "lbdescu";
+            this.lbdescu.Size = new System.Drawing.Size(19, 19);
+            this.lbdescu.TabIndex = 237;
+            this.lbdescu.Text = "0";
+            this.lbdescu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbdescu.Visible = false;
+            // 
             // btnplatacaja
             // 
             this.btnplatacaja.Image = global::Presentacion.Properties.Resources.dinero32;
@@ -766,13 +758,13 @@
             // 
             // btnahora12
             // 
-            this.btnahora12.Image = global::Presentacion.Properties.Resources.ahora12a48;
+            this.btnahora12.Image = global::Presentacion.Properties.Resources.cuotasimple48;
             this.btnahora12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnahora12.Location = new System.Drawing.Point(593, 573);
             this.btnahora12.Name = "btnahora12";
             this.btnahora12.Size = new System.Drawing.Size(91, 70);
             this.btnahora12.TabIndex = 208;
-            this.btnahora12.Text = "Ahora 12";
+            this.btnahora12.Text = "3 cuota simple";
             this.btnahora12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnahora12.UseVisualStyleBackColor = true;
             this.btnahora12.Click += new System.EventHandler(this.btnahora12_Click);
@@ -828,6 +820,27 @@
             this.btnagregap.UseVisualStyleBackColor = true;
             this.btnagregap.Click += new System.EventHandler(this.btnagregap_Click);
             // 
+            // LUComprobante
+            // 
+            this.LUComprobante.Location = new System.Drawing.Point(338, 37);
+            this.LUComprobante.Name = "LUComprobante";
+            this.LUComprobante.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.Border;
+            this.LUComprobante.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LUComprobante.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LUComprobante.Properties.Appearance.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.LUComprobante.Properties.Appearance.Options.UseBackColor = true;
+            this.LUComprobante.Properties.Appearance.Options.UseFont = true;
+            this.LUComprobante.Properties.Appearance.Options.UseForeColor = true;
+            this.LUComprobante.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LUComprobante.Properties.DropDownRows = 5;
+            this.LUComprobante.Properties.HideSelection = false;
+            this.LUComprobante.Properties.NullText = "";
+            this.LUComprobante.Properties.ShowHeader = false;
+            this.LUComprobante.Size = new System.Drawing.Size(179, 22);
+            this.LUComprobante.TabIndex = 194;
+            this.LUComprobante.EditValueChanged += new System.EventHandler(this.LUComprobante_EditValueChanged);
+            // 
             // btnagregar
             // 
             this.btnagregar.Image = ((System.Drawing.Image)(resources.GetObject("btnagregar.Image")));
@@ -851,19 +864,6 @@
             this.btnSalir.TabIndex = 183;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // lbdescu
-            // 
-            this.lbdescu.AutoSize = true;
-            this.lbdescu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdescu.ForeColor = System.Drawing.Color.Black;
-            this.lbdescu.Location = new System.Drawing.Point(334, 534);
-            this.lbdescu.Name = "lbdescu";
-            this.lbdescu.Size = new System.Drawing.Size(19, 19);
-            this.lbdescu.TabIndex = 237;
-            this.lbdescu.Text = "0";
-            this.lbdescu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbdescu.Visible = false;
             // 
             // Facturar
             // 
@@ -926,11 +926,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facturar";
             this.Load += new System.EventHandler(this.Facturar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.LUComprobante.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.conMSdebito.ResumeLayout(false);
             this.conMScredito.ResumeLayout(false);
             this.conMScuotas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LUComprobante.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
