@@ -53,8 +53,8 @@ namespace AccesoaDatos
             uid = "root";
             //password = "lolasdb99";
             password = "123123";
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";port=3306;" + "UID=" + uid + ";" + "PASSWORD=" + password + ";" + "Allow Zero Datetime=true";
-            connectionString1 = "SERVER=" + server + ";" + "DATABASE=" + database + ";port=3306;" + "UID=" + uid + ";" + "PASSWORD=" + password + ";" + "Allow Zero Datetime=true";
+            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";port=3307;" + "UID=" + uid + ";" + "PASSWORD=" + password + ";" + "Allow Zero Datetime=true";
+            connectionString1 = "SERVER=" + server + ";" + "DATABASE=" + database + ";port=3307;" + "UID=" + uid + ";" + "PASSWORD=" + password + ";" + "Allow Zero Datetime=true";
         }
 
         public string inicializa()
@@ -65,7 +65,7 @@ namespace AccesoaDatos
             uid = "root";
             //password = "lolasdb99";
             password = "123123";
-            return connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";" + "Allow Zero Datetime=true";
+            return connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";port=3307;" + "UID=" + uid + ";" + "PASSWORD=" + password + ";" + "Allow Zero Datetime=true";
         }
 
         public void OpenConexion(MySqlConnection mysql_conexion1)

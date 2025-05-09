@@ -2319,6 +2319,17 @@ pnombrecli, pcuit, pdire, ptipo;
             cpv.ShowDialog();
         }
 
+        private void plan4NaranjaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dgvProductos.Rows.Count > 0)
+            {
+                Tipodepago tp = new Tipodepago();
+                int valor = tp.spConsultaInteres(18);
+                this.aplicadescuento(valor, " Plan 4 naranja?", 18);
+                // this.eliminardatosdelformulario();
+            }
+        }
+
         private void btncobrar_Click(object sender, EventArgs e)
         {
             if (dgvProductos.Rows.Count <= 0)
@@ -2927,7 +2938,7 @@ pnombrecli, pcuit, pdire, ptipo;
             lbimp10.Text = "0";
             lbiva10.Text = "0";
             lbexcento.Text = "0";
-            
+
             LUComprobante.EditValue = 1;
             lbcomprador.Text = "Consumidor final";
             lbcomdire.Text = "Dirección";
@@ -2945,6 +2956,7 @@ pnombrecli, pcuit, pdire, ptipo;
             LUComprobante.Enabled = true;
             lbtotalg.Text = "0";
             totalg = 0;
+            txtdescuento.Text = "0";
         }
 
         public void aplicadescuento(int descuent,string tipopag, int tipop)

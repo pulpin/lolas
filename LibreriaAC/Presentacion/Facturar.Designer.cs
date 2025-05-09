@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facturar));
             this.label3 = new System.Windows.Forms.Label();
             this.lbcomprador = new System.Windows.Forms.Label();
@@ -98,6 +98,7 @@
             this.LUComprobante = new DevExpress.XtraEditors.LookUpEdit();
             this.btnagregar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.plan4NaranjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.conMSdebito.SuspendLayout();
             this.conMScredito.SuspendLayout();
@@ -243,33 +244,33 @@
             this.dgvProductos.BackgroundColor = System.Drawing.Color.PaleGoldenrod;
             this.dgvProductos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductos.Location = new System.Drawing.Point(55, 211);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.ReadOnly = true;
             this.dgvProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvProductos.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DimGray;
-            this.dgvProductos.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.DimGray;
+            this.dgvProductos.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProductos.Size = new System.Drawing.Size(884, 304);
             this.dgvProductos.TabIndex = 202;
@@ -380,35 +381,36 @@
             this.tSMI2cuotas,
             this.tSMI3cuotas,
             this.ahora3ToolStripMenuItem,
-            this.ahora6ToolStripMenuItem});
+            this.ahora6ToolStripMenuItem,
+            this.plan4NaranjaToolStripMenuItem});
             this.conMScuotas.Name = "contextMenuStrip1";
-            this.conMScuotas.Size = new System.Drawing.Size(152, 92);
+            this.conMScuotas.Size = new System.Drawing.Size(181, 136);
             // 
             // tSMI2cuotas
             // 
             this.tSMI2cuotas.Name = "tSMI2cuotas";
-            this.tSMI2cuotas.Size = new System.Drawing.Size(151, 22);
+            this.tSMI2cuotas.Size = new System.Drawing.Size(180, 22);
             this.tSMI2cuotas.Text = "2 cuotas";
             this.tSMI2cuotas.Click += new System.EventHandler(this.tSMI2cuotas_Click);
             // 
             // tSMI3cuotas
             // 
             this.tSMI3cuotas.Name = "tSMI3cuotas";
-            this.tSMI3cuotas.Size = new System.Drawing.Size(151, 22);
+            this.tSMI3cuotas.Size = new System.Drawing.Size(180, 22);
             this.tSMI3cuotas.Text = "3 cuotas";
             this.tSMI3cuotas.Click += new System.EventHandler(this.tSMI3cuotas_Click);
             // 
             // ahora3ToolStripMenuItem
             // 
             this.ahora3ToolStripMenuItem.Name = "ahora3ToolStripMenuItem";
-            this.ahora3ToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.ahora3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ahora3ToolStripMenuItem.Text = "Ahora 3";
             this.ahora3ToolStripMenuItem.Click += new System.EventHandler(this.ahora3ToolStripMenuItem_Click);
             // 
             // ahora6ToolStripMenuItem
             // 
             this.ahora6ToolStripMenuItem.Name = "ahora6ToolStripMenuItem";
-            this.ahora6ToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.ahora6ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ahora6ToolStripMenuItem.Text = "6 cuota simple";
             this.ahora6ToolStripMenuItem.Click += new System.EventHandler(this.ahora6ToolStripMenuItem_Click);
             // 
@@ -865,6 +867,13 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // plan4NaranjaToolStripMenuItem
+            // 
+            this.plan4NaranjaToolStripMenuItem.Name = "plan4NaranjaToolStripMenuItem";
+            this.plan4NaranjaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.plan4NaranjaToolStripMenuItem.Text = "Plan 4 naranja";
+            this.plan4NaranjaToolStripMenuItem.Click += new System.EventHandler(this.plan4NaranjaToolStripMenuItem_Click);
+            // 
             // Facturar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1003,5 +1012,6 @@
         private System.Windows.Forms.ToolStripMenuItem ahora3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ahora6ToolStripMenuItem;
         private System.Windows.Forms.Label lbdescu;
+        private System.Windows.Forms.ToolStripMenuItem plan4NaranjaToolStripMenuItem;
     }
 }
