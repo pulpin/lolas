@@ -8,6 +8,6 @@ namespace LogicaNegocios
 {
     public interface IClientes
     {
-        void selecciondecliente(string cuit, string nombre, string dire, string tipo, string tipoletra);
+        void selecciondecliente(string cuit, string nombre, string dire, string tipo, string tipoletra, int cliide);
     }
 }

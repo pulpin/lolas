@@ -23,6 +23,7 @@ namespace LogicaNegocios
                                     " left join lolasdb.libros as lb on tvd.VEND_LI_IDE = lb.LI_CODIGOVIEJO " +
                                     " left join lolasdb.editorial as ed on lb.LI_EDI_CODIGO = ed.EDI_CODIGO " +
                                     " left join lolasdb.tipopago as tp on tv.VEN_TIP_IDE = tp.TIP_IDE" +
+                                    " left join lolasdb.clientes as cli on tv.VEN_CLI_IDE = cli.CLI_IDE " +
                                     " where VEN_IDE = " + Venide +"");
 
                 return rdr;

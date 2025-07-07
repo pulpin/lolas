@@ -2471,7 +2471,7 @@ pnombrecli, pcuit, pdire, ptipo;
             this.guardarnotadecred();
         }
      
-        public void selecciondecliente(string cuit, string nombre, string dire, string tipo, string tipoletra)
+        public void selecciondecliente(string cuit, string nombre, string dire, string tipo, string tipoletra, int cliide)
         {
             lbcomcuit.Text = cuit;
             lbcomprador.Text = nombre;

@@ -139,6 +139,11 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
         public static extern int ConsultarNumeroComprobanteUltimo(string tipo_de_comprobante, StringBuilder respuesta, int respuesta_largo_maximo);
 
 
+        // Nueva declaración para EstablecerCola
+        [System.Runtime.InteropServices.DllImport("EpsonFiscalInterface.dll", CharSet = System.Runtime.InteropServices.CharSet.Ansi,
+                                             CallingConvention = System.Runtime.InteropServices.CallingConvention.StdCall)]
+        public static extern int EstablecerCola(int numero_cola, string descripcion);
+
         /* Globa variable */
         private bool _WorkThreadRunning = false;
 
@@ -151,7 +156,7 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
         string pcantidadelegida,pcodigo, pnombre, peditorialu,ppreciou, psubtotal, ppreciouc,psubtotalc, pivavalor, pimportedeliva, piva, ppivavalor, ppimportedeliva, ppivavalor10, ppimportedeliva10,
 pnombrecli, pcuit, pdire, ptipo;
         string ptipofactu, ptipopag;
-        int ptipopagide, ptipopagideNuevo, retornar,pusuariopedidoide, pventemporalaborrar = 0;
+        int ptipopagide, ptipopagideNuevo, retornar,pusuariopedidoide, pventemporalaborrar = 0, clienteide = 0;
         double pventotal,pexento;
        // string nroticket;
         public static int clientecuentacorriente;
@@ -332,6 +337,42 @@ pnombrecli, pcuit, pdire, ptipo;
            // precio = Convert.ToString(201 * 1000);
             ConfigurarVelocidad(9600);
             ConfigurarPuerto("0"); //USB
+
+            double iva21 = 0;
+
+            foreach (DataGridViewRow row in dgvProductos.Rows)
+            {
+                if (row.IsNewRow) continue;
+                double cantidad1 = Convert.ToDouble(row.Cells[0].Value);
+                double precioUnitario = Convert.ToDouble(row.Cells[4].Value);
+                //double ivaPorcentaje = Convert.ToDouble(row.Cells[10].Value);
+                string ivaPorcentaje = Convert.ToString(row.Cells[10].Value);
+
+                if (ivaPorcentaje == "21" || ivaPorcentaje == "21.00" || ivaPorcentaje == "21,00")
+                {
+                    double ivaMonto = (precioUnitario * cantidad1) * 0.21;
+                    iva21 += ivaMonto;
+                }
+            }
+
+            error = Conectar();
+            if (error == 0)
+            {
+
+                error = EstablecerCola(1, "TRANSPARENCIA FISCAL");
+                error = EstablecerCola(2, $"IVA Contenido: {iva21.ToString("0.00")}");
+                error = EstablecerCola(3, "Otros imp. Nac. Indirectos: 0.00");
+
+                //string textoFooter = $"TRANSPARENCIA FISCAL IVA: {iva21.ToString("0.00")}";
+                //EstablecerCola(1, textoFooter); // Configura para todos los futuros tickets
+                if (error != 0)
+                {
+                    MessageBox.Show($"Error configurando footer: 0x{error:X}");
+                }
+                Desconectar();
+            }
+
+
             error = Conectar();
             if (error != ERROR_NINGUNO)
             {
@@ -775,6 +816,42 @@ pnombrecli, pcuit, pdire, ptipo;
             // precio = Convert.ToString(201 * 1000);
             ConfigurarVelocidad(9600);
             ConfigurarPuerto("0"); //USB
+
+            double iva21 = 0;
+
+            foreach (DataGridViewRow row in dgvProductos.Rows)
+            {
+                if (row.IsNewRow) continue;
+                double cantidad1 = Convert.ToDouble(row.Cells[0].Value);
+                double precioUnitario = Convert.ToDouble(row.Cells[4].Value);
+                //double ivaPorcentaje = Convert.ToDouble(row.Cells[10].Value);
+                string ivaPorcentaje = Convert.ToString(row.Cells[10].Value);
+
+                if (ivaPorcentaje == "21" || ivaPorcentaje == "21.00" || ivaPorcentaje == "21,00")
+                {
+                    double ivaMonto = (precioUnitario * cantidad1) * 0.21;
+                    iva21 += ivaMonto;
+                }
+            }
+
+            error = Conectar();
+            if (error == 0)
+            {
+
+                error = EstablecerCola(1, "TRANSPARENCIA FISCAL");
+                error = EstablecerCola(2, $"IVA Contenido: {iva21.ToString("0.00")}");
+                error = EstablecerCola(3, "Otros imp. Nac. Indirectos: 0.00");
+
+                //string textoFooter = $"TRANSPARENCIA FISCAL IVA: {iva21.ToString("0.00")}";
+                //EstablecerCola(1, textoFooter); // Configura para todos los futuros tickets
+                if (error != 0)
+                {
+                    MessageBox.Show($"Error configurando footer: 0x{error:X}");
+                }
+                Desconectar();
+            }
+
+
             error = Conectar();
             if (error != ERROR_NINGUNO)
             {
@@ -1213,6 +1290,42 @@ pnombrecli, pcuit, pdire, ptipo;
             // precio = Convert.ToString(201 * 1000);
             ConfigurarVelocidad(9600);
             ConfigurarPuerto("0"); //USB
+
+            double iva21 = 0;
+
+            foreach (DataGridViewRow row in dgvProductos.Rows)
+            {
+                if (row.IsNewRow) continue;
+                double cantidad1 = Convert.ToDouble(row.Cells[0].Value);
+                double precioUnitario = Convert.ToDouble(row.Cells[4].Value);
+                //double ivaPorcentaje = Convert.ToDouble(row.Cells[10].Value);
+                string ivaPorcentaje = Convert.ToString(row.Cells[10].Value);
+
+                if (ivaPorcentaje == "21" || ivaPorcentaje == "21.00" || ivaPorcentaje == "21,00")
+                {
+                    double ivaMonto = (precioUnitario * cantidad1) * 0.21;
+                    iva21 += ivaMonto;
+                }
+            }
+
+            error = Conectar();
+            if (error == 0)
+            {
+
+                error = EstablecerCola(1, "TRANSPARENCIA FISCAL");
+                error = EstablecerCola(2, $"IVA Contenido: {iva21.ToString("0.00")}");
+                error = EstablecerCola(3, "Otros imp. Nac. Indirectos: 0.00");
+
+                //string textoFooter = $"TRANSPARENCIA FISCAL IVA: {iva21.ToString("0.00")}";
+                //EstablecerCola(1, textoFooter); // Configura para todos los futuros tickets
+                if (error != 0)
+                {
+                    MessageBox.Show($"Error configurando footer: 0x{error:X}");
+                }
+                Desconectar();
+            }
+
+
             error = Conectar();
             if (error != ERROR_NINGUNO)
             {
@@ -2475,6 +2588,7 @@ pnombrecli, pcuit, pdire, ptipo;
                 vta.Vencuit = lbcomcuit.Text;
                 vta.Vendireccion = lbcomdire.Text;
             }
+
             vta.Ventipoiva = lbtipoiva.Text;
             vta.venimporte = lbtotalg.Text;
             vta.ventipopago = tipop2;
@@ -2491,8 +2605,7 @@ pnombrecli, pcuit, pdire, ptipo;
             {
                 vta.ventipofactura = "B";
             }
-            //truncar aca
-            //hugo
+            
             string importetem = lbimp21.Text;
             decimal valortem = Convert.ToDecimal(importetem);
             valortem = Math.Floor(valortem * 10000) / 10000;
@@ -2528,7 +2641,7 @@ pnombrecli, pcuit, pdire, ptipo;
             vta.venimpexcento = lbexcento.Text;
 
             vta.vendescuento = txtdescuento.Text;
-
+            vta.cliide = this.clienteide;
             //Si es tipo crédito
             if (tipop2 == 12)
             {
@@ -2543,6 +2656,7 @@ pnombrecli, pcuit, pdire, ptipo;
             }
             else
             {
+                
                 //faltan los parámetros de la tabla cuentacorriente.
                 int valor = vta.spVentaProducto();
                 MessageBox.Show("El número del pedido es: " + valor);
@@ -2686,6 +2800,7 @@ pnombrecli, pcuit, pdire, ptipo;
 
             //vta.vendescuento = txtdescuento.Text;
             vta.vendescuento = lbdescu.Text;
+            vta.cliide = this.clienteide;
             int valor = vta.spVentaProductodefinitiva();
             if (valor == 0)
             {
@@ -3193,6 +3308,15 @@ pnombrecli, pcuit, pdire, ptipo;
                     pdire = reader["VEN_DIRE"].ToString();
                     ptipo = reader["VEN_TIPI_IDE"].ToString();
 
+                    clienteide = Convert.ToInt32(reader["VEN_CLI_IDE"]);
+                    if (clienteide > 0)
+                    {
+                        lbcomprador.Text = reader["CLI_NOMBRE"].ToString(); 
+                        lbcomdire.Text = reader["CLI_DIRE"].ToString();
+                        lbcomtipo.Text = "RESP. INSCRIPTO";
+                        lbcomcuit.Text = reader["CLI_CUIT"].ToString();
+                    }
+
                     string[] row1 = new string[] { pcantidadelegida, pcodigo, pnombre, peditorialu, ppreciou, psubtotal, ppreciouc, psubtotalc, pivavalor, pimportedeliva, piva, ppivavalor, ppimportedeliva, ppreciou, psubtotal };
                     rowsenviar = new object[] { row1 };
                     
@@ -3547,14 +3671,14 @@ pnombrecli, pcuit, pdire, ptipo;
 
 
         
-        public void selecciondecliente(string cuit, string nombre, string dire, string tipo, string tipoletra)
+        public void selecciondecliente(string cuit, string nombre, string dire, string tipo, string tipoletra, int cliide)
         {
             lbcomcuit.Text = cuit;
             lbcomprador.Text = nombre;
             lbcomdire.Text = dire;
             lbcomtipo.Text = tipo;
             lbtipoiva.Text = tipoletra;
-
+            this.clienteide = cliide;
             if (tipoletra == "I")
             {
                 MessageBox.Show("El cliente es RESPONSABLE INSCRIPTO, se realizará la impresión de Ticket/Factura A");

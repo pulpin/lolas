@@ -1154,7 +1154,7 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
 
 
         
-        public void selecciondecliente(string cuit, string nombre, string dire, string tipo, string tipoletra)
+        public void selecciondecliente(string cuit, string nombre, string dire, string tipo, string tipoletra, int cliide)
         {
         }
 

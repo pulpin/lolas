@@ -103,6 +103,7 @@
             this.tSBEditorial = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -738,6 +739,7 @@
             this.tSBEditorial,
             this.toolStripSeparator7,
             this.toolStripButton2,
+            this.toolStripButton1,
             this.toolStripButton6});
             this.toolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.toolStrip2.Location = new System.Drawing.Point(939, 48);
@@ -817,15 +819,28 @@
             // toolStripButton2
             // 
             this.toolStripButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.toolStripButton2.Image = global::Presentacion.Properties.Resources.changeuser64;
+            this.toolStripButton2.Image = global::Presentacion.Properties.Resources.clientes64;
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(66, 83);
-            this.toolStripButton2.Text = "Usuario";
+            this.toolStripButton2.Text = "Clientes";
             this.toolStripButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.toolStripButton1.Image = global::Presentacion.Properties.Resources.changeuser64;
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(66, 83);
+            this.toolStripButton1.Text = "Usuario";
+            this.toolStripButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_2);
             // 
             // toolStripButton6
             // 
@@ -849,7 +864,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Versión: 08/05/2025";
+            this.label5.Text = "Versión: 02/07/2025";
             // 
             // textBox2
             // 
@@ -1010,5 +1025,6 @@
         private System.Windows.Forms.ToolStripMenuItem dVTSMItem;
         private System.Windows.Forms.ToolStripMenuItem cargaTSMItem;
         private System.Windows.Forms.ToolStripMenuItem cargaRápidaDeProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

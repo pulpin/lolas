@@ -121,6 +121,9 @@
   <data name="exit96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="comprar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comprar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="escuela32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\escuela32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,20 +136,14 @@
   <data name="ahora12ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ahora12ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="papelera64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\papelera64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guardar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guardar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cobrar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cobrar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="credpersonalc48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\credpersonalc48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ahora12a48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ahora12a48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="changeuser64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\changeuser64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,8 +172,8 @@
   <data name="Cancel64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cancel64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eliminar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eliminar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zoom24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AC64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AC64.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,17 +184,14 @@
   <data name="circuloverde30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circuloverde30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nodisponible" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nodisponible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="entrar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\entrar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="proveedor642" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\proveedor642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cuotasimple48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cuotasimple48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nolibro32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nolibro32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pdf64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pdf64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editarusu32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editarusu32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +202,8 @@
   <data name="agregar24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zoom24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zoom24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="intere32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\intere32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ahora1248" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ahora1248.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,11 +214,11 @@
   <data name="buscarlibro32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buscarlibro32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="execute32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\execute32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cancelar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancelar64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="borrarusu32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\borrarusu32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AC15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AC15.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,11 +262,14 @@
   <data name="pedidos32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pedidos32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="subirimagen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subirimagen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="prin48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prin48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ventaspago64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ventaspago64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AC3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AC3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="diferenciaprecio64+" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diferenciaprecio64+.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,8 +283,8 @@
   <data name="agregali64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregali64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="precio64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\precio64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eliminar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eliminar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="diferenciapre64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diferenciapre64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,6 +307,9 @@
   <data name="proveedor64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proveedor64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Books_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Books_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="agregar321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -322,11 +322,8 @@
   <data name="modificar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\modificar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="list64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\list64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AC3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AC3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="proveedor642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proveedor642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="permisos32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\permisos32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -336,9 +333,6 @@
   </data>
   <data name="credito48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\credito48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="entrar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\entrar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pdf232" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pdf232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,8 +346,14 @@
   <data name="plata321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plata321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="google24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\google24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AC11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AC11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="editar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editar64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="efectivo48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\efectivo48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -364,20 +364,20 @@
   <data name="borrar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\borrar64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="google24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\google24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nodisponible" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nodisponible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="debito48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\debito48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="usuarios96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuarios96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pagos64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pagos64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pay48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pay48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="subirimagen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\subirimagen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="credpersonalc48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\credpersonalc48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Reservas64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reservas64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -385,8 +385,8 @@
   <data name="reservas24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reservas24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="execute32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\execute32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="papelera64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\papelera64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="producto48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\producto48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -409,8 +409,8 @@
   <data name="proforma48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proforma48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pagos64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pagos64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="borrarusu32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\borrarusu32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="subirimagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\subirimagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -433,23 +433,26 @@
   <data name="search96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ahora48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ahora48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="search64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buscar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuarios96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuarios96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="factu96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\factu96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="editar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\editar64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ahora12a48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ahora12a48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circulorojo30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circulorojo30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ahora48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ahora48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ventas48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ventas48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -460,17 +463,17 @@
   <data name="Print-256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Print-256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="comprar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\comprar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="precio64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\precio64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Books_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Books_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ventaspago64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ventaspago64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="interes24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\interes24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buscar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buscar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pdf64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pdf64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editorial64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editorial64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -481,10 +484,10 @@
   <data name="reservas32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reservas32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="intere32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\intere32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="list64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cuotasimple48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cuotasimple48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clientes64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clientes64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

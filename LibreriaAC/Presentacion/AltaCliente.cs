@@ -98,31 +98,44 @@ namespace Presentacion
         {
             //verifica si el cuit/cuil es válido.
             //bool valor = validateCuit(txtcuit.Text);
-            bool valor = Validate(txtcuit.Text);
+            bool valor = false;
+            if (txtcuit.Text.All(char.IsDigit))
+            {
+                if (txtcuit.Text.Length <= 8)
+                {
+                    valor = true;
+                }
+                else if (txtcuit.Text.Length == 11)
+                {
+                    valor = Validate(txtcuit.Text);
+                }
+                
+            }
+            
+
+
             if (valor == true)
             {
                 //si es válido, verifica que no exista ya cargado en la base de datos.
                 cli.Cuit = txtcuit.Text;
                 int valor1 = cli.spVersiexiste();
-                if (valor1 == 0)
+                if (valor1 == 0 && this.Alta == 1)
                 {
-                    if (this.Alta == 1)
-                    {
-                        this.altaclien();
-                    }
-                    else
-                    {
-                        this.modificaclien();
-                    }
+                   
+                   this.altaclien();
+                   
+                }else if (valor1 > 0 && this.Alta == 0)
+                {
+                    this.modificaclien();
                 }
                 else
                 {
-                    MessageBox.Show("Ya está cargado este CUIT/CUIL.");
+                    MessageBox.Show("Ya está cargado este CUIT/DNI.");
                 }
             }
             else
             {
-                MessageBox.Show("Verificar el CUIT/CUIL por favor.");
+                MessageBox.Show("Verificar el CUIT/DNI por favor.");
             }
         }
 

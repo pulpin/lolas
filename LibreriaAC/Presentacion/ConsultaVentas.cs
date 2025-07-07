@@ -15,7 +15,7 @@ namespace Presentacion
     public partial class ConsultaVentas : Form
     {
         Venta ve = new Venta();
-        int _filtro;
+        int _filtro, _cliide;
         public ConsultaVentas()
         {
             InitializeComponent();
@@ -23,7 +23,15 @@ namespace Presentacion
 
         private void ConsultaInteres_Load(object sender, EventArgs e)
         {
-            this.cargar();
+            if (this.Cliide>0)
+            {
+                consulta_ventas_clientes();
+            }
+            else
+            {
+                this.cargar();
+            }
+                
         }
         private void cargar()
         {
@@ -197,6 +205,10 @@ namespace Presentacion
 
         }
 
+        private void consulta_ventas_clientes()
+        {
+            gConsulta.DataSource = ve.Mostrar_ventas_clientes(this.Cliide);
+        }
         public void consultaventasfiltros(DateTime fdesde, DateTime fhasta,int puntod, int tipop)
         {
             string fdesdee = fdesde.ToString("yyyy-MM-dd");
@@ -214,6 +226,11 @@ namespace Presentacion
         {
             get { return this._filtro; }
             set { this._filtro = value; }
+        }
+        public int Cliide
+        {
+            get { return this._cliide; }
+            set { this._cliide = value; }
         }
 
     }

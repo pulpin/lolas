@@ -44,6 +44,7 @@
             this.btnmodificarcliente = new System.Windows.Forms.Button();
             this.txttitulo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).BeginInit();
             this.SuspendLayout();
@@ -157,7 +158,7 @@
             // 
             this.btncancelar.Image = global::Presentacion.Properties.Resources.cancelar64;
             this.btncancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btncancelar.Location = new System.Drawing.Point(382, 349);
+            this.btncancelar.Location = new System.Drawing.Point(449, 349);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(102, 87);
             this.btncancelar.TabIndex = 12;
@@ -170,7 +171,7 @@
             // 
             this.btnseleccionado.Image = global::Presentacion.Properties.Resources.acepta64;
             this.btnseleccionado.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnseleccionado.Location = new System.Drawing.Point(242, 349);
+            this.btnseleccionado.Location = new System.Drawing.Point(309, 349);
             this.btnseleccionado.Name = "btnseleccionado";
             this.btnseleccionado.Size = new System.Drawing.Size(102, 87);
             this.btnseleccionado.TabIndex = 11;
@@ -223,12 +224,26 @@
             this.label2.Text = "Nombre:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // button1
+            // 
+            this.button1.Image = global::Presentacion.Properties.Resources.caro64;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(174, 349);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 87);
+            this.button1.TabIndex = 253;
+            this.button1.Text = "Compras";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 443);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txttitulo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnmodificarcliente);
@@ -265,5 +280,6 @@
         private System.Windows.Forms.Button btnmodificarcliente;
         private System.Windows.Forms.TextBox txttitulo;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -692,13 +692,9 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            Usuarios usu = new Usuarios();
-            usu.cerrarconexion();
-            usu = null;
-            this.Dispose();
-            this.Hide();
-            Login l = new Login();
-            l.ShowDialog();
+            ConsultaCliente cc = new ConsultaCliente();
+            cc.desaparecerbotonselec();
+            cc.ShowDialog();
         }
 
         private void históricoDeDevolucionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -880,6 +876,17 @@ Typedef from exported Prototypes of "EpsonFiscalInterface.h"
         {
             Cargarapida cr = new Cargarapida();
             cr.ShowDialog();
+        }
+
+        private void toolStripButton1_Click_2(object sender, EventArgs e)
+        {
+            Usuarios usu = new Usuarios();
+            usu.cerrarconexion();
+            usu = null;
+            this.Dispose();
+            this.Hide();
+            Login l = new Login();
+            l.ShowDialog();
         }
 
         private void toolTurnosD_Click(object sender, EventArgs e)

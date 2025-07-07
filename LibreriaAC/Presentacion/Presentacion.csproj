@@ -1450,6 +1450,7 @@
   <ItemGroup>
     <Content Include="libreriaac.ico" />
     <Content Include="lolas.ico" />
+    <None Include="Resources\clientes64.png" />
     <None Include="Resources\cuotasimple48.png" />
     <None Include="Resources\notepad32.png" />
     <None Include="Resources\noted32.png" />

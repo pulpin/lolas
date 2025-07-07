@@ -6,24 +6,20 @@
       "AbsoluteMoniker": "D:0:0:{F01FBC3F-5853-4889-B321-1383038A9D75}|..\\Datos\\AccesoaDatos\\AccesoaDatos.csproj|c:\\users\\administrador\\documents\\github\\lolas\\datos\\accesoadatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|c:\\users\\administrador\\documents\\github\\lolas\\libreriaac\\presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\presentacion\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|c:\\users\\administrador\\documents\\github\\lolas\\libreriaac\\presentacion\\altacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\altacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|LogicaNegocios||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|c:\\users\\administrador\\documents\\github\\lolas\\libreriaac\\presentacion\\consultacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\consultacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Presentacion||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47A4E732-957A-437F-9371-C4BBB9257BDB}|..\\Logica\\LogicaNegocios\\LogicaNegocios.csproj|c:\\users\\administrador\\documents\\github\\lolas\\logica\\logicanegocios\\seteousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|AccesoaDatos||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|c:\\users\\administrador\\documents\\github\\lolas\\libreriaac\\presentacion\\consultacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0C68FBE9-778D-40B4-ADF0-68F89A2C5937}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\consultacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,30 +29,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Principal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\Principal.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Principal.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\Principal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\Principal.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Datos\\AccesoaDatos\\Conexion.cs",
+              "RelativeDocumentMoniker": "..\\Datos\\AccesoaDatos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Datos\\AccesoaDatos\\Conexion.cs",
+              "RelativeToolTip": "..\\Datos\\AccesoaDatos\\Conexion.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAswCkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T02:03:33.884Z"
+              "WhenOpened": "2025-07-07T00:37:08.448Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SeteoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Logica\\LogicaNegocios\\SeteoUsuario.cs",
-              "RelativeDocumentMoniker": "..\\Logica\\LogicaNegocios\\SeteoUsuario.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Logica\\LogicaNegocios\\SeteoUsuario.cs",
-              "RelativeToolTip": "..\\Logica\\LogicaNegocios\\SeteoUsuario.cs",
-              "ViewState": "AgIAAKsBAAAAAAAAAAAYwLoBAAAsAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AltaCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\AltaCliente.cs",
+              "RelativeDocumentMoniker": "Presentacion\\AltaCliente.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\AltaCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\AltaCliente.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T00:51:18.323Z"
+              "WhenOpened": "2025-07-07T00:44:28.669Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConsultaCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\ConsultaCliente.cs",
+              "RelativeDocumentMoniker": "Presentacion\\ConsultaCliente.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\ConsultaCliente.cs",
+              "RelativeToolTip": "Presentacion\\ConsultaCliente.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAswGUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T00:44:17.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConsultaCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\ConsultaCliente.cs",
+              "RelativeDocumentMoniker": "Presentacion\\ConsultaCliente.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\ConsultaCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\ConsultaCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T00:44:13.646Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -66,55 +90,9 @@
               "RelativeDocumentMoniker": "Presentacion\\Program.cs",
               "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\Program.cs",
               "RelativeToolTip": "Presentacion\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T00:52:02.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccesoaDatos",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Datos\\AccesoaDatos\\AccesoaDatos.csproj",
-              "RelativeDocumentMoniker": "..\\Datos\\AccesoaDatos\\AccesoaDatos.csproj",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Datos\\AccesoaDatos\\AccesoaDatos.csproj",
-              "RelativeToolTip": "..\\Datos\\AccesoaDatos\\AccesoaDatos.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-09T00:49:19.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LogicaNegocios",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Logica\\LogicaNegocios\\LogicaNegocios.csproj",
-              "RelativeDocumentMoniker": "..\\Logica\\LogicaNegocios\\LogicaNegocios.csproj",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Logica\\LogicaNegocios\\LogicaNegocios.csproj",
-              "RelativeToolTip": "..\\Logica\\LogicaNegocios\\LogicaNegocios.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-09T00:49:09.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Presentacion",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\Presentacion.csproj",
-              "RelativeDocumentMoniker": "Presentacion\\Presentacion.csproj",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\LibreriaAC\\Presentacion\\Presentacion.csproj",
-              "RelativeToolTip": "Presentacion\\Presentacion.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-09T00:48:17.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Datos\\AccesoaDatos\\Conexion.cs",
-              "RelativeDocumentMoniker": "..\\Datos\\AccesoaDatos\\Conexion.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\lolas\\Datos\\AccesoaDatos\\Conexion.cs",
-              "RelativeToolTip": "..\\Datos\\AccesoaDatos\\Conexion.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAA0wCgAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T00:45:05.186Z",
+              "WhenOpened": "2025-07-07T00:32:48.698Z",
               "EditorCaption": ""
             }
           ]

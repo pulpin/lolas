@@ -14,7 +14,7 @@ namespace LogicaNegocios
         string _vennombre, _vendireccion, _vencuit, _venimporte, _venimporteiva, _ventotal, _ventipofactura, _vennroticket, _vendescuento, _ventipoiva, _venliide, _vendimporteu, _vendimporte, _vendimporteiva21, _vendiva21, _vendimporteiva1050, _vendivavalor, _vendivaimporte, _vendiva, _obs;
         string _vendimporteivac, _vendimporteiva, _vendivavalorc, _vendimportec, _vendimporteuc;
         string _venimp21 = "0", _veniva21 = "0", _venimp105 = "0", _veniva105 = "0", _venimpexcento = "0", _venproducide, _telefono;
-        int _venptodeventa, _venccorriente, _ventipopago, _venide, _vencantidad, _vendtieneiva, _venusuventapedido, _proformaide, _ventaidparanota, _eslibro, _editorial;
+        int _venptodeventa, _venccorriente, _ventipopago, _venide, _vencantidad, _vendtieneiva, _venusuventapedido, _proformaide, _ventaidparanota, _eslibro, _editorial,_cliide;
         public int spVentaProducto()
         {
             int Valor_Retornado = 0;
@@ -58,6 +58,7 @@ namespace LogicaNegocios
                 myCommand.Parameters.AddWithValue("VEN_IMP10p", this.venimp105);
                 myCommand.Parameters.AddWithValue("VEN_IVA10p", this.venIVA105);
                 myCommand.Parameters.AddWithValue("VEN_EXCENTOp", this.venimpexcento);
+                myCommand.Parameters.AddWithValue("VEN_CLIIDEp", this.cliide);
 
                 MySqlParameter ValorRetorno = new MySqlParameter("@Resultado", MySqlDbType.Int32);
                 ValorRetorno.Direction = ParameterDirection.Output;// Output;
@@ -423,6 +424,7 @@ namespace LogicaNegocios
                 myCommand.Parameters.AddWithValue("VEN_EXCENTOp", this.venimpexcento);
                 myCommand.Parameters.AddWithValue("VEN_COBUSUp", Globales.gbUsuide);
                 myCommand.Parameters.AddWithValue("VEN_DESCUENTOp", this.vendescuento);
+                myCommand.Parameters.AddWithValue("VEN_CLIIDEP", this.cliide);
 
                 MySqlParameter ValorRetorno = new MySqlParameter("@Resultado", MySqlDbType.Int32);
                 ValorRetorno.Direction = ParameterDirection.Output;// Output;
@@ -1141,6 +1143,18 @@ namespace LogicaNegocios
                 " left join cccliente as ccc on CUCO_CC_IDE = CC_IDE where " + valor +" ORDER BY VEN_IDE DESC");
         }
 
+
+        public DataTable Mostrar_ventas_clientes(int cliide)
+        {
+            string valor = string.Empty;
+            Conexion con = new Conexion("lolasdb", Globales.ip);
+            con.AbrirConexio();
+
+            return con.Mostrar_Datos("select VEN_IDE,VEN_TIPOFACTU, " +
+                " VEN_NROTICKET,VEN_FECHA,(case when VEN_TIP_IDE = 12 then CC_NOMBRE else VEN_NOMBRE END) as VEN_NOMBRE,VEN_TOTAL,VEN_ANULADO,TIP_DESC,VEN_PTOVTA,VEN_DESCUENTO " +
+                " from venta left join tipopago on VEN_TIP_IDE = TIP_IDE left join cuentacorriente as cc on VEN_IDE = CUCO_VEN_IDE " +
+                " left join cccliente as ccc on CUCO_CC_IDE = CC_IDE where VEN_CLI_IDE = "+cliide+" ORDER BY VEN_IDE DESC");
+        }
         public DataTable Mostrar_ventasporparametrofiltro(string desde, string hasta, int puntodvta, int tipop)
         {
            // int ingresa = 0;
@@ -1660,6 +1674,11 @@ namespace LogicaNegocios
         {
             get { return this._proformaide; }
             set { this._proformaide = value; }
+        }
+        public int cliide
+        {
+            get { return this._cliide; }
+            set { this._cliide = value; }
         }
     }
 }

@@ -18,7 +18,7 @@ namespace LogicaNegocios
             Conexion con = new Conexion("lolasdb", Globales.ip);
             con.AbrirConexio();
 
-            return con.Mostrar_Datos("select CLI_CUIT,CLI_NOMBRE,CLI_DIRE,CLI_TELEFONO,TIPI_DESC,CLI_IDE,TIPI_LETRA,CLI_TIPI_IDE FROM clientes LEFT JOIN tipoiva as tiv ON CLI_TIPI_IDE = TIPI_IDE");
+            return con.Mostrar_Datos("select CLI_CUIT,CLI_NOMBRE,CLI_DIRE,CLI_TELEFONO,TIPI_DESC,CLI_IDE,TIPI_LETRA,CLI_TIPI_IDE,CLI_IDE FROM clientes LEFT JOIN tipoiva as tiv ON CLI_TIPI_IDE = TIPI_IDE");
 
         }
         public DataTable Mostrar_clientesReservas()
