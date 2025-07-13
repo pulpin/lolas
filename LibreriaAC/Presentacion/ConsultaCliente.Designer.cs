@@ -43,8 +43,8 @@
             this.btnaltacliente = new System.Windows.Forms.Button();
             this.btnmodificarcliente = new System.Windows.Forms.Button();
             this.txttitulo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPintarFilas)).BeginInit();
             this.SuspendLayout();
@@ -208,21 +208,11 @@
             // 
             // txttitulo
             // 
-            this.txttitulo.Location = new System.Drawing.Point(242, 12);
+            this.txttitulo.Location = new System.Drawing.Point(369, 12);
             this.txttitulo.Name = "txttitulo";
-            this.txttitulo.Size = new System.Drawing.Size(272, 20);
+            this.txttitulo.Size = new System.Drawing.Size(311, 20);
             this.txttitulo.TabIndex = 251;
             this.txttitulo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txttitulo_KeyPress);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(192, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 252;
-            this.label2.Text = "Nombre:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // button1
             // 
@@ -237,15 +227,25 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(171, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(192, 13);
+            this.label2.TabIndex = 254;
+            this.label2.Text = "Busca por: nombre, cuit, dni o teléfono:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // ConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 443);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txttitulo);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnmodificarcliente);
             this.Controls.Add(this.btnaltacliente);
             this.Controls.Add(this.btncancelar);
@@ -279,7 +279,7 @@
         private System.Windows.Forms.Button btnaltacliente;
         private System.Windows.Forms.Button btnmodificarcliente;
         private System.Windows.Forms.TextBox txttitulo;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }

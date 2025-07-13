@@ -34,9 +34,16 @@ namespace LogicaNegocios
             Conexion con = new Conexion("lolasdb", Globales.ip);
             con.AbrirConexio();
             string contiene = "%";
-            string valor = "CLI_NOMBRE like " + "'" + contiene + "" + this.Nombre + "%" + "'";
+            string valor = this.Nombre;
+            string filtro = $"(CLI_NOMBRE LIKE '%{valor}%' OR " +
+                $"CLI_TELEFONO LIKE '%{valor}%' OR " +
+                $"CLI_CUIT LIKE '%{valor}%' OR " +
+                $"CLI_IDE LIKE '%{valor}%')";
 
-            return con.Mostrar_Datos("select CLI_CUIT,CLI_NOMBRE,CLI_DIRE,CLI_TELEFONO,TIPI_DESC,CLI_IDE,TIPI_LETRA,CLI_TIPI_IDE FROM clientes LEFT JOIN tipoiva as tiv ON CLI_TIPI_IDE = TIPI_IDE where " + valor + "");
+            return con.Mostrar_Datos("SELECT CLI_CUIT, CLI_NOMBRE, CLI_DIRE, CLI_TELEFONO, TIPI_DESC, CLI_IDE, TIPI_LETRA, CLI_TIPI_IDE " +
+                                     "FROM clientes " +
+                                     "LEFT JOIN tipoiva as tiv ON CLI_TIPI_IDE = TIPI_IDE " +
+                                     "WHERE " + filtro);
         }
 
         public DataTable Mostrar_clientesBuscarReservas()
